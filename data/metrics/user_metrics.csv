@@ -1,0 +1,7 @@
+user_id,login,name,total_repos,total_stars_received,total_forks_received,avg_stars_per_repo,account_age_days,repos_per_year,followers,following,follower_ratio,h_index,impact_score,primary_languages,primary_language_1,language_diversity,industries_served,primary_industry,has_readme_pct,has_license_pct,total_open_issues,days_since_last_push,is_active
+33765137,alainm23,Alain,1,5053,293,5053.0,3039,0.1201052977953274,395,49,8.061224489795919,1,6034,Vala,Vala,1,1,J,1.0,1.0,175,7,True
+131488004,mabelolivera10,MABEL QUISPE OLIVERA,1,121,63,121.0,1058,0.3449905482041588,1197,0,1197.0,1,1444,CSS,CSS,1,1,J,1.0,0.0,2,648,False
+1312018,sergiodxa,Sergio Xalambrí,10,7126,472,712.6,5180,0.7046332046332047,2204,170,12.964705882352941,10,10274,"TypeScript, JavaScript",TypeScript,2,1,J,1.0,1.0,76,3,True
+8503732,devaige,Aige,3,5507,1236,1835.6666666666667,4224,0.25923295454545453,1178,1,1178.0,3,9157,"Java, Kotlin",Java,2,1,J,1.0,0.6666666666666666,66,2,True
+49838578,gerardokaztro,Gerardo Castro ☁️🔐,2,276,35,138.0,2519,0.28979753870583563,62,13,4.769230769230769,2,408,JavaScript,JavaScript,1,1,J,1.0,1.0,0,299,False
+723723,mgonto,Martin Gontovnikas,3,8580,907,2860.0,5450,0.20091743119266056,824,0,824.0,3,11218,JavaScript,JavaScript,1,1,J,1.0,1.0,274,1986,False

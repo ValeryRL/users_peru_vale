@@ -1,0 +1,21 @@
+repo_id,repo_name,industry_code,industry_name,confidence,reasoning
+9210604,restangular,J,Information and communication,low,OpenAI client missing
+154173536,planify,J,Information and communication,low,OpenAI client missing
+47186418,WheelPicker,J,Information and communication,low,OpenAI client missing
+363995566,remix-utils,J,Information and communication,low,OpenAI client missing
+388624643,remix-auth,J,Information and communication,low,OpenAI client missing
+32990107,DatePicker,J,Information and communication,low,OpenAI client missing
+35923428,MultiThreadDownloader,J,Information and communication,low,OpenAI client missing
+422046848,remix-i18next,J,Information and communication,low,OpenAI client missing
+10418404,angularytics,J,Information and communication,low,OpenAI client missing
+664907402,remix-hono,J,Information and communication,low,OpenAI client missing
+217599397,flagged,J,Information and communication,low,OpenAI client missing
+138063059,next-ga,J,Information and communication,low,OpenAI client missing
+440076905,remix-auth-oauth2,J,Information and communication,low,OpenAI client missing
+683833940,cloudsec-ninja,J,Information and communication,low,OpenAI client missing
+138228625,next-nprogress,J,Information and communication,low,OpenAI client missing
+15535086,mgo-mousetrap,J,Information and communication,low,OpenAI client missing
+440683737,remix-auth-form,J,Information and communication,low,OpenAI client missing
+755725134,floresamarillasycorazones,J,Information and communication,low,OpenAI client missing
+281784442,use-mutation,J,Information and communication,low,OpenAI client missing
+621891194,cybersecurity-entry-level,J,Information and communication,low,OpenAI client missing

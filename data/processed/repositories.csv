@@ -1,0 +1,2363 @@
+id,owner,name,full_name,description,topics,language,languages,stargazers_count,forks_count,watchers_count,open_issues_count,created_at,updated_at,pushed_at,license,has_license,readme,has_readme
+9210604,mgonto,restangular,mgonto/restangular,AngularJS service to handle Rest API Restful Resources properly and easily,,JavaScript,JavaScript,7810,828,7810,254,2013-04-04T03:53:57Z,2026-03-14T20:21:36Z,2020-10-05T12:55:23Z,mit,True,"# Restangular
+
+[![Build Status](https://travis-ci.org/mgonto/restangular.svg?branch=master)](https://travis-ci.org/mgonto/restangular)
+[![Coverage Status](https://coveralls.io/repos/github/mgonto/restangular/badge.svg?branch=master)](https://coveralls.io/github/mgonto/restangular?branch=master)
+[![David](https://img.shields.io/david/dev/mgonto/restangular.svg)](https://david-dm.org/mgonto/restangular/?type=dev)
+[![Known Vulnerabilities](https://snyk.io/test/github/mgonto/restangular/badge.svg)](https://snyk.io/test/github/mgonto/restangular)
+[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=martin%40gon%2eto&lc=US&item_name=Martin%20Gontovnikas&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted ""Donate once-off to this project using Paypal"")
+[![Donate on Gittip](http://img.shields.io/gittip/mgonto.svg)](https://www.gittip.com/mgonto/)
+<a href=""https://twitter.com/intent/tweet?hashtags=&original_referer=http%3A%2F%2Fgithub.com%2F&text=Check+out+Restangular%2C+a+service+for+%23AngularJS+that+makes+it+easy+to+use+Rest+APIs&tw_p=tweetbutton&url=https%3A%2F%2Fgithub.com%2Fmgonto%2Frestangular"" target=""_blank"">
+  <img src=""http://jpillora.com/github-twitter-button/img/tweet.png""></img>
+</a>
+
+Restangular is an AngularJS service that simplifies common GET, POST, DELETE, and UPDATE requests with a minimum of client code. It's a perfect fit for any WebApp that consumes data from a RESTful API.
+
+**Note This version of Restangular [only supports Angular 1](#supported-angular-versions). For an Angular 2+ version of Restangular, check out [ngx-restangular](https://github.com/2muchcoffeecom/ngx-restangular).** It's a separate project with different maintainers, so issues regarding ngx-restangular should be reported [over there](https://github.com/2muchcoffeecom/ngx-restangular/issues) :wink:
+
+Learn Restangular! Try the [live demo on plunkr](http://plnkr.co/edit/8qrGeE?p=preview). It uses the same example as the official [Angular Javascript Project](http://angularjs.org/#wire-up-a-backend), but with Restangular! Or watch [a video introduction of a talk I gave at Devoxx France](http://www.parleys.com/play/535a189ee4b0c5ba17d43455/chapter1/about) about Restangular.
+
+
+# Table of contents
+
+- [Restangular](#restangular)
+- [Differences with $resource](#differences-with-resource)
+- [How do I add this to my project?](#how-do-i-add-this-to-my-project)
+- [Dependencies](#dependencies)
+- [Production apps using Restangular](#production-apps-using-restangular)
+- [Starter Guide](#starter-guide)
+  - [Quick configuration for Lazy Readers](#quick-configuration-for-lazy-readers)
+  - [Adding dependency to Restangular module in your app](#adding-dependency-to-restangular-module-in-your-app)
+  - [Using Restangular](#using-restangular)
+    - [Creating Main Restangular object](#creating-main-restangular-object)
+    - [Let's code!](#lets-code)
+  - [Configuring Restangular](#configuring-restangular)
+    - [Properties](#properties)
+      - [setBaseUrl](#setbaseurl)
+      - [setExtraFields](#setextrafields)
+      - [setParentless](#setparentless)
+      - [setDefaultHttpFields](#setdefaulthttpfields)
+      - [addElementTransformer](#addelementtransformer)
+      - [setOnElemRestangularized](#setonelemrestangularized)
+      - [setResponseInterceptor](#setresponseinterceptor)
+      - [setResponseExtractor (alias of setResponseInterceptor)](#setresponseinterceptor)
+      - [addResponseInterceptor](#addresponseinterceptor)
+      - [setRequestInterceptor](#setrequestinterceptor)
+      - [addRequestInterceptor](#addrequestinterceptor)
+      - [setFullRequestInterceptor](#setfullrequestinterceptor)
+      - [addFullRequestInterceptor](#addfullrequestinterceptor)
+      - [setErrorInterceptor](#seterrorinterceptor)
+      - [setRestangularFields](#setrestangularfields)
+      - [setMethodOverriders](#setmethodoverriders)
+      - [setDefaultRequestParams](#setdefaultrequestparams)
+      - [setFullResponse](#setfullresponse)
+      - [setDefaultHeaders](#setdefaultheaders)
+      - [setRequestSuffix](#setrequestsuffix)
+      - [setUseCannonicalId](#setusecannonicalid)
+      - [setPlainByDefault](#setplainbydefault)
+    - [How to configure them globally](#how-to-configure-them-globally)
+      - [Configuring in the config](#configuring-in-the-config)
+      - [Configuring in the run](#configuring-in-the-run)
+    - [How to create a Restangular service with a different configuration from the global one](#how-to-create-a-restangular-service-with-a-different-configuration-from-the-global-one)
+    - [Decoupled Restangular Service](#decoupled-restangular-service)
+  - [Methods description](#methods-description)
+    - [Restangular methods](#restangular-methods)
+    - [Element methods](#element-methods)
+    - [Collection methods](#collection-methods)
+    - [Custom methods](#custom-methods)
+  - [Copying elements](#copying-elements)
+  - [Enhanced promises](#enhanced-",True
+154173536,alainm23,planify,alainm23/planify,"Task manager with Todoist, Nextcloud & CalDAV support designed for GNOME","caldav,gtd,libadwaita,nextcloud,productivity,task-manager,to-do-list,todo,todo-app,todo-list,todoapp,todoist,todoist-api,vala",Vala,"Vala,Meson,CSS,Python",5053,293,5053,175,2018-10-22T16:02:34Z,2026-03-14T23:10:24Z,2026-03-07T11:11:56Z,gpl-3.0,True,"[![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+<a href=""https://hosted.weblate.org/engage/planner/"">
+<img src=""https://hosted.weblate.org/widget/planner/io-github-alainm23-planify/svg-badge.svg"" alt=""Estado de la traducción"" />
+</a>
+
+<div align=""center"">
+  <span align=""center""> <img width=""128"" height=""128"" class=""center"" src=""data/icons/hicolor/scalable/apps/io.github.alainm23.planify.svg"" alt=""Planify Icon""></span>
+  <h1 align=""center"">Planify</h1>
+  <h3 align=""center"">Never worry about forgetting things again</h3>
+</div>
+
+![Planify Screenshot](https://raw.githubusercontent.com/alainm23/planify/main/data/resources/screenshot/screenshot-03.png)
+
+## ✨ Features
+
+### 🎯 Core Functionality
+- **🚀 Modern Interface**: Clean, intuitive design that gets out of your way
+- **🤚 Drag & Drop**: Effortlessly organize tasks and projects with natural gestures
+- **💯 Progress Tracking**: Visual indicators show completion status at a glance
+- **📂 Smart Organization**: Group tasks into sections for better workflow management
+- **📅 Calendar Integration**: Visualize your schedule and plan your day effectively
+- **⏰ Flexible Reminders**: Set multiple reminders per task - never miss a deadline
+- **🌙 Dark Mode**: Seamless integration with system themes
+- **🔍 Quick Search**: Find anything instantly with powerful search capabilities
+
+### ☁️ Cloud Synchronization
+- **Todoist Integration**: Full sync with your existing Todoist account
+- **Nextcloud Support**: Keep your data private with self-hosted solutions
+- **Offline Mode**: Work without internet - sync when you're back online
+- **Cross-Platform**: Access your tasks from anywhere
+
+*Note: Planify is not created by, affiliated with, or supported by Doist*
+
+### 💎 Advanced Features
+- **🔔 Smart Notifications**: Never miss important tasks
+- **🔁 Recurring Tasks**: Set up repeating schedules with flexible patterns
+- **📊 Analytics**: Track your productivity over time
+- **🏷️ Labels & Filters**: Organize and find tasks with custom labels
+- **📎 Attachments**: Add files and links to your tasks
+- **🎨 Customization**: Personalize colors and themes
+
+## 📥 Installation
+
+### 🏪 Official Distribution
+
+<a href=""https://flathub.org/apps/details/io.github.alainm23.planify"" rel=""noreferrer noopener"" target=""_blank"">
+  <img loading=""lazy"" draggable=""false"" width='240' alt='Download on Flathub' src='https://dl.flathub.org/assets/badges/flathub-badge-en.png' />
+</a>
+
+### 🛠 Build from Source
+
+<details>
+<summary><strong>System Requirements & Dependencies</strong></summary>
+
+**Minimum Requirements:**
+- Linux distribution with GTK4 support
+- 2GB RAM
+- 500MB disk space
+
+**Build Dependencies:**
+
+| Package | Version |
+|---------|---------|
+| meson | ≥ 0.56 |
+| valac | ≥ 0.48 |
+| gio-2.0 | ≥ 2.80.3 |
+| glib-2.0 | ≥ 2.80.3 |
+| gee-0.8 | ≥ 0.20.6 |
+| gtk4 | ≥ 4.14.4 |
+| libsoup-3.0 | ≥ 3.4.4 |
+| sqlite3 | ≥ 3.45.1 |
+| libadwaita-1 | ≥ 1.5.3 |
+| webkitgtk-6.0 | ≥ 2.44.3 |
+| json-glib-1.0 | ≥ 1.8.0 |
+| libecal-2.0 | ≥ 3.52.4 |
+| libedataserver-1.2 | ≥ 3.52.4 |
+| libportal | ≥ 0.7.1 |
+| libportal-gtk4 | ≥ 0.7.1 |
+| gxml-0.20 | ≥ 0.21.0 |
+| libsecret-1 | ≥ 0.21.4 |
+| libspelling-dev | latest |
+| gtksourceview-5 | 5.12.1 |
+
+**Install Dependencies:**
+
+**Fedora/RHEL:**
+```bash
+sudo dnf install vala meson ninja-build gtk4-devel libadwaita-devel libgee-devel libsoup3-devel webkitgtk6.0-devel libportal-devel libportal-gtk4-devel evolution-devel libspelling-devel gtksourceview5-devel
+```
+
+**Ubuntu/Debian:**
+```bash
+sudo apt install valac meson ninja-build libgtk-4-dev libadwaita-1-dev libgee-0.8-dev libjson-glib-dev libecal2.0-dev libsoup-3.0-dev libwebkitgtk-6.0-dev libportal-dev libportal-gtk4-dev libspelling-1-dev libgtksourceview-5-dev
+```
+
+</details>
+
+**Build Instructions:**
+
+```bash
+# Clone the repository
+git clone https://github.com/alainm23/planify.git
+cd planify
+
+# Configure build
+meson build --prefix=/usr
+
+# Compile
+cd build
+ninja
+
+# Install
+sudo ninja install
+
+# Run
+io.github.alainm23.planify
+```
+
+### 🏗️ Development Setup
+
+**Using GNOME Builder:**
+1. Install [GNOME Builder](https://apps.gnome.org/Builder/)
+2. Clone this repository
+3. Open the project in GNOME Builder
+4. Click ""Run"" to build and test
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+### 🐛 Bug Reports & Feature Requests
+- Check [existing issues](https://github.com/alainm23/planify/issues) first
+- Use our issue templates for better communication
+- Include system information and steps to reproduce
+
+### 💻 Code Contributions
+- Read our [Architecture Guide](ARCHITECTURE.md)
+- Fork the repository and create a feature branch
+- Follow our coding standards and commit message format
+- Submit a pull request with a clear description
+
+### 🌍 Translations
+Help make Planify available in your language:
+
+- **Weblate (Recommended)**: [Join our translation project](https://hosted.weblate.org/",True
+47186418,devaige,WheelPicker,devaige/WheelPicker,Simple and fantastic wheel view in realistic effect for android.,,Kotlin,Kotlin,2625,547,2625,0,2015-12-01T11:57:33Z,2026-03-12T10:18:54Z,2026-03-12T07:30:29Z,apache-2.0,True,"![Banner](Previews/main/Banner.jpg)
+
+***
+
+# Overview
+[![Maven Central](https://img.shields.io/maven-central/v/dev.aige.pub/WheelPicker)](https://central.sonatype.com/artifact/dev.aige.pub/WheelPicker) [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg)](https://android-arsenal.com/api?level=21) [![License](https://img.shields.io/badge/License-Apache%202-blue.svg)](https://github.com/AigeStudio/WheelPicker)
+
+# Contact
+[![QQ](https://img.shields.io/badge/QQ-1994099479-red.svg)](http://sighttp.qq.com/authd?IDKEY=404d62c783d5c76e312f4c9fa65819d75ce648bff94b8cd6) [![QQGroup](https://img.shields.io/badge/QQ%E7%BE%A4-361739851-blue.svg)](http://shang.qq.com/wpa/qunwpa?idkey=a62502df9a8f2f24f20f978070a9c93238c1fe91db8888dda78214cb83dc6002) [![Mail](https://img.shields.io/badge/mail-aigestudio%40qq.com-orange.svg)](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=i_ri7O74--7v4uTL_vql6OTm) [![Sina](https://img.shields.io/badge/Sina-%40AigeStudio-red.svg)](http://weibo.com/aigestudio) [![Twitter](https://img.shields.io/badge/Twitter-%40AigeStudio-blue.svg)](https://twitter.com/AigeStudio)
+
+# Preview
+![Preview](Previews/main/Preview.gif)
+
+# Include
+### Compile
+```Gradle
+implementation 'dev.aige.pub:WheelPicker:1.2.2'
+```
+
+> **Note / 注意**  
+> Since `1.2.2`, internal dependencies are marked as `compileOnly`. Please ensure you have added the following dependencies to your project manually to avoid exceptions.  
+> 自 `1.2.2` 版本起，为了解决依赖冲突内部库已被标记为 `compileOnly`。请确保您的项目 `build.gradle` 中已手动添加以下依赖：
+
+```Gradle
+// Core Dependencies / 核心依赖
+implementation(""org.jetbrains.kotlin:kotlin-stdlib:<version>"")
+implementation(""androidx.appcompat:appcompat:<version>"")
+implementation(""com.google.code.gson:gson:<version>"")
+
+// Compose Support (Optional) / Jetpack Compose 支持（可选）
+implementation(platform(""androidx.compose:compose-bom:<version>""))
+implementation(""androidx.compose.ui:ui"")
+implementation(""androidx.compose.runtime:runtime"")
+```
+
+or
+```Maven
+<dependency>
+  <groupId>dev.aige.pub</groupId>
+  <artifactId>WheelPicker</artifactId>
+  <version>1.2.2</version>
+  <type>pom</type>
+</dependency>
+```
+
+# Usage
+[WIKI](https://github.com/AigeStudio/WheelPicker/wiki/WIKI) | [帮助文档](https://github.com/AigeStudio/WheelPicker/wiki/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3)
+
+# Versions
+### 1.2.2
+* Feature: Support click on adjacent items to switch quickly
+* BugFix: WheelPicker stops between two items when fling is interrupted by touch
+* Optimization: Mark dependencies as `compileOnly`
+* 新增：支持点击相邻数据以快速切换选中项
+* 修复：滑动过程中被触摸中断时，内容可能停在两项之间的问题
+* 优化：将依赖库标记为 `compileOnly` 避免版本冲突
+
+### 1.2.1
+* Feature: Support Kotlin-style function interface for `OnItemSelectedListener`
+* 新增 `OnItemSelectedListener` 的 Kotlin 函数式接口支持
+
+### 1.2.0
+* Feature: Support Jetpack Compose
+* Feature: Migrate to Maven Central (New Group ID: dev.aige.pub)
+* Feature: Upgrade to Kotlin & Material 3
+* Optimization: Remove Handler for animation
+* Chore: Upgrade target SDK to 36
+* 新增 Jetpack Compose 支持
+* 迁移至 Maven Central (新 Group ID: dev.aige.pub)
+* 全面迁移至 Kotlin 并适配 Material 3
+* 移除 Handler 动画实现以优化性能
+* 升级 Target SDK 至 36
+
+### 1.1.2
+* BugFix:WheelPicker can not get the height in some layout
+* Support Android Nougat
+
+### 1.1.1
+* BugFix:Scroll automatically when touch but not move on WheelPicker in some low resolution phone
+* BugFix:Scroll range incorrect when invoke setData twice and set data source's length less than last
+* BugFix:Wheel state do not refresh when invoke setData twice and set data source's length-1 less than last selected position
+* BugFix:Switch between click and scroll event
+* BugFix:Call OnItemSelectedListener more time when user want to scroll continuously
+* BugFix:Scroll range incorrect when set current selected item again
+* BugFix:Scroll will be triggered when click WheelPicker
+* Function:All the parameters of WheelPicker will be reset when you setData
+* ADD WheelYearPicker, WheelMonthPicker, WheelDayPicker
+* ADD WheelDatePicker
+* 修复某些低分辨率手机触摸不动时自滑动问题
+* 修复第二次调用setData设置长度比上次小的数据时滑动范围不改变的问题
+* 修复第二次调用setData设置长度位置小于上次选中位置时滚轮状态不刷新问题
+* 修复点击与滑动事件切换的问题
+* 修复当用户想连续滑动时出现多次回调的问题
+* 修复重新设置选择的数据项位置后滑动范围错位问题
+* 修复点击后触发滚动的问题
+* 重新设置数据源后会重置滚轮选择器相关参数
+* 新增年份、月份、日期选择器
+* 新增三级联动的日期选择器
+
+### 1.1.0 Stable
+* Refactor project fix all known bug and some function additions
+* I will create a tag for old beta version but not be updated anymore
+* 重构项目发布稳定版修复测试版所有BUG以及新增功能
+* Beta版本会打上TAG方便老版本过渡但不再更新
+
+### 1.0.3 beta
+* BugFix:Error parameter after scroll using setXXX method
+
+### 1.0.2 beta
+* BugFix:MotionEvent lost when point outside of view in WheelCurvedPicker
+
+### 1.0.1 beta
+* BugFix:Cache in WheelCuredPicker can not clean...a stupid mistake.
+
+### 1.0.0 beta
+* Preview for WheelPicker and support few function.
+
+# Function
+* Data display circulation
+* Set visible item count
+* Get the current item data straight in stationary
+* Monitor status of scroll get selected item data and other parameter when wheel stop
+* Dynamic update data
+* Set text color of selected or non-selected item
+* Set item space
+* Support",True
+363995566,sergiodxa,remix-utils,sergiodxa/remix-utils,A set of utility functions and types to use with Remix.run,,TypeScript,TypeScript,2379,146,2379,31,2021-05-03T16:39:57Z,2026-03-13T10:06:35Z,2026-03-11T15:56:55Z,mit,True,"# Remix Utils
+
+This package contains simple utility functions to use with [React Router](https://reactrouter.com/).
+
+## Installation
+
+```bash
+npm install remix-utils
+```
+
+### Shadcn Registry
+
+Add this to your `components.json`:
+
+```json
+{
+	""registries"": {
+		""@remix-utils"": ""https://sergiodxa.github.io/remix-utils/r/{name}.json""
+	}
+}
+```
+
+Then install any utility with `bunx shadcn@latest add @remix-utils/<item>`.
+
+Additional optional dependencies may be needed, all optional dependencies are:
+
+- `react-router`
+- `@edgefirst-dev/batcher`
+- `@edgefirst-dev/jwt`
+- `@edgefirst-dev/server-timing`
+- `@oslojs/crypto`
+- `@oslojs/encoding`
+- `is-ip`
+- `intl-parse-accept-language`
+- `react`
+
+> [!NOTE]
+> Install optional dependencies only when needed. Use `npm add <dependency>`, for example `npm add react-router`.
+
+The utils that require an extra optional dependency mention it in their documentation.
+
+If you want to install them all run:
+
+```sh
+npm add @edgefirst-dev/batcher @edgefirst-dev/jwt @edgefirst-dev/server-timing @oslojs/crypto @oslojs/encoding is-ip intl-parse-accept-language
+```
+
+React and React Router packages should be already installed in your project.
+
+## Upgrade from Remix Utils v6
+
+Check the [v6 to v7 upgrade guide](./docs/v6-to-v7.md).
+
+## API Reference
+
+### promiseHash
+
+> [!NOTE]
+> Install using `bunx shadcn@latest add @remix-utils/promise`.
+
+The `promiseHash` function is not directly related to Remix but it's a useful function when working with loaders and actions.
+
+This function is an object version of `Promise.all` which lets you pass an object with promises and get an object with the same keys with the resolved values.
+
+```ts
+import { promiseHash } from ""remix-utils/promise"";
+
+export async function loader({ request }: Route.LoaderArgs) {
+	return json(
+		await promiseHash({
+			user: getUser(request),
+			posts: getPosts(request),
+		}),
+	);
+}
+```
+
+You can use nested `promiseHash` to get a nested object with resolved values.
+
+```ts
+import { promiseHash } from ""remix-utils/promise"";
+
+export async function loader({ request }: Route.LoaderArgs) {
+	return json(
+		await promiseHash({
+			user: getUser(request),
+			posts: promiseHash({
+				list: getPosts(request),
+				comments: promiseHash({
+					list: getComments(request),
+					likes: getLikes(request),
+				}),
+			}),
+		}),
+	);
+}
+```
+
+### timeout
+
+> [!NOTE]
+> Install using `bunx shadcn@latest add @remix-utils/promise`.
+
+The `timeout` function lets you attach a timeout to any promise, if the promise doesn't resolve or reject before the timeout, it will reject with a `TimeoutError`.
+
+```ts
+import { timeout } from ""remix-utils/promise"";
+
+try {
+	let result = await timeout(fetch(""https://example.com""), { ms: 100 });
+} catch (error) {
+	if (error instanceof TimeoutError) {
+		// Handle timeout
+	}
+}
+```
+
+Here the fetch needs to happen in less than 100ms, otherwise it will throw a `TimeoutError`.
+
+If the promise is cancellable with an AbortSignal you can pass the AbortController to the `timeout` function.
+
+```ts
+import { timeout } from ""remix-utils/promise"";
+
+try {
+	let controller = new AbortController();
+	let result = await timeout(fetch(""https://example.com"", { signal: controller.signal }), {
+		ms: 100,
+		controller,
+	});
+} catch (error) {
+	if (error instanceof TimeoutError) {
+		// Handle timeout
+	}
+}
+```
+
+Here after 100ms, `timeout` will call `controller.abort()` which will mark the `controller.signal` as aborted.
+
+### cacheAssets
+
+> [!NOTE]
+> Install using `bunx shadcn@latest add @remix-utils/cache-assets`.
+
+> [!NOTE]
+> This can only be run inside `entry.client`.
+
+This function lets you easily cache inside the [browser's Cache Storage](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage) every JS file built by Remix.
+
+To use it, open your `entry.client` file and add this:
+
+```ts
+import { cacheAssets } from ""remix-utils/cache-assets"";
+
+cacheAssets().catch((error) => {
+	// do something with the error, or not
+});
+```
+
+The function receives an optional options object with two options:
+
+- `cacheName` is the name of the [Cache object](https://developer.mozilla.org/en-US/docs/Web/API/Cache) to use, the default value is `assets`.
+- `buildPath` is the pathname prefix for all Remix built assets, the default value is `/build/` which is the default build path of Remix itself.
+
+It's important that if you changed your build path in `remix.config.js` you pass the same value to `cacheAssets` or it will not find your JS files.
+
+The `cacheName` can be left as is unless you're adding a Service Worker to your app and want to share the cache.
+
+```ts
+import { cacheAssets } from ""remix-utils/cache-assets"";
+
+cacheAssests({ cacheName: ""assets"", buildPath: ""/build/"" }).catch((error) => {
+	// do something with the error, or not
+});
+```
+
+### ClientOnly
+
+> [!NOTE]
+> Install using `bunx shadcn@latest add @remix-utils/client-only`.
+
+> [!NOTE]
+> This depends on `react`.
+
+The ClientOnly component lets you render the children element only on the client-side, avoiding rendering it the se",True
+388624643,sergiodxa,remix-auth,sergiodxa/remix-auth,Simple Authentication for Remix,"auth,auth0,authentication,oauth2,remix,strategies",TypeScript,"TypeScript,JavaScript",2217,109,2217,5,2021-07-22T23:32:29Z,2026-03-12T11:29:30Z,2026-03-03T00:43:45Z,mit,True,"![](/assets/header.png)
+
+# Remix Auth
+
+### Simple Authentication for [Remix](https://remix.run) and [React Router](https://reactrouter.com) apps.
+
+## Support the Project
+
+If you find Remix Auth useful, please consider [sponsoring the project](https://github.com/sponsors/sergiodxa). Your support helps maintain this stable, production-ready library!
+
+## Features
+
+- Full **Server-Side** Authentication
+- Complete **TypeScript** Support
+- **Strategy**-based Authentication
+- Implement **custom** strategies
+
+## Overview
+
+Remix Auth is a complete open-source authentication solution for Remix and React Router applications.
+
+Heavily inspired by [Passport.js](https://passportjs.org), but completely rewrote it from scratch to work on top of the [Web Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). Remix Auth can be dropped in to any Remix or React Router based application with minimal setup.
+
+As with Passport.js, it uses the strategy pattern to support the different authentication flows. Each strategy is published individually as a separate npm package.
+
+## Installation
+
+```bash
+npm install remix-auth
+```
+
+## Supported Authentication Methods
+
+Remix Auth supports various authentication methods through its strategy system. Here are some popular strategies:
+
+- [Form Strategy](https://github.com/sergiodxa/remix-auth-form) - Username/password form-based authentication
+- [OAuth 2.0](https://github.com/sergiodxa/remix-auth-oauth2) - Generic OAuth 2.0 authentication
+- [GitHub](https://github.com/sergiodxa/remix-auth-github) - GitHub authentication
+
+For a complete list of community-maintained strategies, check the [Community Strategies discussion](https://github.com/sergiodxa/remix-auth/discussions/111).
+
+> [!TIP]
+> Check in the strategies what versions of Remix Auth they support, as they may not be updated to the latest version.
+
+## Usage
+
+Import the `Authenticator` class and instantiate with a generic type that will be the type of the user data you will get from the strategies.
+
+```ts
+// app/services/auth.server.ts
+import { Authenticator } from ""remix-auth"";
+import { createCookieSessionStorage } from ""react-router"";
+
+// Define your user type
+type User = {
+	id: string;
+	email: string;
+	name: string;
+	// ... other user properties
+};
+
+// Create a session storage
+export const sessionStorage = createCookieSessionStorage({
+	cookie: {
+		name: ""__session"",
+		httpOnly: true,
+		path: ""/"",
+		sameSite: ""lax"",
+		secrets: [""s3cr3t""], // replace this with an actual secret
+		secure: process.env.NODE_ENV === ""production"",
+	},
+});
+
+// Create an instance of the authenticator, pass a generic with what
+// strategies will return
+export const authenticator = new Authenticator<User>();
+```
+
+The `User` type is whatever your strategies will give you after identifying the authenticated user. It can be the complete user data, or a string with a token. It is completely up to you.
+
+After that, register the strategies. In this example, we will use the [FormStrategy](https://github.com/sergiodxa/remix-auth-form) to check the documentation of the strategy you want to use to see any configuration you may need.
+
+```ts
+// app/services/auth.server.ts
+import { FormStrategy } from ""remix-auth-form"";
+import { Authenticator } from ""remix-auth"";
+
+// Your authentication logic (replace with your actual DB/API calls)
+async function login(email: string, password: string): Promise<User> {
+	// Verify credentials
+	// Return user data or throw an error
+}
+
+// Tell the Authenticator to use the form strategy
+authenticator.use(
+	new FormStrategy(async ({ form }) => {
+		const email = form.get(""email"") as string;
+		const password = form.get(""password"") as string;
+
+		if (!email || !password) {
+			throw new Error(""Email and password are required"");
+		}
+
+		// the type of this user must match the type you pass to the
+		// Authenticator the strategy will automatically inherit the type if
+		// you instantiate directly inside the `use` method
+		return await login(email, password);
+	}),
+	// each strategy has a name and can be changed to use the same strategy
+	// multiple times, especially useful for the OAuth2 strategy.
+	""user-pass"",
+);
+```
+
+Once we have at least one strategy registered, it is time to set up the routes.
+
+First, create a `/login` page. Here we will render a form to get the email and password of the user and use Remix Auth to authenticate the user.
+
+```tsx
+// app/routes/login.tsx or equivalent route file
+import { Form, data, redirect } from ""react-router"";
+import { authenticator, sessionStorage } from ""~/services/auth.server"";
+
+// Import this from correct place for your route
+import type { Route } from ""./+types"";
+
+// First we create our UI with the form doing a POST and the inputs with
+// the names we are going to use in the strategy
+export default function Component({ actionData }: Route.ComponentProps) {
+	return (
+		<div>
+			<h1>Login</h1>
+
+			{actionData?.error ? (
+				<div className=""error"">{actionData.error}</div>
+			) : null}
+
+			<Form method=""",True
+32990107,devaige,DatePicker,devaige/DatePicker,Useful and powerful date picker for android,,Java,Java,1861,415,1861,66,2015-03-27T14:16:33Z,2026-01-18T10:41:35Z,2020-07-31T09:29:37Z,apache-2.0,True,"[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-DatePicker-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1864)
+
+*You can jump to EN README after CN if you don't read chinese.*
+
+***
+
+**Here is begin of CN document.**
+
+# 日历选择器
+灰常灰常简单的Android日历选择器~~（注：暂不支持横屏操作，农历节气有一到两天的误差）~~
+
+## Android API 版本要求
+~~API 1~~
+
+~~API 11~~
+
+**API 1**
+
+## 版本迭代
+### 1.0.0 beta
+* ~~横屏暂未考虑，竖屏暂未发现问题，项目使用中~~
+
+### 1.1.2 release
+* 增加日期选择时弹性动画
+* 修复设置主色调后农历颜色不改变BUG
+
+### 1.1.3 release
+* 不管是横屏还是竖屏，你必须总为该控件指定一个确切宽度比如320dp或者填充父布局，大多数情况下该日期选择器都是在dialog中使用，默认dialog宽度是填充屏幕宽度的，你可以参照Demo来更改diaolog的宽度。
+
+### 2.0.0 stable LTS
+* API版本支持到1，对于大于等于API11的版本支持动画显示
+* 增加呼声很高的单选模式支持 目前支持两种模式 单选和多选
+* 增加周次标题的显示
+* 支持上下滑动切换年份 左右滑动切换月份
+* 节日文本显示从单行调整为两行
+* 调整UI色调符合material design
+* 对于天朝月历，增加假期、补休的标识
+* 增加呼声很高的对今天日期的标识
+* 支持默认年月设定
+* 在现有月视图的基础上分割出五个区域提供自定义装饰物的绘制
+* 在现有月视图的基础上分割出一个背景层提供背景装饰物的绘制
+* 内置中文和英语两种语言，根据当前系统语言环境自动切换
+* 支持自定义国家语言扩展
+* 内置中国和美国两国节假日显示
+* 支持多国假期节日显示扩展
+* 增强主题色调扩展定制更易于操作
+* 优化天朝农历和节气算法 农历显示范围从1900-2100
+* 优化代码逻辑提升执行效率
+* 该版本后不再作重大更新
+
+### 2.0.1 stable
+* BugFix：忘记更改测试代码导致的显示问题
+
+### 2.0.2 stable
+* BugFix：顶部装饰物绘制错位问题
+
+### 2.1.0 
+* 修改装饰物绘制逻辑，可根据日期在同一区域绘制不同装饰物
+
+### 2.2.0 
+* BugFix：最后一个月份当前日期无法显示问题
+
+## 预览图
+![](https://github.com/AigeStudio/DatePicker/blob/master/PreviewGif.gif)
+
+## 如何集成到项目
+### 方式一 直接从maven center compile
+```gradle
+compile 'cn.aigestudio.datepicker:DatePicker:2.2.0'
+```
+
+### 方式二 手动导入
+#### 步骤一
+将DatePicker这个Module导入你的Project中
+
+#### 步骤二
+在你Project的settings.gradle文件中增加如下内容：
+
+```gradle
+include ':DatePicker'
+```
+
+这里要注意的是在一些gradle版本中需要以英文逗号的方式追加Module：
+
+```gradle
+include ':YourMoudle',':DatePicker'
+```
+
+添加后当出现“sycn now”提示时点击同步即可
+
+#### 步骤三
+在你项目的build.gradle文件的dependencies区域中添加如下内容：
+
+```gradle
+compile project(':DatePicker')
+```
+
+## 如何使用
+### 简单使用
+一旦将DatePicker集成到项目后你便可以像普通控件那样使用它。
+
+如果你需要获取DatePicker日期选择后返回的数据你需要为DatePicker设置一个OnDateSelectedListener监听器：
+
+```Java
+......
+DatePicker picker = (DatePicker) findViewById(R.id.main_dp);
+picker.setDate(2015, 7);
+picker.setOnDateSelectedListener(new DatePicker.OnDateSelectedListener() {
+    @Override
+    public void onDateSelected(List<String> date) {
+        String result = """";
+        Iterator iterator = date.iterator();
+        while (iterator.hasNext()) {
+            result += iterator.next();
+            if (iterator.hasNext()) {
+                result += ""\n"";
+            }
+        }
+        Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();
+    }
+});
+......
+```
+
+setDate方法允许你设置当前月历显示的年月。***注意该方法必须调用，也就是说你必须为DatePicker指定一个确切年月***
+
+默认情况下DatePicker 2.0的选择模式为多选模式，你可以通过setMode方法来设置DatePicker的选择模式，该方法接受一个DPMode类型的枚举值，DatePicker 2.0支持两种选择模式：单选DPMode.SINGLE和多选DPMode.MULTIPLE，设置方式如下：
+
+```Java
+......
+DatePicker picker = (DatePicker) findViewById(R.id.main_dp);
+picker.setDate(2015, 7);
+picker.setMode(DPMode.SINGLE);
+......
+```
+
+在单选模式下，如果你想要获取DatePicker日期选择后返回的数据，你就不能再将DatePicker的监听设置为OnDateSelectedListener而应该设置为OnDatePickedListener：
+
+```Java
+......
+DatePicker picker = (DatePicker) findViewById(R.id.main_dp);
+picker.setDate(2015, 7);
+picker.setMode(DPMode.SINGLE);
+picker.setOnDatePickedListener(new DatePicker.OnDatePickedListener() {
+    @Override
+    public void onDatePicked(String date) {
+        Toast.makeText(MainActivity.this, date, Toast.LENGTH_LONG).show();
+    }
+});
+......
+```
+
+***这里需要注意的是，你不能将DatePicker设置为多选或单选模式的情况下又设置为单选或多选，在一个实例中只能接受一种选择模式***
+
+选择后的日期将会以列表（多选模式下）或字符串（单选模式下）的形式返回，日期字符串的格式为：
+
+>yyyy-M-d
+
+比如：2015-3-28
+
+### 高级定制
+DatePicker 2.0默认了一套显示机制，对于天朝月历而言，2015年的假期与补休都会被不同的背景圆颜色所标识，对于其他国家月历而言只有假期会被标识，当然，在某些情况下你还想在某些特定的日期有自己的显示标识，DatePicker 2.0在原有绘制层的基础上分割出了一个背景层，提供给用户绘制自己想要的标识物。比如你想在2015-7-1，2015-7-8，2015-7-16这三个日期上绘制一个不同的背景圆，首先你要通过DPCManager的setDecorBG方法设置一个日期列表，该列表包含了需要绘制背景标识的日期（在没有特殊说明的情况下，DatePicker 2.0中所使用到的日期格式均与上述一致）：
+
+```Java
+......
+List<String> tmp = new ArrayList<>();
+tmp.add(""2015-7-1"");
+tmp.add(""2015-7-8"");
+tmp.add(""2015-7-16"");
+DPCManager.getInstance().setDecorBG(tmp);
+......
+```
+
+然后你就可以调用DatePicker的setDPDecor方法为DatePicker绘制装饰物背景：
+
+```Java
+......
+List<String> tmp = new ArrayList<>();
+tmp.add(""2015-7-1"");
+tmp.add(""2015-7-8"");
+tmp.add(""2015-7-16"");
+DPCManager.getInstance().setDecorBG(tmp);
+
+DatePicker picker = (DatePicker) findViewById(R.id.main_dp);
+picker.setDate(2015, 7);
+picker.setDPDecor(new DPDecor() {
+    @Override
+    public void drawDecorBG(Canvas canvas, Rect rect, Paint paint) {
+        paint.setColor(Color.RED);
+        canvas.drawCircle(rect.centerX(), rect.centerY(), rect.width() / 2F, paint);
+    }
+});
+......
+```
+
+这里我们在2015-7-1，2015-7-8，2015-7-16这三个日期上绘制一个红色的背景圆：
+
+![](https://github.com/AigeStudio/DatePicker/blob/master/BG.jpg)
+
+DatePicker 2.0中所提供的背景层位于日期文本的下方所有其他背景的上方，也就是说在所有的背景层中，你所自定义的背景拥有最高展示的优先级
+
+当然，有些情况下光是绘制一个背景层往往不是不够的，DatePicker 2.0充分考虑到这一点，开放了位于前景层的五个装饰区域给用户绘制不同的装饰物，这五个装饰区域的位置大致如下：
+
+![](https://github.com/AigeStudio/DatePicker/blob/master/Decor.jpg)
+
+如上图所示，DatePicker 2.0开放了位于前景层的A、B、C、D、E五个区域让用于有机会在这些前景层的这些区域绘制一些装饰物，使用方法也非常简单，与绘制背景装饰物的逻辑类似，这里以分别在2015-7-5，2015-7-10这两个日期的左上和又上角绘制不同颜色形状的图形为例，首先你需要做的第一步与绘制背景装饰物一样，先调用DPCManager的相关方法初始化日",True
+35923428,devaige,MultiThreadDownloader,devaige/MultiThreadDownloader,Light weight and simple Multi-Thread Downloader for Android,,Java,Java,1021,274,1021,0,2015-05-20T03:25:20Z,2026-02-16T04:21:55Z,2016-08-13T00:37:39Z,,False,"[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MultiThreadDownloader-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1865)
+
+***
+
+# Android Multi-Thread Downloader
+For more help please read [wiki](https://github.com/AigeStudio/MultiThreadDownloader/wiki).
+
+## Android API Require
+**API 1**
+
+## Versions
+### 1.0.0 release
+* Multi-thread http download
+
+### 1.2.1 release
+* Bugfix:download thread dispath
+* Support url redirection
+* DLManager will download with single thread if server does not support break-point, and it will not insert to database
+
+### 1.3.7 release
+* Bugfix:can not start multi-threads to download file when we in url redirection.
+* Bugfix:can not stop a download task when we in url redirection.
+
+### 1.4.0 release
+* Fix known bug.
+
+### 1.4.1 release
+* BugFix:Can not resume download after stopped with large file.
+* Optimized code to enhancing the efficient implementation.
+* Optimized thread dispatch.
+
+### 1.4.2 release
+* Add method getDLInfo(String url) to get the download info at the time.
+* Add method getDLDBManager() to get the datebase manager.
+* BugFix:Can not save progress when exception happened.
+
+### 1.4.3 release
+* BugFix:Can not stop in non multi-thread download.
+* BugFix:Can not report result back in non multi-thread download.
+
+## Preview
+**Download in activity**
+
+![](https://github.com/AigeStudio/MultiThreadDownloader/blob/master/preview1.gif)
+
+**Download in statusbar**
+
+![](https://github.com/AigeStudio/MultiThreadDownloader/blob/master/preview2.gif)
+
+***
+
+# LICENSE
+Copyright 2014-2015 [AigeStudio](https://github.com/AigeStudio), [zhangchi](https://github.com/kxdd2002)
+
+Licensed under the Apache License, Version 2.0 (the ""License"");you may not use this file except in compliance with the License.
+
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+",True
+422046848,sergiodxa,remix-i18next,sergiodxa/remix-i18next,The easiest way to translate your React Router framework mode apps,,TypeScript,TypeScript,718,55,718,3,2021-10-28T03:04:43Z,2026-03-09T05:36:48Z,2026-03-09T05:37:52Z,mit,True,"# remix-i18next
+
+**The easiest way to translate your React Router framework mode apps.**
+
+> [!IMPORTANT]
+> If you're still on Remix v2, keep using [remix-i18next v6](https://github.com/sergiodxa/remix-i18next/tree/v6.4.1) as the v7 is only compatible with React Router v7.
+
+> [!NOTE]
+> If you're using React Router SPA Mode, use react-i18next directly, this package if focused on being used server-side.
+
+## Why remix-i18next?
+
+- Easy to set up, easy to use: setup only takes a few steps, and configuration is simple.
+- No other requirements: `remix-i18next` simplifies internationalisation for your React Router app without extra dependencies.
+- Production ready: `remix-i18next` supports passing translations and configuration options into routes from the loader.
+- Take the control: `remix-i18next` doesn't hide the configuration so you can add any plugin you want or configure as pleased.
+
+## Setup
+
+> [!TIP]
+> Check https://github.com/sergiodxa/react-router-i18next-example for an example application, if you have an issue compare your setup with the example.
+> If you're using the `@react-router/fs-routes` package to define your routes, check the `fs-routes` branch on the same repo.
+
+### Installation
+
+The first step is to install it in your project with
+
+```sh
+npm install remix-i18next i18next react-i18next i18next-browser-languagedetector
+```
+
+You will need to configure an i18next backend and language detector, in that case you can install them too, for the rest of the setup guide we'll use the fetch backend.
+
+```sh
+npm install i18next-fetch-backend
+```
+
+### Localization files
+
+First let's create some translation files in `app/locales`:
+
+```ts
+// app/locales/en/translation.ts
+export default {
+  title: ""remix-i18next (en)"",
+  description: ""A React Router + remix-i18next example"",
+};
+
+// app/locales/en/index.ts
+import type { ResourceLanguage } from ""i18next"";
+import translation from ""./translation""; // import your namespaced locales
+
+export default { translation } satisfies ResourceLanguage;
+```
+
+```ts
+// app/locales/es/translation.ts
+export default {
+  title: ""remix-i18next (es)"",
+  description: ""Un ejemplo de React Router + remix-i18next"",
+} satisfies typeof import(""~/locales/en/translation"").default;
+
+// app/locales/es/index.ts
+import type { ResourceLanguage } from ""i18next"";
+import translation from ""./translation""; // import your namespaced locales
+
+export default { translation } satisfies ResourceLanguage;
+```
+
+The `satisfies typeof import(""~/locales/en/translation"").default` is optional, but it will help to ensure that if we add or remove a key from the `en` locale (the default one) we will get a type error in the `es` locale so we can keep them in sync.
+
+Then re-export all the locales in `app/locales/index.ts`:
+
+```ts
+import type { Resource } from ""i18next"";
+import en from ""./en"";
+import es from ""./es"";
+
+export default { en, es } satisfies Resource;
+```
+
+### Setup the Middleware
+
+Ensure middleware is enabled in your React Router config so the middleware can run.
+See the React Router middleware documentation for details: https://reactrouter.com/how-to/middleware
+
+Create a file named `app/middleware/i18next.ts` with the following code:
+
+> [!CAUTION]
+> This depends on `react-router@7.9.0` or later
+> Check older versions of the README for a guide on how to use RemixI18next class instead if you are using an older version of React Router or don't want to use the middleware.
+
+```ts
+import { initReactI18next } from ""react-i18next"";
+import { createCookie } from ""react-router"";
+import { createI18nextMiddleware } from ""remix-i18next/middleware"";
+import resources from ""~/locales""; // Import your locales
+import ""i18next"";
+
+// This cookie will be used to store the user locale preference
+export const localeCookie = createCookie(""lng"", {
+  path: ""/"",
+  sameSite: ""lax"",
+  secure: process.env.NODE_ENV === ""production"",
+  httpOnly: true,
+});
+
+export const [i18nextMiddleware, getLocale, getInstance] =
+  createI18nextMiddleware({
+    detection: {
+      supportedLanguages: [""es"", ""en""], // Your supported languages, the fallback should be last
+      fallbackLanguage: ""en"", // Your fallback language
+      cookie: localeCookie, // The cookie to store the user preference
+    },
+    i18next: { resources }, // Your locales
+    plugins: [initReactI18next], // Plugins you may need, like react-i18next
+  });
+
+// This adds type-safety to the `t` function
+declare module ""i18next"" {
+  interface CustomTypeOptions {
+    defaultNS: ""translation"";
+    resources: typeof resources.en; // Use `en` as source of truth for the types
+  }
+}
+```
+
+Then in your `app/root.tsx` setup the middleware:
+
+```ts
+import { i18nextMiddleware } from ""~/middleware/i18next"";
+
+export const middleware = [i18nextMiddleware];
+```
+
+With this, on every request, the middleware will run, detect the language and set it in the router context.
+
+You can access the language in your loaders and actions using `getLocale(context)` function.
+
+If you need access to the underlying i18next inst",True
+10418404,mgonto,angularytics,mgonto/angularytics,The solution to tracking page views and events in a SPA with AngularJS,,JavaScript,JavaScript,626,67,626,18,2013-06-01T05:56:37Z,2025-07-23T03:30:07Z,2016-04-15T08:03:24Z,mit,True,"#Angularytics
+
+[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=martin%40gon%2eto&lc=US&item_name=Martin%20Gontovnikas&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted ""Donate once-off to this project using Paypal"")
+[![Donate on Gittip](http://badgr.co/gittip/mgonto.png)](https://www.gittip.com/mgonto/)
+
+
+Angularytics is the solution to tracking PageViews and Events on your Single Page App. 
+
+All analytics frameworks are based on browser refreshes to track page views. I've created this service wrapper so that we can track page views in our WebApp without a page refresh and without too much configuration.
+
+## Main Features
+This are Angularytics main features:
+
+* **It automatically tracks a new page view** with all of the connected providers (For now Google Analytics and console.log) **once you change the URL in your SPA**
+* **It gives you the ability to track events** either by calling the **Angularytics service or by using the trackEvent filter**.
+
+#How do I add this to my project?
+
+You can download this by:
+
+* Using bower and running `bower install angularytics`
+* Using npm and running `npm install angularytics`
+* Downloading it manually by clicking [here to download development unminified version](https://raw.github.com/mgonto/angularytics/master/dist/angularytics.js) or [here to download minified production version](https://raw.github.com/mgonto/angularytics/master/dist/angularytics.min.js)
+
+#Prerequisites
+
+Angularytics depends on AngularJS.
+
+You need to add the needed Analytics code (Google Analytics) in your app. I thought of adding this in the service, but if you just add it in the body, it'd load MUCH faster than if we loaded this in the init. If everybody wants to move this to the service's init, then please submit an issue.
+
+#Starter Guide
+
+## TL;DR Basic configuration on your app.
+This is the quick configuration to bootstrap all. Read the rest of the documentation for further configuration and understanding. After doing this, Angularytics will automatically track all of the page views in the app for you. 
+
+````javascript
+angular.module('sample-app', ['angularytics'])
+  .config(function(AngularyticsProvider) {
+    AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
+  }).run(function(Angularytics) {
+    Angularytics.init();
+  });
+````
+
+## Tracking Page Views
+This is easy :). You don't need to do anything. By configuring Angularytics with your app like in the step before, all pages will start being tracked.
+
+If you wish to disable this for whatever reason, you can use:
+
+```javascript
+.config(function(AngularyticsProvider) {
+  AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
+  AngularyticsProvider.disablePageViewTracking();
+})
+```
+
+## Tracking events
+The trackEvent function in service and filter has the same parameters in the same order as Google Analytics. [Click here to check the Google Analytics documentation](https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide).
+There're 2 ways of tracking events. Either using Angularytics service, or using the filter.
+
+### Using the filter
+This is the most common way of tracking events. Suppose that you have a button which calls some function on your scope and you want to track when that button is clicked. This is the example:
+
+````html
+<input type=""submit"" ng-click=""doSomething() | trackEvent:'Home Category':'Button clicked'"" />
+````
+
+### Using the service
+You just need to inject the service and call the `trackEvent` function.
+
+Let's see an example:
+
+````javascript
+angular.controller('MainCtrl', function(Angularytics, $scope) {
+    $scope.click = function() {
+        Angularytics.trackEvent(""Home Category"", ""Button clicked"");
+    }
+});
+````
+
+## Event Handlers (Available providers)
+
+There are 3 event handlers: `Console`, `Google`, and `GoogleUniversal`. **The last one of this uses `ga` instead of `_gaq`**.
+
+- `Console` logs all page views and events.
+- `Google` tracks all page views and events using Google Analytics.
+
+### Adding your own event handler
+
+You can add your own event handler in 3 easy steps:
+
+#### Create your service.
+
+You need to create a service with the following name format: `Angularytics[EventHandlerName]Handler`. For example: `AngularyticsKissmetricsHandler`.
+
+This service must have the following methods and signatures:
+
+* `trackPageView(url)`: Tracks a page view to the given URL
+* `trackEvent(category, action, opt_label, opt_value, opt_noninteraction)`: Tracks a new event with the given parameters
+* `trackTiming(category, variable, value, opt_label)`: Tracks user timings with the given parameters
+
+#### Use this service by changing the AngularyticsProvider
+Use this newly created service by setting the name in the AngularyticsProvider.
+For example:
+
+````javascript
+// Considering the service is named AngularyticsKissmetricsHandler
+AngularyticsProvider.setEven",True
+664907402,sergiodxa,remix-hono,sergiodxa/remix-hono,Hono middlewares for Remix,"cloudflare,cloudflare-pages,hono,remix,remix-run",TypeScript,TypeScript,551,9,551,4,2023-07-11T02:51:59Z,2026-03-08T22:24:33Z,2025-12-15T17:06:02Z,mit,True,"# Remix/React Router + Hono
+
+> [React Router](https://remix.run) is a web framework for building web
+> applications, which can run on the Edge.
+
+> [Hono](https://hono.dev) is a small and ultrafast web framework for the Edges.
+
+This adapter allows you to use Hono with React Router, so you can use the best
+of each one.
+
+Let Hono power your HTTP server and its middlewares, then use React Router to
+build your web application.
+
+## Installation
+
+Install the package
+
+```sh
+npm add remix-hono
+```
+
+The following packages are optional dependencies, you will need to install them
+depending on what features from remix-hono you're using.
+
+- `@react-router/cloudflare` if you're using Cloudflare integration.
+- `i18next` and `remix-i18next` if you're using the i18n middleware.
+- `zod` if you're using `typedEnv`.
+
+> [!NOTE] You don't really need to install them if you don't use them, but you
+> will need to install them yourself (they don't come not automatically) if you
+> use the features that depends on those packages.
+
+## Usage
+
+Create your Hono + React Routers server:
+
+```ts
+import { logDevReady } from ""@react-router/cloudflare"";
+import { Hono } from ""hono"";
+// You can also use it with other runtimes
+import { handle } from ""hono/cloudflare-pages"";
+import { reactRouter } from ""remix-hono/handler"";
+
+import build from ""./build/server"";
+
+if (process.env.NODE_ENV === ""development"") logDevReady(build);
+
+/* type your Cloudflare bindings here */
+type Bindings = {};
+
+/* type your Hono variables (used with c.get/c.set) here */
+type Variables = {};
+
+type ContextEnv = { Bindings: Bindings; Variables: Variables };
+
+const server = new Hono<ContextEnv>();
+
+// Add the React Router middleware to your Hono server
+server.use(
+	""*"",
+	reactRouter({
+		build,
+		mode: process.env.NODE_ENV as ""development"" | ""production"",
+		// getLoadContext is optional, the default function is the same as here
+		getLoadContext(c) {
+			return c.env;
+		},
+	}),
+);
+
+// Create a Cloudflare Pages request handler for your Hono server
+export const onRequest = handle(server);
+```
+
+Now, you can add more Hono middlewares, like the basic auth middleware:
+
+```ts
+import { basicAuth } from ""hono/basic-auth"";
+
+server.use(
+	""*"",
+	basicAuth({ username: ""hono"", password: ""react-router"" }),
+	// Ensure React Router request handler is the last one
+	reactRouter(options),
+);
+```
+
+With just that, your app will now have basic auth protection, which can work
+great of preview applications.
+
+## Session Management
+
+Additionally to the `reactRouter` Hono middleware, there are other three
+middlewares to work with React Router sessions.
+
+Because React Router sessions typically use a secret coming from the environment
+you will need access to Hono `c.env` to use them. If you're using the Worker KV
+session storage you will also need to pass the KV binding to the middleware.
+
+You can use the different middlewares included in this package to do that:
+
+```ts
+import { session } from ""remix-hono/session"";
+import { createWorkerKVSessionStorage } from ""@react-router/cloudflare"";
+
+server.use(
+	""*"",
+	session({
+		autoCommit: true,
+		createSessionStorage(c) {
+			return createWorkersKVSessionStorage({
+				kv: c.env.MY_KV_BINDING,
+				cookie: {
+					name: ""session"",
+					httpOnly: true,
+					secrets: [c.SESSION_SECRET],
+				},
+			});
+		},
+	}),
+);
+```
+
+Now, setup the React Router middleware after your session middleware and use the
+helpers `getSessionStorage` and `getSession` to access the SessionStorage and
+Session objects.
+
+> **Note** The Session object will only be defined if autoCommit was set as true
+> in the session middleware options. If you set it to false, you will need to
+> call `sessionStorage.getSession()` manually.
+
+```ts
+import { getSessionStorage, getSession } from ""remix-hono/session"";
+
+server.use(
+	""*"",
+	reactRouter<ContextEnv>({
+		build,
+		mode: process.env.NODE_ENV as ""development"" | ""production"",
+		// getLoadContext is optional, the default function is the same as here
+		getLoadContext(c) {
+			let sessionStorage = getSessionStorage(c);
+			let session = getSession(c);
+
+			// Return them here to access them in your loaders and actions
+			return { ...c.env, sessionStorage, session };
+		},
+	}),
+);
+```
+
+The `session` middleware is generic and lets you use any session storage
+mechanism. If you want to use the Worker KV session storage you can use the
+`workerKVSession` middleware instead.
+
+```ts
+import { workerKVSession } from ""remix-hono/cloudflare"";
+
+server.use(
+	""*"",
+	workerKVSession({
+		autoCommit: true, // same as in the session middleware
+		cookie: {
+			name: ""session"", // all cookie options as in createWorkerKVSessionStorage
+			// In this function, you can access c.env to get the session secret
+			secrets(c) {
+				return [c.env.SECRET];
+			},
+		},
+		// The name of the binding using for the KVNamespace
+		binding: ""KV_BINDING"",
+	}),
+);
+```
+
+If you want to use the cookie session storage, you can use the `cookieSession`
+middleware instead.
+
+```ts
+import { cookieSession } from ""remix-hono/cloudfl",True
+217599397,sergiodxa,flagged,sergiodxa/flagged,"Feature Flags for React made easy with hooks, HOC and Render Props","feature-flags,higher-order-component,hoc,hooks,react,react-hooks,render-prop,render-props,typescript",TypeScript,"TypeScript,JavaScript,HTML",434,20,434,14,2019-10-25T19:11:40Z,2025-11-20T15:33:59Z,2025-10-29T10:02:29Z,mit,True,"# Flagged
+
+> ### Feature flags for React made easy with hooks, HOC and Render Props
+
+## Features
+
+- Hooks API
+- High Order Component API
+- Render Props API
+- TypeScript Support
+- Zero Dependencies
+- Nested Flags
+
+## How to Use It
+
+Install it from npm.
+
+```bash
+yarn add flagged
+# npm i flagged
+```
+
+Import the `FlagsProvider` in your code and wrap your application around it.
+
+```tsx
+import { createRoot } from ""react-dom/client"";
+import { FlagsProvider } from ""flagged"";
+
+import { App } from ""./components/app"";
+
+createRoot(document.getElementById(""root"")!).render(
+	<FlagsProvider features={{ v2: true }}>
+		<App />
+	</FlagsProvider>,
+);
+```
+
+Now use `useFeature`, `withFeature` or `Feature` to check if the feature is enabled in your application:
+
+### Features Valid Values
+
+The features prop you pass to `FlagsProvider` could be an array of strings or an object, if you decide to use an object you could also pass nested objects to group feature flags together.
+
+**Using an Array**
+
+```tsx
+createRoot(document.getElementById(""root"")!).render(
+	<FlagsProvider features={[""v2"", ""moderate""]}>
+		<App />
+	</FlagsProvider>,
+);
+```
+
+**Using an Object**
+
+```tsx
+createRoot(document.getElementById(""root"")!).render(
+	<FlagsProvider features={{ v2: true, moderate: false }}>
+		<App />
+	</FlagsProvider>,
+);
+```
+
+**Using Nested Objects**
+
+```tsx
+createRoot(document.getElementById(""root"")!).render(
+	<FlagsProvider
+		features={{ v2: true, content: { moderate: true, admin: false } }}
+	>
+		<App />
+	</FlagsProvider>,
+);
+```
+
+If you use nested objects you will need to either use the `useFeatures` hook or pass a string separated by `/`, e.g. `content/moderate` to read nested flags, if you don't pass the whole path you will get an object so `content` will return `{ moderate: false }` when reading it.
+
+### `useFeature` Custom Hook
+
+The `useFeature` custom hook is the base for the HOC and Render Prop implementation, it lets you check if a single feature is enabled and get a boolean, then you can do anything you want with that value, uesful to use it in combination with other hooks like useEffect or to show two different UIs based on a feature being enabled or not.
+
+```tsx
+import { useFeature } from ""flagged"";
+
+export function Header() {
+	const hasV2 = useFeature(""v2"");
+
+	return <header>{hasV2 ? <h1>My App v2</h1> : <h1>My App v1</h1>}</header>;
+}
+```
+
+### `withFeature` High Order Component
+
+This `withFeature` high order component let's you wrap a component behind a feature flag, this way the parent component using your wrapped component doesn't need to know anything about the feature flag. This is useful when you don't need to provide a fallback if the feature is disabled, e.g. for admin pieces of UI or new features you want to hide completely.
+
+```tsx
+import { withFeature } from ""flagged"";
+
+export const Heading = withFeature(""newHeading"")(function Heading() {
+	return <h1>My App v2</h1>;
+});
+```
+
+### `Feature` Render Prop
+
+The `Feature` component works using the render prop pattern and as a wrapper. This component is useful if you want to hide an specific part of a component behind a feature flag but don't want to wrap the whole component.
+
+Pass the name of the feature you want to check for and a children value and it will not render the children if the feature is enabled.
+
+```tsx
+import { Feature } from ""flagged"";
+
+export function Header() {
+	return (
+		<header>
+			<Feature name=""v2"">
+				<h1>My App v2</h1>
+			</Feature>
+		</header>
+	);
+}
+```
+
+Another option is to pass a function as children and get a boolean if the feature is enabled, this way you can render two different pieces of UI based on the feature being enabled or not.
+
+```tsx
+import { Feature } from ""flagged"";
+
+export function Header() {
+	return (
+		<header>
+			<Feature name=""v2"">
+				{(isEnabled) => (isEnabled ? <h1>My App v2</h1> : <h1>My App v1</h1>)}
+			</Feature>
+		</header>
+	);
+}
+```
+
+In both cases you could also send a `render` prop instead of `children`.
+
+```tsx
+import { Feature } from ""flagged"";
+
+export function Header() {
+	return (
+		<header>
+			<Feature name=""v2"" render={<h1>My App v2</h1>} />
+		</header>
+	);
+}
+```
+
+```tsx
+import { Feature } from ""flagged"";
+
+export function Header() {
+	return (
+		<header>
+			<Feature
+				name=""v2""
+				render={(isEnabled) =>
+					isEnabled ? <h1>My App v2</h1> : <h1>My App v1</h1>
+				}
+			/>
+		</header>
+	);
+}
+```
+
+### `useFeatures` Custom Hook
+
+The `useFeatures` custom hook is the base for the `useFeature` custom hook, it gives you the entire feature flags object or array you sent to `FlagsProvider` so you could use it however you want.
+
+```tsx
+import { useFeatures } from ""flagged"";
+
+export function Header() {
+	let features = useFeatures();
+
+	return (
+		<header>{features.v2 ? <h1>My App v2</h1> : <h1>My App v1</h1>}</header>
+	);
+}
+```
+",True
+138063059,sergiodxa,next-ga,sergiodxa/next-ga,Next.js HOC to integrate Google Analytics on every page change,"analytics,ga,google-analytics,high-order-component,hoc,nextjs,react",JavaScript,JavaScript,231,25,231,0,2018-06-20T17:11:10Z,2025-08-27T12:17:06Z,2020-01-22T17:36:24Z,mit,True,"# next-ga
+
+> The Next.js team has an official plugin being developed, while plugin supports it's still in canary only, the way the plugin works it's simpler than next-ga and I recommend you to check it and do it manually in your project until it's stable.
+
+> Plugin link: https://github.com/zeit/next.js/tree/canary/packages/next-plugin-google-analytics
+
+Next.js High Order Component to integrate Google Analytics on every page change.
+
+<a href=""https://www.patreon.com/sergiodxa"">
+	<img src=""https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"" width=""160"">
+</a>
+
+## Usage
+
+Install it
+
+```bash
+yarn add next-ga
+```
+
+Import it inside your `pages/_app.js`;
+
+```js
+import Router from ""next/router"";
+import withGA from ""next-ga"";
+```
+
+Wrap your [custom App container](https://nextjs.org/docs#custom-%3Capp%3E) with it
+
+```js
+// pass your GA code as first argument
+export default withGA(""UA-xxxxxxxxx-1"", Router)(MyApp);
+```
+
+That's it, now when the user access a page it will log a pageview to Google Analytics, each page change after that will also trigger a pageview on Google Analytics.
+
+> **Note**: This module detects if it's running in localhost and do nothing there to avoid polluting your analytics with local data.
+",True
+440076905,sergiodxa,remix-auth-oauth2,sergiodxa/remix-auth-oauth2,A OAuth2Strategy for Remix Auth,,TypeScript,TypeScript,200,66,200,6,2021-12-20T07:16:22Z,2026-03-09T12:45:29Z,2026-03-09T12:45:28Z,mit,True,"# OAuth2Strategy
+
+A strategy to use and implement OAuth2 framework for authentication with federated services like Google, Facebook, GitHub, etc.
+
+> [!WARNING]
+> This strategy expects the identity provider to strictly follow the OAuth2 specification. If the provider does not follow the specification and diverges from it, this strategy may not work as expected.
+
+## Supported runtimes
+
+| Runtime    | Has Support |
+| ---------- | ----------- |
+| Node.js    | ✅          |
+| Cloudflare | ✅          |
+
+## How to use
+
+### Installation
+
+```bash
+npm add remix-auth-oauth2
+```
+
+### Directly
+
+You can use this strategy by adding it to your authenticator instance and configuring the correct endpoints.
+
+```ts
+import { OAuth2Strategy, CodeChallengeMethod } from ""remix-auth-oauth2"";
+
+export const authenticator = new Authenticator<User>();
+
+authenticator.use(
+  new OAuth2Strategy(
+    {
+      cookie: ""oauth2"", // Optional, can also be an object with more options
+
+      clientId: CLIENT_ID,
+      clientSecret: CLIENT_SECRET,
+
+      authorizationEndpoint: ""https://provider.com/oauth2/authorize"",
+      tokenEndpoint: ""https://provider.com/oauth2/token"",
+      redirectURI: ""https://example.app/auth/callback"",
+
+      tokenRevocationEndpoint: ""https://provider.com/oauth2/revoke"", // optional
+
+      scopes: [""openid"", ""email"", ""profile""], // optional
+      codeChallengeMethod: CodeChallengeMethod.S256, // optional
+    },
+    async ({ tokens, request }) => {
+      // here you can use the params above to get the user and return it
+      // what you do inside this and how you find the user is up to you
+      return await getUser(tokens, request);
+    }
+  ),
+  // this is optional, but if you setup more than one OAuth2 instance you will
+  // need to set a custom name to each one
+  ""provider-name""
+);
+```
+
+Then you will need to setup your routes, for the OAuth2 flows you will need to call the `authenticate` method twice.
+
+First, you will call the `authenticate` method with the provider name you set in the authenticator.
+
+```ts
+export async function action({ request }: Route.ActionArgs) {
+  await authenticator.authenticate(""provider-name"", request);
+}
+```
+
+> [!NOTE]
+> This route can be an `action` or a `loader`, it depends if you trigger the flow doing a POST or GET request.
+
+This will start the OAuth2 flow and redirect the user to the provider's login page. Once the user logs in and authorizes your application, the provider will redirect the user back to your application redirect URI.
+
+You will now need a route on that URI to handle the callback from the provider.
+
+```ts
+export async function loader({ request }: Route.LoaderArgs) {
+  let user = await authenticator.authenticate(""provider-name"", request);
+  // now you have the user object with the data you returned in the verify function
+}
+```
+
+> [!NOTE]
+> This route must be a `loader` as the redirect will trigger a `GET` request.
+
+Once you have the `user` object returned by your strategy verify function, you can do whatever you want with that information. This can be storing the user in a session, creating a new user in your database, link the account to an existing user in your database, etc.
+
+### Using the Refresh Token
+
+The strategy exposes a public `refreshToken` method that you can use to refresh the access token.
+
+```ts
+let strategy = new OAuth2Strategy<User>(options, verify);
+let tokens = await strategy.refreshToken(refreshToken);
+```
+
+The refresh token is part of the `tokens` object the verify function receives. How you store it to call `strategy.refreshToken` and what you do with the `tokens` object after it is up to you.
+
+The most common approach would be to store the refresh token in the user data and then update the session after refreshing the token.
+
+```ts
+authenticator.use(
+  new OAuth2Strategy<User>(
+    options,
+    async ({ tokens, request }) => {
+      let user = await getUser(tokens, request);
+      return {
+        ...user,
+        accessToken: tokens.accessToken()
+        refreshToken: tokens.hasRefreshToken() ? tokens.refreshToken() : null,
+      }
+    }
+  )
+);
+
+// later in your code you can use it to get new tokens object
+let tokens = await strategy.refreshToken(user.refreshToken);
+```
+
+### Revoking Tokens
+
+You can revoke the access token the user has with the provider.
+
+```ts
+await strategy.revokeToken(user.accessToken);
+```
+
+### Discovering the Provider
+
+If you want to discover the provider's endpoints, you can use the `discover` static method.
+
+```ts
+export let authenticator = new Authenticator<User>();
+
+authenticator.use(
+  await OAuth2Strategy.discover<User>(
+    ""https://provider.com"",
+    {
+      clientId: CLIENT_ID,
+      clientSecret: CLIENT_SECRET,
+      redirectURI: ""https://example.app/auth/callback"",
+      scopes: [""openid"", ""email"", ""profile""], // optional
+    },
+    async ({ tokens, request }) => {
+      // here you can use the params above to get the user and return it
+      // what you do inside this and how you find the user is up to you
+      retu",True
+683833940,gerardokaztro,cloudsec-ninja,gerardokaztro/cloudsec-ninja,Become a CloudSecurity Engineer using the AWS Cloud for free. ☁️🔐🥷,"aws,cloud,containers,cybersecurity,secops,security,terraform",JavaScript,"JavaScript,CSS,TypeScript",157,22,157,0,2023-08-27T20:58:43Z,2026-03-11T14:55:43Z,2025-05-19T04:20:52Z,gpl-3.0,True,"<p align=""center"">
+  <a href=""https://acloudsecurity.ninja"">
+    <img alt=""Cloud Security Ninja"" src=""static/img/portada_readme.png"" />
+  </a>
+</p>
+
+<h1 align=""center"">
+  Bienvenido/a 👋
+</h1>
+
+<p align=""center"">
+   Cloud Security Ninja es una plataforma de aprendizaje de Seguridad en nube que ha sido diseñada para ayudar a quienes deseen dar sus primeros pasos en el apasionante mundo de la Ciberseguridad y que esto les permita generar nuevas oportunidades profesionales en una área con muchísima demanda laboral.
+</p>
+
+<p align=""center"">
+    Visite la <b><a href=""https://acloudsecurity.ninja/docs/"">📚 Documentación</a></b> para inciar tu carrera como Cloud Security Engineer.
+</p>
+
+<p align=""center"">
+    Apoya el contenido que ves aquí dejando una 🌟 al repo.
+</p>
+
+[![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v3/open-source.png)](https://github.com/firstcontributions/open-source-badges)
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCVWjwOiJGog7Km90-ayFESg?style=social)](https://youtube.com/@awssecuritylatam?sub_confirmation=1)
+[![Twitter Follow](https://img.shields.io/twitter/follow/gerardokaztro?style=social)](https://twitter.com/gerardokaztro)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/gerardokaztro/cloudsec-ninja?style=social)
+<!-- ![GitHub Followers](https://img.shields.io/github/followers/gerardokaztro?style=social)
+![GitHub Repo Stars](https://img.shields.io/github/stars/gerardokaztro?style=social) -->
+
+<h2 align=""center"">
+  Cómo iniciar este lindo viaje 🚀
+</h2>
+
+### 👨‍💻 Instrucciones para público en general
+Lo primero, es hacer un `git clone` a este [repositorio](https://github.com/gerardokaztro/cloudsec-ninja) en una carpeta de tu local. Esto es para que puedas tener todo el código de los ejercicios que se realizarán en cada tema.
+
+```
+git clone https://github.com/gerardokaztro/cloudsec-ninja.git
+```
+
+Todo el contenido de las diferentes secciones de aprendizaje de la plataforma se encuentran dentro de la carpeta `docs`. Algunas secciones tendran código que podras usar para realizar los laboratorios, podrás encontralo dentro de la carpeta `code`. Por ejemplo: `docs/fundamentos/code` o `docs/cloud/code`.
+
+```
+.docs
+├── fundamentos-de-ciberseguridad
+│   ├── code/
+│   ├── img/
+│   └── .
+├── fundamentos-de-nube
+│   ├── code/
+│   ├── img/
+│   └── .
+└── fundamentos-de-tecnologia
+    ├── code/
+    ├── img/
+    └── .
+```
+
+### 👷‍♀️ Instrucciones para contribuir en este proyecto
+Esta plataforma esta basada en [Docusaurus](https://docusaurus.io) un generador de sitios estáticos hecho en React, una de las principales bibliotecas de JavaScript, como biblioteca de interfaz de usuario para la creación de páginas.
+
+Y se ha utilizado [Vercel](https://vercel.com/) como hosting debido a su capacidad de desplegar, gestionar y escalar aplicaciones y sitios web. Además que Vercel proporciona una amplia gama de funciones, como despliegues automatizados, entre otras funciones interesantes.
+
+Con esto, la fase `build` se encuentra automatizada al momento de merguear los cambios a la rama `main`,
+
+Echa un vistazo a nuestra [guía para contribuidores](https://github.com/gerardokaztro/cloudsec-ninja/blob/main/CONTRIBUTING.md) antes de empezar.
+
+#### 🎮 Pre-requisitos
+
+- Instalar Git
+- Instalar Node.js v18.x.x o superior
+- Forkear este [repositorio](https://github.com/gerardokaztro/cloudsec-ninja)
+- Despues de tener el repositorio en nuestra cuenta personal de Github, clonarlo a tu local
+
+```bash
+git clone https://github.com/<tu-nombre-de-usuario>/cloudsec-ninja.git
+```
+
+- Dentro de la carpeta local que genera, comprobar la URL del repositorio:
+```bash
+git remote -v
+```
+
+- Antes de realizar modificaciones agregar la URL del repositorio **original** del proyecto:
+```bash
+git remote add upstream https://github.com/gerardokaztro/cloudsec-ninja
+```
+
+- Comprobar:
+```bash
+git remote -v
+```
+
+- Antes de empezar a trabajar, obtener los últimos cambios del repo Original:
+```bash
+git pull -r upstream main
+```
+
+- Crear rama `developement` en tu local
+```bash
+git checkout -b development
+```
+
+- Obtén un preview de la plataforma en tu localhost
+```bash
+npm run start
+```
+
+<p align=""center"">
+    <img alt=""preview"" src=""docs/bienvenida/img/preview_localhost.png"" />
+</p>
+
+- Cambia a la carpeta `docs` y [añade tu contenido](#cómo-añadir-mi-contenido)
+```bash
+cd docs/
+```
+
+- Envía tus cambios al repositorio
+```bash
+git push origin development
+```
+
+Finalmente, crea un **Pull Request** desde tu rama `development` a `main` del repositorio original.
+
+> Esto será revisado por los *code owners* y presta atención por si dejan algún comentario que debas revisar y responder, para que decidan aprobar tu cambio. 
+
+##### Cómo añadir mi contenido
+
+Todo contenido que deseen añadir como contribuidores, debe estar alineado a cualquiera de las secciones o dominios que se presentan en [Ruta de Aprendizaje](https://acloudsecurity.ninja/docs/ruta-de-aprendiza",True
+138228625,sergiodxa,next-nprogress,sergiodxa/next-nprogress,Next.js HOC to integrate NProgress inside your app,"higher-order-component,hoc,nextjs,nprogress,progress-bar,react,reactjs",JavaScript,JavaScript,148,14,148,0,2018-06-21T22:38:51Z,2024-06-24T04:23:57Z,2019-08-10T14:59:36Z,mit,True,"# next-nprogress
+
+Next.js HOC to integrate NProgress inside your app.
+
+This is configured to run only after a delay of (default) 300ms. This means if the page change takes too long it will render the progress bar, but if it's fast enough it will avoid rendering it.
+
+<a href=""https://www.patreon.com/sergiodxa"">
+	<img src=""https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"" width=""160"">
+</a>
+
+## Installation
+
+```bash
+yarn add next-nprogress
+```
+
+## Usage
+
+### Component
+
+Import it inside your `pages/_app.js`;
+
+```js
+import NProgress from ""next-nprogress/component"";
+```
+
+Render the component in your [custom App container](https://nextjs.org/docs#custom-%3Capp%3E):
+
+```jsx
+<NProgress />
+```
+
+That's it. Now NProgress will work automatically and render the correct styles using styled-jsx.
+
+### Higher order component
+
+Import it inside your `pages/_app.js`;
+
+```js
+import withNProgress from ""next-nprogress"";
+```
+
+Wrap your [custom App container](https://nextjs.org/docs#custom-%3Capp%3E) with it
+
+```js
+const msDelay = 1000; // default is 300
+export default withNProgress(msDelay)(MyApp);
+```
+
+Internally it will use the NProgress component and render it alongside your application.
+
+### Advanced Config
+
+You can configure further configure NProgress using its [configuration options](https://github.com/rstacruz/nprogress#configuration).
+
+Configure the component:
+
+```jsx
+<NProgress
+  color=""#29d""
+  options={{ trickleSpeed: 50 }}
+  showAfterMs={300}
+  spinner
+/>
+```
+
+Configure the HOC:
+
+```js
+const msDelay = 200;
+const options = { trickleSpeed: 50 };
+export default withNProgress(msDelay, options)(MyApp);
+```
+",True
+15535086,mgonto,mgo-mousetrap,mgonto/mgo-mousetrap,Handling keyboard interaction on an Angular app: An Angular Mousetrap wrapper,,JavaScript,JavaScript,144,12,144,2,2013-12-30T19:44:36Z,2020-07-18T12:43:14Z,2015-11-30T04:50:15Z,mit,True,"# mgo-mousetrap 
+
+This is a library that lets you handle keyboard interaction on an Angular app. It's an Angular Mousetrap wrapper for the awesome [MouseTrap library](http://craig.is/killing/mice) which takes care of binding key strokes to some function.
+
+## Usage
+
+### Add mgo-mousetrap scripts and module
+
+First of all, you need to include both mousetrap.js and wMousetrap.js in your index.html file. mousetrap.js is copied from its repository, with its corresponding Apache 2 license.
+
+Then, you need to add mgo-mousetrap module as a dependency of your app as follows:
+
+````js
+angular.module('myCoolApp', ['mgo-mousetrap']);
+````
+
+### Just use it
+
+Now you're prepared to use it. For that, you can add this directive to any field and state which keys and actions will happen. For example, let's look at the following pager:
+
+````html
+<div class=""pager"" w-mousetrap=""{left: previousPage, right: nextPage}"">
+  <li ng-click=""previousPage()"">Previous</li>
+  <li ng-repeat=""page in pages"" ng-click=""goTopage(page)"">{{page}}</li>
+  <li ng-click=""nextPage()"">Next</li>
+</div>
+````
+
+Check the pager div, we're setting an object where its keys are the keyboard shortcut to press and the value are the functions to execute once those keys have been clicked.
+
+Let's check a more complex example:
+
+````html
+<input type=""button"" value=""Make super cool action"" ng-click=""superCoolAction()"" w-mousetrap=""{'command+shift+k': superCoolAction}"" />
+````
+
+In here, when the user clicks command + shift + k, then the super cool action is going to be run. Please notice the `''` that wraps the key. This are needed if the key contains some ""not normal"" character like `+`, `*`, etc.
+
+In every `w-mousetrap` attribute you can define ANY number of key shortcuts :).
+
+You can also receive the event that's called with mousetrap to call `preventDefault` or `stopPropagation`. For example, `superCoolAction` might look like:
+
+````js
+$scope.superCoolAction = function(event) {
+    event.preventDefault();
+    alert(""Super cool"");
+}
+````
+
+Hope you guys like this!!!
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mgonto/mgo-mousetrap/trend.png)](https://bitdeli.com/free ""Bitdeli Badge"")
+
+",True
+440683737,sergiodxa,remix-auth-form,sergiodxa/remix-auth-form,A Remix Auth strategy for working with forms.,,TypeScript,TypeScript,128,20,128,0,2021-12-22T00:07:59Z,2025-12-01T06:44:03Z,2025-12-01T06:44:00Z,mit,True,"# FormStrategy
+
+A Remix Auth strategy to work with any form.
+
+## Supported runtimes
+
+| Runtime    | Has Support |
+| ---------- | ----------- |
+| Node.js    | ✅          |
+| Cloudflare | ✅          |
+
+## How to use
+
+This Strategy gives you back on the verify function the FormData instance of the request and the request from the action.
+
+This let you use any field from that form with the names you want, so you are not limited to only a username+password or email+password, if you need a third field you can use it too.
+
+First, install the strategy and Remix Auth.
+
+```bash
+$ npm install remix-auth remix-auth-form
+```
+
+Then, create an Authenticator instance.
+
+```ts
+import { Authenticator } from ""remix-auth"";
+import { User, findOrCreateUser } from ""~/models/user"";
+
+export let authenticator = new Authenticator<User>();
+```
+
+And you can tell the authenticator to use the FormStrategy.
+
+```ts
+import { FormStrategy } from ""remix-auth-form"";
+
+// The rest of the code above here...
+
+authenticator.use(
+  new FormStrategy(async ({ form, request }) => {
+    // Here you can use `form` to access and input values from the form.
+    // and also use `request` to access more data
+    let username = form.get(""username""); // or email... etc
+    let password = form.get(""password"");
+
+    // You can validate the inputs however you want
+    invariant(typeof username === ""string"", ""username must be a string"");
+    invariant(username.length > 0, ""username must not be empty"");
+
+    invariant(typeof password === ""string"", ""password must be a string"");
+    invariant(password.length > 0, ""password must not be empty"");
+
+    // And if you have a password you should hash it
+    let hashedPassword = await hash(password);
+
+    // And finally, you can find, or create, the user
+    let user = await findOrCreateUser(username, hashedPassword);
+
+    // And return the user as the Authenticator expects it
+    return user;
+  })
+);
+```
+
+In order to authenticate a user, you can use the following inside of an `action` function:
+
+```ts
+export async function action({ request }: Route.ActionArgs) {
+  let user = await authenticator.authenticate(""form"", request);
+  // Now you have the user object with the data you returned in the verify function
+}
+```
+
+Once you have the `user` object returned by your strategy verify function, you can do whatever you want with that information. This can be storing the user in a session, creating a new user in your database, link the account to an existing user in your database, etc.
+",True
+755725134,mabelolivera10,floresamarillasycorazones,mabelolivera10/floresamarillasycorazones,,,CSS,"CSS,HTML,JavaScript",121,63,121,2,2024-02-10T22:25:17Z,2026-03-02T20:09:41Z,2024-06-04T14:59:31Z,,False,"# floresamarillasycorazones
+
+¡Hola! Soy [Mabel Olivera - @mabelolivera10]() y estoy encantada de conocerte.
+
+## Acerca de mí👀
+Soy una persona apasionada por mi profesión, con una excelente capacidad de organización y facilidad para trabajar en equipo. Me considero altamente adaptable a diferentes entornos y siempre enfocada en alcanzar objetivos. Además, poseo conocimientos en diversos lenguajes de programación como Java, Visual.NET, PHP, entre otros. Tengo un gran interés en el desarrollo de software y el análisis de sistemas.
+
+🌱 Actualmente, estoy enfocada en seguir aprendiendo y mejorando mis habilidades en distintos lenguajes de programación.
+
+## Colaboración💞
+Estoy interesada en colaborar contigo en proyectos emocionantes y desafiantes. ¡Juntos podemos lograr grandes cosas!
+
+## Contacto 📫
+Puedes encontrarme en mis redes sociales:
+
+- [Facebook](https://www.facebook.com/mabelquispeolivera/)
+- [Instagram](https://www.instagram.com/mabelolivera10/)
+- [TikTok](https://www.tiktok.com/@encodedmabel)
+- [YouTube](https://www.youtube.com/@encodedmabel)
+- [LinkedIn](https://www.linkedin.com/in/mabelquispeolivera/)
+- [Twitter](https://twitter.com/mabel_Q_O)
+- [CodeOpen](https://codepen.io/mabelolivera10)
+- [Sitio Web](https://encoded.pe/)
+
+¡Espero poder conectarme contigo pronto y colaborar en futuros proyectos! 😊
+",True
+281784442,sergiodxa,use-mutation,sergiodxa/use-mutation,🧬 Run side-effects safely in React,"hooks,mutations,react-query,reactjs,side-effects,swr,typescript,use-mutation",TypeScript,TypeScript,120,8,120,13,2020-07-22T21:14:16Z,2025-01-24T16:12:16Z,2023-02-17T10:57:47Z,mit,True,"<div align=""center"">
+
+![🧬 useMutation - Run side-effects safely in React](other/og.png)
+
+</div>
+
+![CI](https://github.com/sergiodxa/use-mutation/workflows/CI/badge.svg) ![Publish](https://github.com/sergiodxa/use-mutation/workflows/Publish/badge.svg)
+
+
+Specially useful to run requests against an API, and combined with [SWR](https://swr.vercel.app).
+
+## Usage
+
+Install it:
+
+```sh
+$ yarn add use-mutation
+```
+
+Import it:
+
+```ts
+import useMutation from 'use-mutation';
+```
+
+Create a function which runs a mutation
+
+```tsx
+async function createComment({
+  authorId,
+  comment,
+}: {
+  authorId: number;
+  comment: string;
+}) {
+  const res = await fetch('/api/comments', {
+    method: 'POST',
+    body: JSON.stringify({ authorId, comment }),
+  });
+  if (!res.ok) throw new Error(res.statusText);
+  return await res.json();
+}
+```
+
+Use your function with `useMutation`
+
+```tsx
+function CommentForm({ authorId }) {
+  const [comment, setComment] = React.useState('');
+  const [mutate, { status }] = useMutation(createComment, {
+    onMutate({ input }) {
+      // do something before the mutation run
+      return () => {
+        // rollback changes if the mutation failed
+      };
+    },
+    onSuccess({ data, input }) {
+      // do something once the mutation succeeded
+    },
+    onFailure({ error, rollback, input }) {
+      // do something once the mutation failed
+    },
+    onSettled({ status, error, data, rollback, input }) {
+      switch (status) {
+        case 'success': {
+          // do something if the mutation succeeded
+        }
+        case 'failure': {
+          // do something if the mutation failed
+        }
+      }
+    },
+  });
+
+  const handleSubmit = React.useCallback(
+    function handleSubmit(event) {
+      mutate({ authorId, comment });
+    },
+    [mutate, comment]
+  );
+
+  // render your UI
+}
+```
+
+### Usage with SWR
+
+If you are using SWR, you can use `useMutation` to run your mutations to perform Optimistic UI changes.
+
+```tsx
+import { cache, mutate } from 'swr';
+
+function createComment(input) {
+  // ...
+}
+
+function useCreateComment() {
+  return useMutation(createComment, {
+    onMutate({ input }) {
+      const oldData = cache.get('comment-list');
+      // optimistically update the data before your mutation is run
+      mutate('comment-list', current => current.concat(input), false);
+      return () => mutate('comment-list', oldData, false); // rollback if it failed
+    },
+
+    onFailure({ rollback }) {
+      if (rollback) rollback();
+    },
+  });
+}
+```
+
+This way when you run `mutate`, it will first optimistically update your SWR cache and if it fails it will rollback to the old data.
+
+## API Reference
+
+```tsx
+const [mutate, { status, data, error, reset }] = useMutation<
+  Input,
+  Data,
+  Error
+>(mutationFn, {
+  onMutate,
+  onSuccess,
+  onFailure,
+  onSettled,
+  throwOnFailure,
+  useErrorBoundary,
+});
+
+const promise = mutate(input, {
+  onSuccess,
+  onSettled,
+  onError,
+  throwOnFailure,
+});
+```
+
+### Hook Generic
+
+> Only if you are using TypeScript
+
+- `Input = any`
+  - The data your mutation function needs to run
+- `Data = any`
+  - The data the hook will return as result of your mutation
+- `Error = any`
+  - The error the hook will return as a failure in your mutation
+
+### Hook Options
+
+- `mutationFn(input: Input): Promise<Data>`
+  - **Required**
+  - A function to be executed before the mutation runs.
+  - It receives the same input as the mutate function.
+  - It can be an async or sync function, in both cases if it returns a function it will keep it as a way to rollback the changed applied inside onMutate.
+- `onMutate?({ input: Input }): Promise<rollbackFn | undefined> | rollbackFn | undefined`
+  - Optional
+  - A function to be executed before the mutation runs.
+  - It receives the same input as the mutate function.
+  - It can be an async or sync function, in both cases if it returns a function.
+  - it will keep it as a way to rollback the changed applied inside `onMutate`
+- `onSuccess?({ data: Data, input: Input }): Promise<void> | void`
+  - Optional
+  - A function to be executed after the mutation resolves successfully.
+  - It receives the result of the mutation.
+  - If a Promise is returned, it will be awaited before proceeding.
+- `onFailure?({ error: Error, rollback: rollbackFn, input: Input }): Promise<void> | void`
+  - Optional
+  - A function to be executed after the mutation failed to execute.
+  - If a Promise is returned, it will be awaited before proceeding.
+- `onSettled?({ status: 'success' | 'failure', error?: Error, data?: Data, rollback?: rollbackFn, input: Input}): Promise<void> | void`
+  - Optional
+  - A function to be executed after the mutation has resolves, either successfully or as failure.
+  - This function receives the error or the result of the mutation.
+  - If a Promise is returned, it will be awaited before proceeding.
+- `throwOnFailure?: boolean`
+  - Optional
+  - If defined as `true`, a failure in the mutation will cause the `mutate` function to throw. Disabled by default.
+- `useErrorBounda",True
+621891194,gerardokaztro,cybersecurity-entry-level,gerardokaztro/cybersecurity-entry-level,"Curso para aprender Ciberseguridad desde cero, en español y 100% gratis. Abarca 5 dominios fundamentales que necesitas conocer para poder dar tus primeros pasos en este apasionante mundo.","access-control,backup,ciberseguridad,cybersecurity,disaster-recovery,fundamentals,incident-response,network-security,security-operations,seguridad-de-la-informacion,seguridad-informatica,tutorial",,,119,13,119,0,2023-03-31T15:58:42Z,2026-03-05T20:02:37Z,2023-05-27T16:16:17Z,apache-2.0,True,"# CIBERSEGURIDAD DESDE CERO
+## Da tus primeros pasos en Ciberseguridad sin morir en el intento
+
+![banner](./img/ciberseguridad.png)
+
+### Este curso será transmitido en directo desde el canal de 📺 [Twitch](https://twitch.tv/awssecuritylatam) de la comunidad [AWS Security Community](https://bit.ly/youtube-awsseclatam). Cada Sábado, desde el 29 de Abril, abordaré un dominio de seguridad distinto.
+
+> #### Si te gusta este curso y quieres apoyarme, por favor regalale un ""⭐️ Star"" al repositorio. Gracias 🙌
+
+## Introducción
+Ciberseguridad desde cero es un curso que te ayudara a conocer y comprender las mejores prácticas, políticas y procedimientos fundamentales de seguridad. Al finalizar este curso, serás capaz de demostrar un nivel aceptable de competencia en el campo, sin importar el campo laboral en el que te desempeñas, ni la nula experiencia en esta área. Si te gusta resolver problemas, te motiva ayudar a las personas y te entusiasma el trabajar en un campo en constante evolución, ya tienes mucho en común con los profesionales de ciberseguridad. Esta es la certificación perfecta para tí si quieres iniciar una carrera profesional en esta área.
+
+## Pre-requistos
+No hay pre-requisitos para este curso ya que es de nivel introductorio.
+
+## A quién va dirigido
+- Estudiantes
+- Profesionales recién egresados
+- Profesionales de TI
+- Profesionales de cualquier área
+
+## Objetivo general del curso
+El objetivo general de este curso es que puedas dar tus primeros pasos en ciberseguridad comprendiendo los conceptos que maneja un profesional de esta área en el día a día. Para aprender ciberseguridad es necesario entender cada uno de los dominios que esta tiene, de los cuales, vamos a cubrir solamente cinco de ellos. La idea es no saturar de información a quienes vienen por primera vez e intentan aprender de esta apasionante profesión y que el curso no sea tan largo, ya que su mayor cuota es de conceptoos. ¿Qué seguirá después?, bueno, si el interés a este proyecto es la esperada, podemos hacer un siguiente curso con mas nivel y usando diferentes tecnologias de la industria, todo va a depender de ustedes 😉
+
+## Temario:
+Este curso proporciona una revisión integral de los conceptos de seguridad de los sistemas de información, las mejores prácticas de la industria y la terminología, que cubre los cinco dominios que a su vez, son incluidos en el esquema del examen [Certified in Cybersecurity](https://www.isc2.org/certified-in-cybersecurity):
+
+1️⃣ Principios de seguridad
+
+2️⃣ Conceptos de Respuestas a incidentes, Continuidad del negocio y Recuperación ante desastres
+
+3️⃣ Control de acceso
+
+4️⃣ Seguridad de la red
+
+5️⃣ Seguridad de operaciones
+
+
+## Calendario
+> Cada semana aprenderemos un dominio de seguridad distinto
+
+### `PRIMERA CLASE`
+#### Sábado 29 de Abril: PRINCIPIOS DE SEGURIDAD
+##### Hora 10am GMT-5
+###### Clase en directo por [Twitch](https://twitch.tv/awssecuritylatam).
+
+### `SEGUNDA CLASE`
+#### Sábado 06 de Mayo: CONCEPTOS DE RESPUESTA A INCIDENTES, CONTINUIDAD DEL NEGOCIO Y RECUPERACIÓN ANTE DESASTRES
+##### Hora 10am GMT-5
+###### Clase en directo por [Twitch](https://twitch.tv/awssecuritylatam).
+
+### `TERCERA CLASE`
+#### Sábado 13 de Mayo: CONCEPTOS DE CONTROL DE ACCESO
+##### Hora 10am GMT-5
+###### Clase en directo por [Twitch](https://twitch.tv/awssecuritylatam).
+
+### `CUARTA CLASE`
+#### Sábado 20 de Mayo: SEGURIDAD DE LA RED
+##### Hora 10am GMT-5
+###### Clase en directo por [Twitch](https://twitch.tv/awssecuritylatam).
+
+### `ÚLTIMA CLASE`
+#### Próximamente: SEGURIDAD DE OPERACIONES
+##### Hora 10am GMT-5
+###### Clase en directo por [Twitch](https://twitch.tv/awssecuritylatam).
+
+## Preguntas frecuentes
+
+### ¿Qué utilidad tiene este repositorio?
+Aquí, se va a publicar toda la información relacionada con el curso como:
+- Calendario de las clases
+- Vídeo del directo (una vez finalice en Twitch) 
+- Clase editada (una vez se suba a la plataforma que podria ser Youtube o alguna otra, ya aviseremos)
+- Enlaces de interés y material de estudio.
+
+### ¿Las clases en directo quedarán grabadas?
+Sí, todas las emisiones se podrán ver durante 7 dias posterior a su emisión en [Twitch](https://www.twitch.tv/awssecuritylatam/videos).
+
+### ¿El curso se subirá a YouTube?
+Probablemente si. Al decir verdad, estamos pensando subir una version editada a una plataforma en la que podamos dejar quizzes, flash cards, exams, para que puedas poner a prueba tus conocimientos, además de emitir badge digitales y certificados de finalización, ¿te gustaría? Hazmelo saber ❤️ 
+
+> Puedes apoyar mi trabajo haciendo ""⭐️ Star"" en el repo y/o nominarme a ""GitHub Star"" 👇
+
+[![GitHub Star](https://img.shields.io/badge/GitHub-Nominar_a_star-yellow?style=for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://stars.github.com/nominate/)
+
+## Hola, mi nombre es Gerardo Castro 👋🏻
+Soy Cloud Security Engineer...
+
+### **Te invito a conectar conmigo** 🤝🏻 &nbsp;
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCVWjwOiJGog7Km9",True
