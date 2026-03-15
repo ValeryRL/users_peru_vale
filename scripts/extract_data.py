@@ -31,7 +31,7 @@ def extract_data():
     
     logger.info("Starting user discovery by location...")
     for loc in locations:
-        users = user_extractor.search_users_by_location(loc, max_users=300)
+        users = user_extractor.search_users_by_location(loc, max_users=400)
         for user in users:
             login = user.get("login")
             if login and login not in seen_users:
