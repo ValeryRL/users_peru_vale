@@ -9,6 +9,8 @@ This project extracts data from over 1,000 GitHub repositories associated with d
 
 *(Antigravity Easter egg screenshot will be added here)*
 
+![Dashboard Overview](screenshots/overview.png)
+
 ## Section 2: Key Findings
 Based on the analysis of the Peruvian developer ecosystem (Sampled results from 24 regions):
 
@@ -17,6 +19,8 @@ Based on the analysis of the Peruvian developer ecosystem (Sampled results from 
 - **Industry Concentration:** While **Information and Communication** is the primary sector (74%), there's a notable presence in **Scientific Activities** and **Manufacturing**, indicating a diversifying digital economy in Peru.
 - **Ecosystem Maturity:** The average developer account age is over **11 years (4264 days)**, reflecting a solid foundation of senior talent in the region.
 - **Recent Activity:** Approximately **43.7%** of the analyzed developers have pushed code in the last 90 days, indicating a healthy level of ongoing maintenance.
+
+![Industry Distribution](screenshots/industries.png)
 
 ## Section 3: Data Collection
 - **Users/Repos collected:** 200 users discovered across 25 locations; 50 top repositories analyzed in depth.
