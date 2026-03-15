@@ -24,14 +24,19 @@ def extract_data():
     user_extractor = UserExtractor(client)
     repo_extractor = RepoExtractor(client)
     
-    locations = ["Peru", "Lima", "Arequipa", "Cusco", "Trujillo"]
+    locations = [
+        "Amazonas Peru", "Ancash", "Apurimac", "Arequipa", "Ayacucho", "Cajamarca", 
+        "Callao", "Cusco", "Huancavelica", "Huanuco", "Ica", "Junin", "La Libertad", 
+        "Lambayeque", "Lima", "Loreto", "Madre de Dios", "Moquegua", "Pasco", 
+        "Piura", "Puno", "San Martin", "Tacna", "Tumbes", "Ucayali" # Wait, actually 24 regions + constitutional province (Callao)
+    ]
     
     all_users = []
     seen_users = set()
     
     logger.info("Starting user discovery by location...")
     for loc in locations:
-        users = user_extractor.search_users_by_location(loc, max_users=400)
+        users = user_extractor.search_users_by_location(loc, max_users=100) # 25 locations * 100 max = up to 2500 initial pool
         for user in users:
             login = user.get("login")
             if login and login not in seen_users:
