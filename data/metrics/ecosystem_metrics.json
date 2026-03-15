@@ -1,19 +1,29 @@
 {
-  "total_developers": 6,
-  "total_repositories": 20,
-  "total_stars": 26663,
-  "avg_repos_per_user": 3.3333333333333335,
+  "total_developers": 16,
+  "total_repositories": 50,
+  "total_stars": 34946,
+  "avg_repos_per_user": 3.125,
   "most_popular_languages": {
-    "TypeScript": 8,
-    "JavaScript": 6,
+    "TypeScript": 13,
+    "JavaScript": 12,
+    "CSS": 3,
+    "OCaml": 3,
+    "C++": 2,
     "Java": 2,
+    "Python": 2,
     "Vala": 1,
     "Kotlin": 1,
-    "CSS": 1
+    "C": 1
   },
   "industry_distribution": {
-    "Information and communication": 20
+    "Information and communication": 37,
+    "Professional, scientific activities": 4,
+    "Manufacturing": 3,
+    "Administrative and support activities": 2,
+    "Education": 2,
+    "Wholesale and retail trade": 1,
+    "Arts, entertainment and recreation": 1
   },
-  "active_developer_pct": 50.0,
-  "avg_account_age_days": 3578.3333333333335
+  "active_developer_pct": 43.75,
+  "avg_account_age_days": 4264.6875
 }

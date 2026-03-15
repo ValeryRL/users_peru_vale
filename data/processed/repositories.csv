@@ -213,6 +213,61 @@ We welcome contributions! Here's how you can help:
 Help make Planify available in your language:
 
 - **Weblate (Recommended)**: [Join our translation project](https://hosted.weblate.org/",True
+450854006,mriscoc,Ender3V2S1,mriscoc/Ender3V2S1,This is optimized firmware for Ender3 V2/S1 3D printers.,"ender3s1,ender3v2,firmware",C++,"C++,C,G-code,Python,Linker Script,Shell,JavaScript,Makefile,HTML,Assembly,CMake,OpenSCAD,CSS,Roff,Dockerfile,GDB,Pawn",3064,429,3064,13,2022-01-22T15:19:17Z,2026-03-14T21:35:45Z,2026-01-07T23:39:25Z,other,True,"# Professional Firmware for the Creality Ender 3 V2/S1 Printers
+
+![GitHub contributors](https://img.shields.io/github/contributors/mriscoc/Ender3V2S1.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/mriscoc/Ender3V2S1.svg)
+[![Build Status](https://github.com/mriscoc/Ender3V2S1/workflows/CI/badge.svg?branch=Ender3V2S1-Released)](https://github.com/mriscoc/Ender3V2S1/actions)
+
+## RET6/RCT6 Compatibility
+
+The Precompiled binary files of this firmware can work with STM32FX RET6 or RCT6 and can be downloader from:
+[Latest Release](https://github.com/mriscoc/Ender3V2S1/releases/latest)
+
+<img aling=left height=240 src=""buildroot/share/pixmaps/Ender-3V2.jpg"" /> <img height=300 src=""buildroot/share/pixmaps/Ender-3S1.jpg"" />
+<BR/>
+
+## Donations
+Thank you for your support, I receive donations through [Patreon](https://www.patreon.com/mriscoc) and [Paypal](https://www.paypal.com/donate/?business=85SPAAR6UZEE8)   
+
+[<img src=""https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"">](https://www.paypal.com/donate?business=85SPAAR6UZEE8&currency_code=USD)   
+
+## Wiki
+ - [About of this firmware and features](https://github.com/mriscoc/Ender3V2S1/wiki)
+ - [How to install the firmware](https://github.com/mriscoc/Ender3V2S1/wiki/How-to-install-the-firmware)
+ - [Getting started](https://github.com/mriscoc/Ender3V2S1/wiki/Calibration-Guides)
+ - [Saving preferences in Configuration Files](https://github.com/mriscoc/Ender3V2S1/wiki/Configuration-files)
+ - [Installing a 3D/BLTouch](https://github.com/mriscoc/Ender3V2S1/wiki/3D-BLTouch)
+ - [Color themes](https://github.com/mriscoc/Ender3V2S1/wiki/Color-Themes)
+ - [How to use with Octoprint](https://github.com/mriscoc/Ender3V2S1/wiki/Octoprint)
+  
+## Community links
+* [Telegram](https://t.me/ender3v2s1firmware)
+* [Reddit](https://www.reddit.com/r/Ender3v2Firmware) 
+* [Facebook](https://www.facebook.com/groups/professionalfirmware)
+* [Youtube](https://www.youtube.com/@3dprinterfirmware)
+
+![](https://raw.githubusercontent.com/mriscoc/Ender3V2S1/Ender3V2S1-Released/screenshots/main.jpg)
+
+## Credits
+
+This is a Marlin based firmware and is maintained by [@mriscoc](https://github.com/mriscoc)  
+
+This work would not be possible without the supporters, helpers and betatesters at the **Telegram** group and **Patreons**.
+
+Marlin firmware is an Open Source project hosted on Github, [Marlin](https://marlinfw.org/) is owned and maintained by the maker community.  
+
+## Changelog
+
+For a list of changes made in each release, see the release notes.
+
+## Disclaimer  
+
+THIS FIRMWARE AND ALL OTHER FILES HERE ARE PROVIDED FREE OF CHARGE WITH NO WARRANTY OR GUARANTEE. SUPPORT IS NOT INCLUDED JUST BECAUSE YOU DOWNLOADED THE FIRMWARE. WE ARE NOT LIABLE FOR ANY DAMAGE TO YOUR PRINTER, PERSON, OR ANY OTHER PROPERTY DUE TO USE OF THIS FIRMWARE. IF YOU DO NOT AGREE TO THESE TERMS THEN DO NOT USE THE FIRMWARE.
+
+## LICENSE
+For the license, check the header of each file, if the license is not specified there, the project license will be used. Marlin is licensed under the GPL.
+",True
 47186418,devaige,WheelPicker,devaige/WheelPicker,Simple and fantastic wheel view in realistic effect for android.,,Kotlin,Kotlin,2625,547,2625,0,2015-12-01T11:57:33Z,2026-03-12T10:18:54Z,2026-03-12T07:30:29Z,apache-2.0,True,"![Banner](Previews/main/Banner.jpg)
 
 ***
@@ -930,6 +985,148 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 ",True
+43579892,spiermar,d3-flame-graph,spiermar/d3-flame-graph,A D3.js plugin that produces flame graphs from hierarchical data.,,JavaScript,"JavaScript,HTML,CSS",962,126,962,20,2015-10-02T22:49:28Z,2026-03-14T05:18:55Z,2026-03-13T23:10:27Z,apache-2.0,True,"# d3-flame-graph
+
+A D3.js plugin that produces flame graphs from hierarchical data.
+
+[![Flame Graph Example](https://media.giphy.com/media/l41JMjBaxrZw1bqpi/giphy.gif)](http://spiermar.github.io/d3-flame-graph/)
+
+If you don't know what flame graphs are, check [Brendan Gregg's post](http://www.brendangregg.com/flamegraphs.html).
+
+> Flame graphs are a visualization of profiled software, allowing the most frequent code-paths to be identified quickly and accurately. They can be generated using my open source programs on [github.com/brendangregg/FlameGraph](http://github.com/brendangregg/FlameGraph), which create interactive SVGs.
+>
+> <cite>Brendan Gregg</cite>
+
+## Examples
+
+Click [here](http://spiermar.github.io/d3-flame-graph/) to check the demos, and [source](https://github.com/spiermar/d3-flame-graph/tree/master/src).
+
+Click [here](http://bl.ocks.org/spiermar/4509343495f8d6e214cb) to check the simplified demo on bl.ocks.org.
+
+## Getting Started
+
+### jsdelivr CDN
+
+Just reference the CDN hosted CSS and JS files!
+
+```html
+<head>
+</head>
+<body>
+    <div id=""chart""></div>
+    <script type=""text/javascript"" src=""https://d3js.org/d3.v7.js""></script>
+    <script
+        type=""text/javascript""
+        src=""https://cdn.jsdelivr.net/npm/d3-flame-graph@5.0.0/dist/d3-flamegraph.umd.min.js""
+    ></script>
+    <script type=""text/javascript"">
+        var chart = flamegraph().width(960);
+
+        d3.json(""data.json"")
+            .then((data) => {
+                d3.select(""#chart"").datum(data).call(chart);
+            })
+            .catch((error) => {
+                return console.warn(error);
+            });
+    </script>
+</body>
+```
+
+### NPM
+
+Make sure [Node]() and [npm]() installed on your system.
+
+Install the d3-flame-graph plugin.
+
+```
+$ npm install d3-flame-graph --save
+```
+
+And use it!
+
+```html
+<head>
+</head>
+<body>
+    <div id=""chart""></div>
+    <script type=""text/javascript"" src=""node_modules/d3/d3.js""></script>
+    <script
+        type=""text/javascript""
+        src=""node_modules/d3-flame-graph/dist/d3-flamegraph.umd.js""
+    ></script>
+    <script type=""text/javascript"">
+        var chart = flamegraph().width(960);
+
+        d3.json(""data.json"")
+            .then((data) => {
+                d3.select(""#chart"").datum(data).call(chart);
+            })
+            .catch((error) => {
+                return console.warn(error);
+            });
+    </script>
+</body>
+```
+
+## Input Format
+
+Input stack is a simple hierarchical data structure in JSON format.
+
+```js
+{
+  ""name"": ""<name>"",
+  ""value"": <value>,
+  ""children"": [
+    <Object>
+  ]
+}
+```
+
+The [burn](https://github.com/spiermar/burn) CLI tool can convert multiple file formats to this hierarchical data structure.
+
+## Interacting with entries
+
+Internally, the data is transformed into a d3 **hierarchy**.
+Functions like `onClick`, `label` and `zoom` expose individual entries as hierarchy Nodes, which wrap the provided data and add more properties:
+
+```
+{
+  ""data"": <original user-provided object>,
+  ""parent"": <another hierarchy node>,
+  ""children"": [
+    <hierarchy node>
+  ],
+  ""x1"": <double>,  // x2 - x1 is the size of this node, as a fraction of the root.
+  ""x2"": <double>
+}
+```
+
+This is a breaking change from previous versions of d3-flame-graph, which were based on version 3 of the d3 library. See [d3-hierarchy](https://github.com/d3/d3-hierarchy#hierarchy).
+
+## API Reference
+
+<a name=""flamegraph"" href=""#flamegraph"">#</a> flamegraph()
+
+Create a new Flame Graph.
+
+<a name=""selfValue"" href=""#selfValue"">#</a> flamegraph.<b>selfValue</b>(<i>[enabled]</i>)
+
+Defines if the plugin should use the self value logic to calculate the node value for the Flame Graph frame size. If set to `true`, it will assume the node value from the input callgraph represents only the internal node value, or self value, not the sum of all children. If set to `false` it will assume the value includes the chidren values too. Defaults to `false` if not explicitely set, which if the same behavior 1.x had.
+
+<a name=""width"" href=""#width"">#</a> flamegraph.<b>width</b>(<i>[size]</i>)
+
+Graph width in px. Defaults to 960px if not set. If <i>size</i> is specified, it will set the graph width, otherwise it will return the current graph width.
+
+<a name=""height"" href=""#height"">#</a> flamegraph.<b>height</b>(<i>[size]</i>)
+
+Graph height in px. Defaults to the number of cell rows times <a name=""cellHeight"" href=""#cellHeight""><b>cellHeight</b></a> if not set. If <i>size</i> is specified, it will set the cell height, otherwise it will return the current graph height. If <a name=""minHeight"" href=""#minHeight""><b>minHeight</b></a> is specified, and higher than the provided or calculated values, it will override height.
+
+<a name=""minHeight"" href=""#minHeight"">#</a> flamegraph.<b>minHeight</b>(<i>[size]</i>)
+
+Minumum graph height in px. If <i>size</i> is specified, and higher than the provided or calculated <i>height</i>, it will override it.
+
+<a name=""cellHeight"" href=""#cellHeight"">#</a> flamegraph.<b>cellHeight</b>(<i>[siz",True
 422046848,sergiodxa,remix-i18next,sergiodxa/remix-i18next,The easiest way to translate your React Router framework mode apps,,TypeScript,TypeScript,718,55,718,3,2021-10-28T03:04:43Z,2026-03-09T05:36:48Z,2026-03-09T05:37:52Z,mit,True,"# remix-i18next
 
 **The easiest way to translate your React Router framework mode apps.**
@@ -1178,6 +1375,124 @@ For example:
 ````javascript
 // Considering the service is named AngularyticsKissmetricsHandler
 AngularyticsProvider.setEven",True
+30365240,ekmartin,slack-irc,ekmartin/slack-irc,Connects Slack and IRC channels by sending messages back and forth.,,JavaScript,JavaScript,589,148,589,30,2015-02-05T16:21:24Z,2026-02-05T04:12:51Z,2022-10-12T02:14:35Z,mit,True,"# slack-irc [![Join the chat at https://gitter.im/ekmartin/slack-irc](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ekmartin/slack-irc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/ekmartin/slack-irc.svg?branch=travis)](https://travis-ci.org/ekmartin/slack-irc) [![Coverage Status](https://coveralls.io/repos/github/ekmartin/slack-irc/badge.svg?branch=master)](https://coveralls.io/github/ekmartin/slack-irc?branch=master)
+
+> Connects Slack and IRC channels by sending messages back and forth. Read more [here](https://ekmartin.com/2015/slack-irc).
+
+## Demo
+![Slack IRC](http://i.imgur.com/58H6HgO.gif)
+
+## Installation and usage
+*Note*: [node-irc](https://github.com/martynsmith/node-irc/)
+uses icu-charset-detector as an optional dependency,
+which might fail to install depending on how you've installed Node.js.
+slack-irc works fine anyhow though, so no need to worry.
+
+Installing with npm:
+```bash
+$ npm install -g slack-irc
+$ slack-irc --config /path/to/config.json
+```
+
+or by cloning the repository:
+
+```bash
+$ git clone https://github.com/ekmartin/slack-irc.git && cd slack-irc
+$ npm install
+$ npm run build
+$ npm start -- --config /path/to/config.json # Note the extra -- here
+```
+
+It can also be used as a node module:
+```js
+var slackIRC = require('slack-irc');
+var config = require('./config.json');
+slackIRC(config);
+```
+
+## Configuration
+
+slack-irc uses Slack's [bot users](https://api.slack.com/bot-users).
+This means you'll have to set up a bot user as a Slack integration, and invite it
+to the Slack channels you want it to listen in on. This can be done using Slack's `/invite <botname>`
+command. This has to be done manually as there's no way to do it through the Slack bot user API at
+the moment.
+
+slack-irc requires a JSON-configuration file, whose path can be given either through
+the CLI-option `--config` or the environment variable `CONFIG_FILE`. The configuration
+file needs to be an object or an array, depending on the number of IRC bots you want to run.
+
+This allows you to use one instance of slack-irc for multiple Slack teams if wanted, even
+if the IRC channels are on different networks.
+
+To set the log level to debug, export the environment variable `NODE_ENV` as `development`.
+
+slack-irc also supports invite-only IRC channels, and will join any channels it's invited to
+as long as they're present in the channel mapping.
+
+### Example configuration
+Valid JSON cannot contain comments, so remember to remove them first!
+```js
+[
+  // Bot 1 (minimal configuration):
+  {
+    ""nickname"": ""test2"",
+    ""server"": ""irc.testbot.org"",
+    ""token"": ""slacktoken2"",
+    ""channelMapping"": {
+      ""#other-slack"": ""#new-irc-channel""
+    }
+  },
+
+  // Bot 2 (advanced options):
+  {
+    ""nickname"": ""test"",
+    ""server"": ""irc.bottest.org"",
+    ""token"": ""slacktoken"", // Your bot user's token
+    ""avatarUrl"": ""https://robohash.org/$username.png?size=48x48"", // Set to false to disable Slack avatars
+    ""slackUsernameFormat"": ""<$username>"", // defaults to ""$username (IRC)""; ""$username"" overides so there's no suffix or prefix at all
+    ""ircUsernameFormat"": ""<$username> "", // defaults to ""<$username>""; ""$username"" overides so there's no suffix or prefix at all
+    ""autoSendCommands"": [ // Commands that will be sent on connect
+      [""PRIVMSG"", ""NickServ"", ""IDENTIFY password""],
+      [""MODE"", ""test"", ""+x""],
+      [""AUTH"", ""test"", ""password""]
+    ],
+    ""channelMapping"": { // Maps each Slack-channel to an IRC-channel, used to direct messages to the correct place
+      ""#slack"": ""#irc channel-password"", // Add channel keys after the channel name
+      ""privategroup"": ""#other-channel"" // No hash in front of private groups
+    },
+    ""ircOptions"": { // Optional node-irc options
+      ""floodProtection"": false, // On by default
+      ""floodProtectionDelay"": 1000 // 500 by default
+    },
+    // Makes the bot hide the username prefix for messages that start
+    // with one of these characters (commands):
+    ""commandCharacters"": [""!"", "".""],
+    // Prevent messages posted by Slackbot (e.g. Slackbot responses)
+    // from being posted into the IRC channel:
+    ""muteSlackbot"": true, // Off by default
+    // Sends messages to Slack whenever a user joins/leaves an IRC channel:
+    ""ircStatusNotices"": {
+      ""join"": false, // Don't send messages about joins
+      ""leave"": true
+    },
+    // Prevent messages posted by users on Slack/IRC from being forwarded:
+    ""muteUsers"": {
+      ""irc"": [""irc-user""],
+      ""slack"": [""slack-user""]
+    }
+  }
+]
+```
+
+`ircOptions` is passed directly to node-irc ([available options](http://node-irc.readthedocs.org/en/latest/API.html#irc.Client)).
+
+## Personal IRC Client
+slack-irc strengths mainly lie in many-to-many communication from Slack to IRC (and vice versa),
+and is thus not very suitable as a makeshift IRC client for one user. If that's
+what you need, check out
+[aeirola/slack-irc-client](https://github.com/aeirola/slack-irc-client),
+which a",True
 664907402,sergiodxa,remix-hono,sergiodxa/remix-hono,Hono middlewares for Remix,"cloudflare,cloudflare-pages,hono,remix,remix-run",TypeScript,TypeScript,551,9,551,4,2023-07-11T02:51:59Z,2026-03-08T22:24:33Z,2025-12-15T17:06:02Z,mit,True,"# Remix/React Router + Hono
 
 > [React Router](https://remix.run) is a web framework for building web
@@ -1544,6 +1859,141 @@ export function Header() {
 }
 ```
 ",True
+94036217,martinwicke,tf-dev-summit-tensorboard-tutorial,martinwicke/tf-dev-summit-tensorboard-tutorial,Code that accompanies my talk at TF Dev Summit 2016,,Python,Python,338,148,338,3,2017-06-11T22:42:56Z,2025-09-24T08:06:23Z,2018-04-06T04:55:42Z,apache-2.0,True,"# TensorBoard Dev Summit Tutorial
+
+This contains a runnable code companion to the TensorBoard tutorial at the 
+2017 TensorFlow Dev Summit.
+
+You can watch the tutorial [on YouTube](https://www.youtube.com/watch?v=eBbEDRsCmv4&t=1105s).
+
+Happy TensorBoarding!",True
+310193724,mriscoc,Marlin,mriscoc/Marlin,Marlin firmware for Ender 3v2 3D printers. It is based upon original Marlin repository and has many improvements from the bugfix branch.,"ender3v2,firmware,marlin,marlin-firmware",C++,"C++,C,Python,Linker Script,Shell,JavaScript,Makefile,HTML,Assembly,CMake,OpenSCAD,CSS,Roff,G-code,Dockerfile,GDB,Pawn",277,14,277,0,2020-11-05T04:53:10Z,2026-03-03T09:43:50Z,2026-01-05T16:40:29Z,gpl-3.0,True,"<p align=""center""><img src=""buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png"" height=""250"" alt=""MarlinFirmware's logo"" /></p>
+
+<h1 align=""center"">Marlin 3D Printer Firmware</h1>
+
+<p align=""center"">
+    <a href=""/LICENSE""><img alt=""GPL-V3.0 License"" src=""https://img.shields.io/github/license/marlinfirmware/marlin.svg""></a>
+    <a href=""//github.com/MarlinFirmware/Marlin/graphs/contributors""><img alt=""Contributors"" src=""https://img.shields.io/github/contributors/marlinfirmware/marlin.svg""></a>
+    <a href=""//github.com/MarlinFirmware/Marlin/releases""><img alt=""Last Release Date"" src=""https://img.shields.io/github/release-date/MarlinFirmware/Marlin""></a>
+    <a href=""//github.com/MarlinFirmware/Marlin/actions/workflows/ci-build-tests.yml""><img alt=""CI Status"" src=""https://github.com/MarlinFirmware/Marlin/actions/workflows/ci-build-tests.yml/badge.svg""></a>
+    <a href=""//github.com/sponsors/thinkyhead""><img alt=""GitHub Sponsors"" src=""https://img.shields.io/github/sponsors/thinkyhead?color=db61a2""></a>
+    <br />
+    <a href=""//bsky.app/profile/marlinfw.org""><img alt=""Follow marlinfw.org on Bluesky"" src=""https://img.shields.io/badge/Follow%20@marlinfw.org-0085ff?logo=bluesky&logoColor=white""></a>
+    <a href=""//fosstodon.org/@marlinfirmware""><img alt=""Follow MarlinFirmware on Mastodon"" src=""https://img.shields.io/mastodon/follow/109450200866020466?domain=https%3A%2F%2Ffosstodon.org&logoColor=%2300B&style=social""></a>
+</p>
+
+### 🌍 Translations
+
+<table>
+<tr>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=an"">Aragonés</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=bg"">Български</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=ca"">Català</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=cs"">Čeština</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=da"">Dansk</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=de"">Deutsch</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=el"">Ελληνικά</a></td>
+</tr>
+<tr>
+  <td><a href=""//github.com/MarlinFirmware/Marlin"">English</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=es"">Español</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=eu"">Euskara</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=fi"">Suomi</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=fr"">Français</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=gl"">Galego</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=hr"">Hrvatski</a></td>
+</tr>
+<tr>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=hu"">Magyar</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=it"">Italiano</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=ja"">にほんご</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=ko"">한국어</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=nl"">Nederlands</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=pl"">Polski</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=pt"">Português</a></td>
+</tr>
+<tr>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=pt-BR"">Português (Brasil)</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=ro"">Română</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=ru"">Русский</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=sk"">Slovenčina</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=sv"">Svenska</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=tr"">Türkçe</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=uk"">Українська</a></td>
+</tr>
+<tr>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=vi"">Tiếng Việt</a></td>
+  <td><a href=""//translate.google.com/translate?u=github.com/MarlinFirmware/Marlin&sl=auto&tl=zh-CN"">简体中文</a></td>
+  <td><a href=""//translate.google.com/translate?u=gith",True
+31572154,escueladigital,EDgrid,escueladigital/EDgrid,CSS/Sass library for responsive layouts | Libreria CSS/Sass para construir layouts responsive,,CSS,"CSS,SCSS,Pug,JavaScript,HTML",262,167,262,17,2015-03-03T01:01:05Z,2026-02-26T11:23:20Z,2022-12-06T16:33:37Z,gpl-2.0,True,"# EDgrid
+![Logo de EDgrid](https://ed-grid.com/assets/img/logo/EDgrid-logo.svg)
+
+EDgrid implementa un sistema de diseño flexible y personalizable para construir layouts y componentes responsive a la velocidad de la luz ⚡
+
+Documentación oficial: https://ed-grid.com/documentacion/instalacion.html
+
+Colaboradores: https://ed-grid.com/creditos/
+",True
+422972530,mriscoc,Special_Configurations,mriscoc/Special_Configurations,In this repository there are the configuration files and releases for the Professional firmware with several features enabled. You can use the Configurator if you want to compile your own custom set of features. You can also request a pre-made binary for a small contribution on the Patreon site.,"3d-printing,ender3s1,ender3v2,firmware",C,"C,Python",232,96,232,5,2021-10-30T19:27:18Z,2026-03-15T03:51:50Z,2026-01-10T21:00:23Z,lgpl-2.1,True,"# Special Configurations
+In this repository there are the configuration files for several Marlin firmware features for the Ender3 V2/S1 printer, the main
+project files are in the firmware repository: https://github.com/mriscoc/Ender3V2S1
+
+#### These special configurations and releases are sponsored by donors.
+
+## How to request a custom build
+Please check the suscription levels on [Patreon](https://www.patreon.com/mriscoc), there are levels that allow to request custom compile. Patrons from [Patreon platform](https://www.patreon.com/mriscoc) can request a configuration sending a message. If you made a equivalent donation through [Paypal](https://www.paypal.com/donate/?business=85SPAAR6UZEE8&currency_code=USD), please reply the message that I sent you or use any of the other communication media (Facebook, Telegram) providing the name used in Paypal. I'm happy and grateful for the contributions but please don't confuse that with paid work. I do what is possible in my little free time, be aware that a donation does not give you the right more than my thanks, a specialized job like coding and compiling a custom firmware could be a work quoted in 3 digits. Github also have a [Sponsor platform](https://github.com/sponsors/mriscoc).
+
+## Contributions
+Thank you for your support, I receive donations through [Patreon](https://www.patreon.com/mriscoc) and [Paypal](https://www.paypal.com/paypalme/mriscoc)   
+
+[<img src=""https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"">](https://www.paypal.com/donate?business=85SPAAR6UZEE8&currency_code=USD)
+
+## Creating your own custom configuration
+It is now possible to use an small Python GUI interface (Professional Firmware **Configurator**) for generate the configuration files,
+after downloading the repository execute the Python file `Configurator.pyw`:
+
+![image](https://github.com/mriscoc/Special_Configurations/raw/main/images/Configurator.png)
+
+> On Windows, `.pyw` files should be opened by pythonw.exe by default.
+
+Select the printer, board, leveling, thermistor (Ender's stock thermistor is T1), features and press the `set config` button; write a name for the configuration
+or press `Auto` button for fill the name automatically, that name will be used as a folder for storage the configuration
+files and also as a custom printer name in the firmware, then press the `Generate` button to start the creation of the configuration files. You can open the `.json`
+files in _printers, _boards, _features, etc. folders to know how each option in the Configurator works.
+
+### Firmware name nomenclature
+
+422 - Creality board version 4.2.2  
+427 - Creality board version 4.2.7  
+F1 - Creality board V2.4.S1.301 with STM32F103 SoC (301F1)  
+F4 - Creality board V2.4.S1.301 with STM32F401 SoC (301F4)     
+SKRME3V3 - BIGTREETECH board SKR Mini E3 V3  
+
+MM - Firmware for Manual Mesh, use it if you don't have a probe.  
+BLT - BL/3D/CR Touch probe support.  
+BQMPv2 - [Biqu microprove v2.](https://biqu.equipment/collections/leveling-system/products/microprobe-v1-0-for-b1-printers-h2-extruders-ender-3)  
+UBL - [Unified Bed Leveling](https://marlinfw.org/docs/features/unified_bed_leveling.html)  
+
+CR10DSPLY - Former monochrome LCD display 12864  
+DACAI/DWIN/SYNWIT/TJC - Color screen with knob encoder  
+
+T1 - Creality Ender-3 Stock temperature sensor  
+T5 - [Marlin #5 temperature sensor](https://github.com/mriscoc/Special_Configurations/releases/tag/T5) (like Volcano Extruder)  
+T13 - [Marlin #13 temperature sensor](https://github.com/mriscoc/Special_Configurations/releases/tag/T13) (like Sprite Pro Extruder)  
+T20 - [Marlin #20 temperature sensor](https://github.com/mriscoc/Special_Configurations/releases/tag/T20)  
+
+CVLM - [Creative CV laser module](https://github.com/mriscoc/Special_Configurations/releases/tag/CVLM)  
+IS - [Input Shaping](https://github.com/mriscoc/Ender3V2S1/wiki/Input-Shaping-(IS))  
+LA - [Linear Advance](https://github.com/mriscoc/Ender3V2S1/wiki/Linear-Advance-(LA))  
+MPC - [Model Predictive Temperature Control](https://github.com/mriscoc/Ender3V2S1/wiki/Model-Predictive-Temperature-Control-(MPC))  
+NP - Support for Neopixel  
+Speaker - Support for speaker tones  
+
+### Compiling your firmware flavor
+From the created custom configuration folder, move Version.h, Configuration.h and Configuration_adv.h files to the Marlin folder inside of your project folder downloaded from the repository https://github.com/mriscoc/Ender3V2S1; move the platform.io file to the root of your project folder.
+Keep your path short, the compiling tools don't like large paths.
+
+Follow any guide about Marlin compile to get your firmware binary: Install [VSCode](https://code.visualstudio.com/), then inside of VSCode install the extensions: [PlatformIO](https://platformio.org/install/ide?install=vscode) and [Auto Build Marlin](https://marlinfw.org/docs/basics/auto_build_marlin.html). Open your project folder in VSCode and compile by using Auto Build Marlin. Remember: RE -> RET6 with 512 kB flash, RC-> R",True
 138063059,sergiodxa,next-ga,sergiodxa/next-ga,Next.js HOC to integrate Google Analytics on every page change,"analytics,ga,google-analytics,high-order-component,hoc,nextjs,react",JavaScript,JavaScript,231,25,231,0,2018-06-20T17:11:10Z,2025-08-27T12:17:06Z,2020-01-22T17:36:24Z,mit,True,"# next-ga
 
 > The Next.js team has an official plugin being developed, while plugin supports it's still in canary only, the way the plugin works it's simpler than next-ga and I recommend you to check it and do it manually in your project until it's stable.
@@ -1582,6 +2032,255 @@ That's it, now when the user access a page it will log a pageview to Google Anal
 
 > **Note**: This module detects if it's running in localhost and do nothing there to avoid polluting your analytics with local data.
 ",True
+108414116,matiskay,html-similarity,matiskay/html-similarity,Compare html similarity using structural and style metrics,"html,jaccard-similarity,python36,similarity",Python,Python,218,24,218,6,2017-10-26T13:19:43Z,2026-02-14T21:40:00Z,2023-05-11T13:04:52Z,bsd-3-clause,True,"===============
+HTML Similarity
+===============
+
+.. image:: https://travis-ci.org/matiskay/html-similarity.svg?branch=master
+    :target: https://travis-ci.org/matiskay/html-similarity
+
+.. image:: https://codebeat.co/badges/304915eb-48a3-46a8-9ce9-2790c82dc2b8
+    :target: https://codebeat.co/projects/github-com-matiskay-html-similarity-master
+
+This package provides a set of functions to measure the similarity between web pages.
+
+Install
+=======
+
+The quick way::
+
+    pip install html-similarity
+
+How it works?
+=============
+
+Structural Similarity
+---------------------
+
+Uses sequence comparison of the html tags to compute the similarity.
+
+We not implement the similarity based on tree edit distance because it is slower than sequence comparison.
+
+
+Style Similarity
+----------------
+
+Extracts css classes of each html document and calculates the jaccard similarity of the sets of classes.
+
+
+Joint Similarity (Structural Similarity and Style Similarity)
+-------------------------------------------------------------
+
+The joint similarity metric is calculated as::
+
+    k * structural_similarity(document_1, document_2) + (1 - k) * style_similarity(document_1, document_2)
+
+
+All the similarity metrics takes values between 0 and 1.
+
+Recommendations for joint similarity
+------------------------------------
+
+Using `k=0.3` give use better results. The style similarity gives more information about the similarity rather than the structural similarity.
+
+Examples
+========
+
+Here is a example::
+
+    In [1]: html_1 = '''
+    <h1 class=""title"">First Document</h1>
+    <ul class=""menu"">
+        <li class=""active"">Documents</li>
+        <li>Extra</li>
+    </ul>
+    '''
+
+    In [2]: html_2 = '''
+    <h1 class=""title"">Second document Document</h1>
+    <ul class=""menu"">
+        <li class=""active"">Extra Documents</li>
+    </ul>
+    '''
+
+    In [3] from html_similarity import style_similarity, structural_similarity, similarity
+
+    In [4]: style_similarity(html_1, html_2)
+    Out[4]: 1.0
+
+    In [7]: structural_similarity(html_1, html_2)
+    Out[7]: 0.9090909090909091
+
+    In [8]: similarity(html_1, html_2)
+    Out[8]: 0.9545454545454546
+
+References
+==========
+
+- The idea of sequence comparision was taken from `Page Compare <https://github.com/TeamHG-Memex/page-compare>`_.
+- The other ideas were taken from `T. Gowda and C. A. Mattmann, Clustering Web Pages Based on Structure and Style Similarity, 2016 IEEE 17th International Conference on Information Reuse and Integration (IRI), Pittsburgh, PA, 2016, pp. 175-180. <http://ieeexplore.ieee.org/document/7785739/>`_
+- Use case `Clustering web pages based on structure and style similarity <https://www.slideshare.net/thammegowda/ieee-iri-16-clustering-web-pages-based-on-structure-and-style-similarity?qid=7deea5f8-157d-4e57-a413-16ec7c6a22d9&v=&b=&from_search=1>`_
+",True
+144072297,ekmartin,unicode-style,ekmartin/unicode-style,Format text using unicode characters,,JavaScript,"JavaScript,CSS,HTML",213,10,213,10,2018-08-08T22:02:33Z,2025-07-29T07:30:35Z,2018-09-27T13:42:29Z,mit,True,"# unicode[.](https://unicode.style)_style_
+
+> Styles text by substituting characters with suitable unicode replacements.
+
+![unicode.style](https://i.imgur.com/zMTwplz.png)
+",True
+64514966,martinwicke,tensorflow-tutorial,martinwicke/tensorflow-tutorial,A tutorial on TensorFlow,,Jupyter Notebook,Jupyter Notebook,212,85,212,2,2016-07-29T22:59:27Z,2025-12-22T03:46:15Z,2016-10-13T21:11:44Z,apache-2.0,True,"
+# TensorFlow tutorial
+
+This codelab contains three lessons:
+
+* Introduction to TensorFlow with Linear Regression
+* MINST with Deep Learning
+* Deepdream
+
+These are all presented via [Jupyter](jupyter.org) notebooks.  To run
+them on your machine, you will need a working TensorFlow installation (v0.10.0RC0). 
+
+Below are instructions on how to set up a TensorFlow environment using Docker. 
+
+## Setup
+
+Docker runs your notebooks from a virtual machine.  Docker images already contain 
+installed and compiled versions of TensorFlow.
+
+Note: it’s quite possible to [install TensorFlow natively](https://tensorflow.org/get_started/os_setup.html) on your
+machine (and this is recommended for long-term experimentation), but for
+simplicity we have docmented only the Docker procedure here.
+
+Prerequisites:
+* A Mac or Ubuntu Linux machine (Docker will work on Windows, but the step-by-step instructions here may not work perfectly since we have not tried them)
+* Some knowledge of Python
+
+### Ubuntu Linux
+
+The overall Linux setup commands for TensorFlow are [on
+tensorflow.org](https://www.tensorflow.org/versions/r0.10/get_started/os_setup.html#docker-installation).
+
+In summary, you will need to:
+
+* Install Docker on your machine.
+* Create a Docker group to allow launching containers without sudo.
+* Launch a Docker container with the TensorFlow image.
+
+You should check your installation by running:
+
+```
+docker run hello-world
+```
+
+To check TensorFlow, you can start a TensorFlow docker image by
+running this:
+
+```
+docker run -it -p 8888:8888 tensorflow/tensorflow:0.10.0rc0 bash
+```
+
+Check to see if your TensorFlow works by invoking Python from the container’s command line (you’ll see `root@xxxxxxx#`):
+
+```
+# python
+
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+```
+
+If you see ""Hello, Tensorflow"", everything is in order.  You should
+exit your docker instance (type `exit`), and go to the section ***Downloading This Repository**.
+
+### Mac OS X:
+
+If you already have the Docker Toolbox installed, skip to
+""Installing/running a TensorFlow Docker Image."" Otherwise, go to
+[docs.docker.com/mac/](http://docs.docker.com/mac/) and follow the
+instructions there, which should roughly be:
+
+Download the Docker Toolbox. 
+* On the Toolbox page, find the Mac version.
+  * Download a DockerToolbox-1.xx.xx.pkg file (180MB).
+  * Run that downloaded pkg to install the Toolbox.
+  * At the end of the install process, choose the Docker Quickstart Terminal.
+  * Open a terminal window and follow the installation script.
+* If you have already installed Toolbox, just run the Docker Quickstart Terminal in `/Applications/Docker/`.
+* Launch the **Docker Quickstart Terminal** 
+  * This may take some time the first time to make an SSH connection.
+* Run the suggested command in the terminal to confirm Docker
+installation has worked:
+```
+docker run hello-world
+```
+
+#### Troubleshooting OS X
+
+On OS X, you may see:
+
+```
+Error checking TLS connection: Something went wrong running an SSH command!
+command : ip addr show
+err     : exit status 255
+```
+
+At which point you may have to destroy and recreate your docker instance like so:
+
+```
+docker-machine rm default
+docker-machine create --driver virtualbox default
+```
+
+#### Installing and Running the TensorFlow Image
+
+On OS X, if you have not already, run the Docker Quickstart Terminal,
+usually found in `/Applications/Docker`, and which looks like this:
+
+![Quickstart Terminal Icon](images/quickstart-icon.png)
+
+There will be a long pause as the Docker container starts and gets an
+SSH keys and an IP address.
+
+Once you see an ASCII whale in the newly-opened terminal, run this command:
+
+```
+docker run -it tensorflow/tensorflow:0.10.0rc0 bash
+```
+
+Check to see if your TensorFlow works by invoking Python from the container’s command line (you’ll see `root@xxxxxxx#`):
+
+```
+# python
+
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+```
+
+If you see ""Hello, Tensorflow!"", it works!
+
+#### Running Faster on OS X
+
+Training takes a long time, even a limited run like this. It helps to
+provide a lot of CPU and memory resources if you can.
+
+On OS X, these Docker instances are running on VirtualBox, and
+VirtualBox by default doesn’t take over huge parts of your
+computer. TensorFlow will take a lot of resources, so it’s worth
+increasing the resources allocated to it.
+
+* Find VirtualBox in your Application folder, and open it.
+* Stop the running process, if there is one
+  * Right-click on “Default” and choose Stop -> Close ACPI Shutdown
+* Click on Settings, then System
+* Choose Motherboard and boost the RAM to the edge of the green area. 
+* Click on Processor, and, again, boost that to the edge of the green area.
+* Click OK.
+* Restart the VirtualBox instance by right-clicking on “default” and choosing **Start -> Headless Start**, then wait a bit until it's Running.
+* Re-run the **Docker Quickstart Terminal**.
+
+* Your session wil",True
 440076905,sergiodxa,remix-auth-oauth2,sergiodxa/remix-auth-oauth2,A OAuth2Strategy for Remix Auth,,TypeScript,TypeScript,200,66,200,6,2021-12-20T07:16:22Z,2026-03-09T12:45:29Z,2026-03-09T12:45:28Z,mit,True,"# OAuth2Strategy
 
 A strategy to use and implement OAuth2 framework for authentication with federated services like Google, Facebook, GitHub, etc.
@@ -1860,6 +2559,100 @@ Finalmente, crea un **Pull Request** desde tu rama `development` a `main` del re
 ##### Cómo añadir mi contenido
 
 Todo contenido que deseen añadir como contribuidores, debe estar alineado a cualquiera de las secciones o dominios que se presentan en [Ruta de Aprendizaje](https://acloudsecurity.ninja/docs/ruta-de-aprendiza",True
+708191407,Mars-tin,awesome-theory-of-mind,Mars-tin/awesome-theory-of-mind,Machine Theory of Mind Reading List. Built upon EMNLP Findings 2023 Paper: Towards A Holistic Landscape of Situated Theory of Mind in Large Language Models,,,,149,6,149,0,2023-10-21T19:50:52Z,2026-02-20T04:18:57Z,2025-02-18T18:35:59Z,,False,"# Reading List: Advances in Machine Theory of Mind
+
+
+![Illustration](figs/avatar.png)
+This illustration is generated using DALL·E 3
+
+## Overview
+
+### Citation
+
+This is a curated list of related literature and resources for machine theory of mind (ToM) research.
+**Last Update:** Dec 30th, 2024.
+
+If you find our work useful, please give us credit by citing:
+
+```bibtex
+@inproceedings{ma2023towards,
+  title={Towards A Holistic Landscape of Situated Theory of Mind in Large Language Models},
+  author={Ma, Ziqiao and Sansom, Jacob and Peng, Run and Chai, Joyce},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2023},
+  year={2023}
+}
+```
+
+### Contributors
+
+- **Main Contributors:** [Martin Ziqiao Ma](http://ziqiaoma.com/)
+- **Active Contributors:** [X. Angelo Huang](https://github.com/Flecart), [Karahan Sarıtaş](https://github.com/KarahanS), [Run Peng](https://roihn.github.io/)
+- **Previous Contributors:** [Jacob Sansom](https://jhsansom.github.io/), [Pony Zhang](https://www.ponyzhang.me/)
+
+### How To Contribute
+
+Welcome to contribute to our paper list or be a collaborator!
+- To add missing papers: Please create an issue or pull request, so the team can make the update.
+- To become a contributor: Please drop an email to [Martin](mailto:marstin@umich.edu).
+
+## Table of Contents
+
+- [Reading List: Advances in Machine Theory of Mind](#reading-list-advances-in-machine-theory-of-mind)
+  - [Overview](#overview)
+    - [Citation](#citation)
+    - [Contributors](#contributors)
+    - [How To Contribute](#how-to-contribute)
+  - [Table of Contents](#table-of-contents)
+  - [1. ToM Community Resources](#1-tom-community-resources)
+    - [1.1 Workshops](#11-workshops)
+    - [1.2 Talks and Tutorials](#12-talks-and-tutorials)
+    - [1.3 Tools](#13-tools)
+  - [2. Machine ToM Surveys and Position Papers](#2-machine-tom-surveys-and-position-papers)
+  - [3. Cognitive Underpinnings of ToM](#3-cognitive-underpinnings-of-tom)
+    - [3.1 Definition and Importance of ToM in Human Cognition (Selected)](#31-definition-and-importance-of-tom-in-human-cognition-selected)
+    - [3.2 Taxonomies of ToM and Mental States](#32-taxonomies-of-tom-and-mental-states)
+  - [4. Computational Inquiry to ToM in Foundation Models](#4-computational-inquiry-to-tom-in-foundation-models)
+    - [4.1 Probing Intrinsic Mental States](#41-probing-intrinsic-mental-states)
+    - [4.1 Evidence for Understanding Extrinsic Mental States](#41-evidence-for-understanding-extrinsic-mental-states)
+    - [4.2 Counter-Evidence for Understanding Extrinsic Mental States](#42-counter-evidence-for-understanding-extrinsic-mental-states)
+  - [4. ToM Benchmarks and Platforms](#4-tom-benchmarks-and-platforms)
+    - [4.1 Benchmarks from original Survey](#41-benchmarks-from-original-survey)
+    - [4.2 New Benchmarks](#42-new-benchmarks)
+  - [5. Computational Modeling of ToM](#5-computational-modeling-of-tom)
+    - [5.1 Learning Latent Representation for ToM](#51-learning-latent-representation-for-tom)
+    - [5.2 Learning (Neural-)Symbolic Representation for ToM](#52-learning-neural-symbolic-representation-for-tom)
+    - [5.3 Prompting and In-Context Learning for ToM in LLMs](#53-prompting-and-in-context-learning-for-tom-in-llms)
+    - [5.4 Bayesian and (Inverse) Reinforcement Learning Based ToM Modeling](#54-bayesian-and-inverse-reinforcement-learning-based-tom-modeling)
+    - [5.5 Other ToM Modeling](#55-other-tom-modeling)
+  - [6. ToM Application](#6-tom-application)
+    - [6.1 Pragmatics and Instruction Generation/Following](#61-pragmatics-and-instruction-generationfollowing)
+    - [6.2 Dialogue Processing and Generation](#62-dialogue-processing-and-generation)
+    - [6.3 Language Acquisition](#63-language-acquisition)
+    - [6.4 Human-AI Interactions](#64-human-ai-interactions)
+    - [6.5 Explainable AI](#65-explainable-ai)
+    - [6.6 Healthcare](#66-healthcare)
+    - [6.7 Privacy](#67-privacy)
+
+## 1. ToM Community Resources
+
+### 1.1 Workshops
+
+- (ToM 2024) 2nd Workshop on Theory-of-Mind @ ICML 2024. [**[Web]**](https://tomworkshop.github.io/)
+- (ToM 2023) 1st Workshop on Theory-of-Mind @ ICML 2023. [**[Web]**](https://tomworkshop.github.io/)
+
+### 1.2 Talks and Tutorials
+
+- To be updated
+
+### 1.3 Tools
+
+- (ToM 2023) The SocialAI School: Insights from Developmental Psychology Towards Artificial Socio-Cultural Agents. [**[Paper]**](https://arxiv.org/abs/2307.07871)[**[Web]**](https://sites.google.com/view/socialai-school)
+- (Preprint 2023) SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents. [**[Paper]**](https://arxiv.org/abs/2310.11667)[**[Web]**](https://www.sotopia.world)
+
+## 2. Machine ToM Surveys and Position Papers
+
+- (Preprint 2025) A Systematic Review on the Evaluation of Large Language Models in Theory of Mind Tasks [**[Paper]**](https://arxiv.org/abs/2502.08796)
+- (EMNLP Main 2024) Large Language Models: The Need for Nuance in Current Debates and a Pragmatic Perspective on Understanding [**[Paper]**](https://aclanthology.org/202",True
 138228625,sergiodxa,next-nprogress,sergiodxa/next-nprogress,Next.js HOC to integrate NProgress inside your app,"higher-order-component,hoc,nextjs,nprogress,progress-bar,react,reactjs",JavaScript,JavaScript,148,14,148,0,2018-06-21T22:38:51Z,2024-06-24T04:23:57Z,2019-08-10T14:59:36Z,mit,True,"# next-nprogress
 
 Next.js HOC to integrate NProgress inside your app.
@@ -1989,6 +2782,36 @@ Hope you guys like this!!!
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mgonto/mgo-mousetrap/trend.png)](https://bitdeli.com/free ""Bitdeli Badge"")
 
 ",True
+106890412,mjambon,dune-starter,mjambon/dune-starter,Simple template for midsize OCaml project,,OCaml,"OCaml,Dune,Makefile,Standard ML",130,16,130,4,2017-10-14T02:09:48Z,2026-01-29T02:32:34Z,2025-01-23T00:32:48Z,unlicense,True,"# Dune starter kit
+
+This repository provides templates to help you start an
+OCaml project. It can be used to create multiple libraries, multiple
+executables, and test suites.
+
+The project is structured as a collection of mostly self-contained
+subprojects, each with its source code and tests.
+
+Requirements: opam, git, make, dune.
+
+## How to set up your OCaml project:
+
+1. Clone this repository:
+   `git clone https://github.com/mjambon/dune-starter`
+2. Copy files into a git repository e.g.
+   `cp -a dune-starter/proj foobar`,
+   `cd foobar && git init && git add .`
+3. Play around and make sure everything works. Try `make setup`
+   to install the missing Opam packages, `make` to build the project,
+   `make test`, `make install`, `make uninstall`, `make clean`.
+   Consult the project's readme (`proj/README.md`) for more info.
+4. Replace occurrences of `proj`, `sub1` and `sub2` by your own names.
+   Rename, throw away, and add files as needed.
+5. Consult the [dune docs](https://dune.readthedocs.io/) as
+   needed.
+
+Thanks to the authors of dune and @rgrinberg in particular for
+this great tool!
+",True
 440683737,sergiodxa,remix-auth-form,sergiodxa/remix-auth-form,A Remix Auth strategy for working with forms.,,TypeScript,TypeScript,128,20,128,0,2021-12-22T00:07:59Z,2025-12-01T06:44:03Z,2025-12-01T06:44:00Z,mit,True,"# FormStrategy
 
 A Remix Auth strategy to work with any form.
@@ -2065,6 +2888,105 @@ export async function action({ request }: Route.ActionArgs) {
 
 Once you have the `user` object returned by your strategy verify function, you can do whatever you want with that information. This can be storing the user in a session, creating a new user in your database, link the account to an existing user in your database, etc.
 ",True
+112386073,ekmartin,bibtex-search,ekmartin/bibtex-search,Search for BibTeX references,"acm,bibtex,google-scholar,ieee",JavaScript,JavaScript,128,8,128,1,2017-11-28T20:33:58Z,2026-01-13T05:31:16Z,2017-12-01T11:28:13Z,mit,True,"# bibtex-search [![DroneCI](https://ci.abakus.no/api/badges/ekmartin/bibtex-search/status.svg?branch=master)](https://ci.abakus.no/ekmartin/bibtex-search)
+
+> Command-line interface for retrieving BibTeX references
+
+![bibtex-search](https://i.imgur.com/ARhwzbQ.gif)
+
+Currently uses [ACM's Digital Library](https://dl.acm.org/),
+[Google Scholar](https://scholar.google.com/) and
+[IEEE Xplore](http://http://ieeexplore.ieee.org/) to find papers, but might
+support other sources in the future.
+
+## Installation
+
+bibtex-search needs at least version 7.6 of Node.js installed.
+
+```bash
+$ npm install --global bibtex-search
+```
+
+## Usage
+
+```bash
+$ bibtex-search <query>
+
+Options:
+  --source, -s Where to find papers from (default: acm) - valid options: [acm, ieee, google]
+
+Examples:
+  $ bibtex-search bayou
+  $ bibtex-search --source google zaharia spark
+```
+",True
+780548406,mriscoc,Sparrow-Extended-GUI-for-RIGOL-DHO800_DHO900,mriscoc/Sparrow-Extended-GUI-for-RIGOL-DHO800_DHO900,Sparrow Android GUI project for Rigol DHO800 and DHO900 series Oscilloscopes,,Smali,"Smali,HTML,Python,JavaScript",122,9,122,0,2024-04-01T17:51:59Z,2026-03-10T10:14:50Z,2026-02-27T05:26:32Z,gpl-3.0,True,"# Sparrow Extended UI for the RIGOL DHO800 DHO900 series oscilloscopes
+
+This is the official repository for the proyect Sparrow Extended UI. This project began by gathering ideas and contributions from the community of users of Rigol DHO800 and DHO900 series oscilloscopes, mainly on the [Eevblog forum](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope). Other projects to customize the original interface were started later. If you visit that forum, you can find a historical compilation of the ideas implemented in this modification. In early 2024, the first layout changes of the measurement panel and a little reorganization of the UI elements were presented in the forum, and the [first public release](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5470243/#msg5470243) was presented, as well as the first demonstration of the [full screen mode](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5471431/#msg5471431). A new [header bar](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5471554/#msg5471554) was shown in April 2024 and released in the Github repository. Finally, a video showing the modifications made up to May 2024 [was published on YouTube](https://www.eevblog.com/forum/testgear/hacking-the-rigol-dho800900-scope/msg5504275/#msg5504275). Many more modifications have been made over time. At the end of 2025, Rigol launched the MHO900 series of oscilloscopes, applying many of the ideas from this project to the user interface of these instruments.
+
+⚠️ Over time, other customization projects appeared with similar names, which has caused confusion. This document refers exclusively to this **ORIGINAL Sparrow Extended** project.
+
+## Sparrow Extended UI
+
+Latest version can be found at:  
+For **00.01.04** firmware: https://www.patreon.com/posts/141472182  
+For **00.01.02** firmware: https://www.patreon.com/mriscoc/shop/rigol-dho800-900-sparrow-extended-gui-v0-204640    
+
+Get the latest version here: https://www.patreon.com/posts/dho800-900-gui-7-141608043
+
+Features of verion 0.7.1:
+- Full Screen mode with informative bottom bar and clickable elements
+- Special A(ction) button to launch the DHO Actions application
+- Included a configurable DHO Actions panel that allows to execute SCPI commands, launch applications (Python scripts with PyDroid) and open web pages in the default browser.
+- Included DHO visor, allows to display the screen streaming in scaling mode.
+- Unlocks extended decoders like LIN, FlexRay, I2S, 1553B
+- All DHO series have bandwidth unlocked to 250MHz and Memory depth up to 50M
+- Ultra Power Analyzer unlocked for all DHO series
+- Enabled advanced settings in XY mode with real functions.
+- Compact unified Horizontal bar, Trigger bar and Channel widgets
+- Dock/Undock of the Result Bar
+- Compact Result / measurements bar with optimized rendering
+- Probe attenuation in channel widget
+- Trigger coupling indicator
+- Better rendering of the chanel scale labels, so they can be readed always no matter what the back color is.
+- Automatically show date-time at boot if it is valid
+- Start menu settings button allows to open Android system settings
+- Fixes alignment of visual elements, color and transparency corrections
+- Better UI organization for improvement of screen size utilization 
+- Code enhancements, removed extra logging for better general performance
+- Fixes for bugs reported by the community
+- Normal and System versions
+
+> [!NOTE]
+> DHO Actions must be started after the Oscilloscope application is loaded to be able to connect to it, if the Oscilloscope application closes and restarts, you must force a reconnect by pressing and holding the close icon [X] in the upper right corner of the DHO Actions screen and start it from the DHO Sparrow application.
+
+## Screeshot of version 0.7.1:
+![Sparrow_Extended_v0 7 1](https://github.com/user-attachments/assets/ba0dd531-b2ab-4f03-9d15-3c6e5d58f9af)
+
+## Fullscreen mode  
+![Sparrow_Extended_v0 7 1_fullscreen](https://github.com/user-attachments/assets/cb4c6276-d328-41e7-826f-6bc0315a32db)
+
+## Unlocked decoders
+![Sparrow_Extended_v0 7 1_decoders](https://github.com/user-attachments/assets/6140cba9-ea47-4c27-ac15-f61dada7410a)
+
+## Unlocked UPA
+![Sparrow_Extended_v0 7 1_UPA](https://github.com/user-attachments/assets/0aceb6ec-334d-4f39-8086-2f8b2bef024c)
+
+## Using Python
+![DHO804_PyVISA](https://github.com/user-attachments/assets/fc0a5206-0fbf-4e06-858b-c6ce302a6ba5)
+
+## DHO 8x2 with full features without ghost channels
+![DHO802_about](https://github.com/user-attachments/assets/ffa26d4c-512e-42e3-8a4d-c1efe1e83c4e)
+
+## Using the DHOVisor and the DHOTools
+Image of the FM radio stations in my city:
+<img width=""2092"" height=""788"" alt=""image"" src=""https://github.com/user-attachments/assets/ca56f111-e94a-4268-9f8c-cf1a05081546"" />
+
+## Social media communication channel
+Telegram DHO800/900 channel: https://t.me/S2084K/2
+
+### Installing Sparrow Extended manually
+Fi",True
 755725134,mabelolivera10,floresamarillasycorazones,mabelolivera10/floresamarillasycorazones,,,CSS,"CSS,HTML,JavaScript",121,63,121,2,2024-02-10T22:25:17Z,2026-03-02T20:09:41Z,2024-06-04T14:59:31Z,,False,"# floresamarillasycorazones
 
 ¡Hola! Soy [Mabel Olivera - @mabelolivera10]() y estoy encantada de conocerte.
@@ -2361,3 +3283,1337 @@ Soy Cloud Security Engineer...
 
 ### **Te invito a conectar conmigo** 🤝🏻 &nbsp;
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCVWjwOiJGog7Km9",True
+58878990,escueladigital,Trucos-CSS,escueladigital/Trucos-CSS,Repositorio de la serie Trucos CSS publicados en YouTube,,CSS,"CSS,HTML,JavaScript",114,104,114,0,2016-05-15T19:05:01Z,2025-11-10T12:47:29Z,2016-11-01T21:36:39Z,,False,"# Trucos CSS (CSS Tricks)
+Repo of the serie Trucos CSS (CSS tricks) published on YouTube
+
+* 28 - Background image transparent [https://www.youtube.com/watch?v=Vf8hoR-EqMQ](https://www.youtube.com/watch?v=Vf8hoR-EqMQ)
+* 29 - Responsive table [https://www.youtube.com/watch?v=Q-foTLlevt4](https://www.youtube.com/watch?v=Q-foTLlevt4)",True
+244100157,sergiodxa,swr-sync-storage,sergiodxa/swr-sync-storage,Synchronize SWR cache with localStorage or sessionStorage to get offline cache,"localstorage,sessionstorage,swr,swr-sync-storage,web-storage",TypeScript,TypeScript,110,3,110,17,2020-03-01T06:38:17Z,2025-02-11T21:34:56Z,2023-01-25T10:01:14Z,mit,True,"# swr-sync-storage
+
+![CI](https://github.com/sergiodxa/swr-sync-storage/workflows/CI/badge.svg)
+![Publish](https://github.com/sergiodxa/swr-sync-storage/workflows/Publish/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/24f2981243f767aba3e8/maintainability)](https://codeclimate.com/github/sergiodxa/swr-sync-storage/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/24f2981243f767aba3e8/test_coverage)](https://codeclimate.com/github/sergiodxa/swr-sync-storage/test_coverage)
+
+Synchronize SWR cache with localStorage or sessionStorage to get offline cache.
+
+## Usage
+
+Install it
+
+```sh
+$ yarn add swr-sync-storage
+```
+
+> Note: You will need to provide SWR v0.2.0-beta.0 or greater
+
+```ts
+import { syncWithStorage } from ""swr-sync-storage"";
+syncWithStorage(""local"");
+syncWithStorage(""session"");
+```
+
+You can also import to already bound versions of local or session storage.
+
+```ts
+import { syncWithLocalStorage } from ""swr-sync-storage"";
+syncWithLocalStorage();
+```
+
+```ts
+import { syncWithSessionStorage } from ""swr-sync-storage"";
+syncWithSessionStorage();
+```
+
+Every function will return a new function to unsubscribe for cache changes.
+",True
+1171665846,mgonto,executive-assistant-skills,mgonto/executive-assistant-skills,Make OpenClaw the best executive assistant in the world and fire your human one like me,,,,104,10,104,1,2026-03-03T13:31:53Z,2026-03-15T03:04:47Z,2026-03-11T16:24:41Z,,False,"# executive-assistant-skills
+
+OpenClaw skills that replace a human executive assistant.
+
+After setting up these skills with [OpenClaw](https://docs.openclaw.ai/), I let go of my human EA and replaced her entirely with my Claw. These five skills handle the core of what an executive assistant does: prepping for meetings, following up on action items, drafting emails, and keeping you on top of everything.
+
+## What's included
+
+| Skill | What it replaces |
+|-------|-----------------|
+| `meeting-prep` | EA researching attendees, pulling email history, and briefing you before each call |
+| `action-items-todoist` | EA reviewing meeting notes, creating follow-up tasks, and drafting emails you promised to send |
+| `email-drafting` | EA drafting replies, intro emails, scheduling responses, and thank-you notes in your voice |
+| `executive-digest` | EA giving you a morning status update: stalled threads, pending intros, overdue tasks, calendar conflicts |
+| `todoist-due-drafts` | EA checking your task list each morning, drafting follow-up/ping emails for anything due today, and notifying you to review |
+| `humanizer` | Making sure nothing your Claw writes sounds like AI wrote it (originally by [biostartechnology](https://clawhub.ai/biostartechnology/humanizer)) |
+
+## How it works
+
+Each skill is a markdown file (`SKILL.md`) that tells your Claw exactly how to do the job. Your Claw reads the skill, follows the instructions, and delivers results to WhatsApp (or Slack, Telegram, etc.).
+
+Skills run on cron schedules — meeting prep fires before your first meeting, action items run after your last meeting, and the digest hits every morning. You can also trigger any skill manually by asking your Claw.
+
+All personal config (email accounts, timezone, work schedule, etc.) lives in a single `config/user.json` that's gitignored and never committed.
+
+## Prerequisites
+
+- [OpenClaw](https://docs.openclaw.ai/) running (local or server)
+- Two Gmail accounts connected via [gog](https://github.com/xhit/gog) CLI
+- [Granola](https://granola.ai/) or [Grain](https://grain.com/) for meeting transcripts (via mcporter MCP)
+- [Todoist CLI](https://github.com/joelhoelting/todoist-cli) for task management
+- A `style/` directory in your OpenClaw workspace with email style guides (see `docs/setup.md`)
+
+---
+
+## Quick setup
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/mgonto/executive-assistant-skills.git ~/executive-assistant-skills
+```
+
+### 2. Create your config
+
+```bash
+cp ~/executive-assistant-skills/config/user.example.json ~/executive-assistant-skills/config/user.json
+# Edit user.json with your values — it's gitignored
+```
+
+### 3. Tell OpenClaw to load these skills
+
+Edit `~/.openclaw/openclaw.json`:
+
+```json
+{
+  ""skills"": {
+    ""load"": {
+      ""extraDirs"": [""~/executive-assistant-skills""]
+    }
+  }
+}
+```
+
+### 4. Restart
+
+```bash
+openclaw gateway restart
+```
+
+### 5. Set up crons
+
+See `docs/crons.md` for ready-to-paste cron job configs.
+
+---
+
+## Config fields
+
+See `config/user.example.json` for the full template:
+
+| Field | Example | Used for |
+|-------|---------|----------|
+| `name` | `""YourName""` | Meeting transcript queries, task attribution |
+| `primary_email` | `""you@gmail.com""` | Gmail account 1 |
+| `work_email` | `""you@company.com""` | Gmail account 2 |
+| `whatsapp` | `""+1234567890""` | Digest and alert delivery |
+| `timezone` | `""America/New_York""` | Meeting times, cron scheduling |
+| `scheduling_cc` | `""assistant@company.com""` | CC on scheduling emails |
+| `scheduling_silent_cc` | `""colleague@company.com""` | Silent CC (not mentioned in body) |
+| `slack_username` | `""yourname""` | Slack DM for meeting briefs |
+| `signature` | `""--yourname""` | Email sign-off |
+| `workspace` | `""/home/user/.openclaw/workspace""` | Absolute path to your OpenClaw workspace |
+
+---
+
+## Full setup guide
+
+- `docs/setup.md` — complete setup (mcporter, OAuth, gog, Todoist CLI)
+- `docs/crons.md` — cron job templates for all skills
+
+---
+
+## Repository conventions
+
+- `config/user.json` is **gitignored** — each person creates their own
+- `config/user.example.json` is the committed template
+- `state/` and `logs/` are gitignored (machine-local)
+- Skills reference workspace files (`style/`, `state/`, `scripts/`) via `{user.workspace}/` prefix for portability
+",True
+725207029,mabelolivera10,mabelolivera10,mabelolivera10/mabelolivera10,Config files for my GitHub profile.,"config,github-config",,,100,2,100,0,2023-11-29T16:54:21Z,2025-11-17T09:51:49Z,2024-08-06T15:35:35Z,,False,"
+¡Hola! Soy [Mabel Olivera - @mabelolivera10]() y estoy encantada de conocerte.
+
+## Acerca de mí👀
+Soy una persona apasionada por mi profesión, con una excelente capacidad de organización y facilidad para trabajar en equipo. Me considero altamente adaptable a diferentes entornos y siempre enfocada en alcanzar objetivos. Además, poseo conocimientos en diversos lenguajes de programación como Java, Visual.NET, PHP, entre otros. Tengo un gran interés en el desarrollo de software y el análisis de sistemas.
+
+🌱 Actualmente, estoy enfocada en seguir aprendiendo y mejorando mis habilidades en distintos lenguajes de programación.
+
+## Colaboración💞
+Estoy interesada en colaborar contigo en proyectos emocionantes y desafiantes. ¡Juntos podemos lograr grandes cosas!
+
+## Contacto 📫
+Puedes encontrarme en mis redes sociales:
+
+- [Facebook](https://www.facebook.com/mabelquispeolivera/)
+- [Instagram](https://www.instagram.com/mabelolivera10/)
+- [TikTok](https://www.tiktok.com/@encodedmabel)
+- [YouTube](https://www.youtube.com/@encodedmabel)
+- [LinkedIn](https://www.linkedin.com/in/mabelquispeolivera/)
+- [Twitter](https://twitter.com/mabel_Q_O)
+- [Codepen](https://codepen.io/mabelolivera10)
+- [Sitio Web](https://encoded.pe/)
+
+¡Espero poder conectarme contigo pronto y colaborar en futuros proyectos! 😊
+",True
+7084497,mgonto,factory_pal,mgonto/factory_pal,A Scala framework for creating objects as test data. Say no to Mocks,,Scala,Scala,100,20,100,6,2012-12-09T22:38:42Z,2026-02-25T11:10:25Z,2017-07-21T15:05:42Z,apache-2.0,True,"#FactoryPal
+
+FactoryPal is a scala framework that lets you create objects as test data. All you have to do is define the templates for each of the classes that you want FactoryPal to create objects from. After that, FactoryPal takes care of the rest. 
+
+Have you ever heard of factory_girl a super cool Ruby framework? Well, FactoryPal is pretty similar in its use. The difference is that FactoryPal is 100% type safe, which all of us Scala people love.
+
+##How do we use this?
+
+FactoryPal is a singleton object where you can register all of the templates. For example, you can define a template as follows:
+
+````scala
+FactoryPal.register[Person]() { person =>
+    person.name.mapsTo(""gonto"") and
+    person.age.isRandom
+}
+````
+
+In this example, we register a new template for class model. If we try to set a value for a property that Person doesn't have, your project won't compile. If you try to set a value to a property that isn't the type of that property, the project won't compile either. Pretty cool huh? This was possible thanks to Scala Macros and Dynamic, two features added in the latest Scala 2.10 RC release.
+
+For the time being, there are 3 supported operations on a field template.
+
+* MapsTo: This sets a certain specific value to that property
+* isRandom: This sets a random value based on the type of the field. I've created some implicit randomizers for common objects (String, Long, Int, Double, etc.) but you can create your own. This is pretty similar to Ordering[T] used in List
+* isAnotherFactoryModel: You tell FactoryPal that this is an inner object that can be constructed with another template of FactoryPal. For the time being, there can only be one template for each class. I'm going to change this very soon.
+
+After we created the template, we can instantiate objects of that template as follows:
+
+````scala
+val person = FactoryPal.create[Person]
+````
+
+The create method has another overload that lets you add some field overriders for certain test. For example you can do the following:
+
+````scala
+val person = FactoryPal.create[Person]() { person  =>
+    person.age.mapsTo(45) alone
+}
+````
+
+Note that in this example we've added an 'alone' at the end. If your builder has only one property, you need to tell this to FactoryPal by adding the alone at the end.
+
+And that's it. That's all you need to know to use this.
+
+## Multiple templates for class
+
+Now, you can have multiple templates for one class. How do you do so? Both register and create take an optional extra parameter that is an Option[Symbol]. That will be the name of your model
+
+So, let's register a coolPerson
+
+````scala
+FactoryPal.register[Person](Some('coolPerson)) { person =>
+    person.name.mapsTo(""gonto"") and
+    person.age.isRandom
+}
+````
+
+and let's use him :)
+
+````scala
+val person = FactoryPal.create[Person](Some('coolPerson))()
+````
+
+## How can I add this to my project?
+
+This is an example configuration for Build.scala for your SBT project :). There are only snapshots for now as Scala 2.10 is not yet final. Once it certainly is, I'm going to make a release. You can check this out in the sample in this project.
+````scala
+import sbt._
+import sbt.Keys._
+
+object ApplicationBuild extends Build {
+
+  lazy val root = Project(
+    id = ""factory_pal_sample"",
+    base = file("".""),
+    settings = Project.defaultSettings ++ Seq(
+      name := ""factory_pal_sample"",
+      organization := ""ar.com.gonto"",
+      version := ""0.2"",
+      scalaVersion := ""2.10.0"",
+      scalacOptions += """",
+      licenses      := (""Apache2"", new java.net.URL(""http://www.apache.org/licenses/LICENSE-2.0.txt"")) :: Nil,
+      libraryDependencies ++= Seq(
+       ""org.scala-lang"" % ""scala-compiler"" % ""2.10.0"",
+       ""ar.com.gonto"" % ""factory_pal_2.10"" % ""0.2.1"",
+       ""org.scalatest"" % ""scalatest_2.10"" % ""1.9.1"" % ""test""
+      ),
+      resolvers ++= Seq(
+         ""Typesafe repository"" at ""http://repo.typesafe.com/typesafe/releases/"",
+         Resolver.url(""Factory Pal Repository"", 
+          url(""http://mgonto.github.com/releases/""))(Resolver.ivyStylePatterns)
+      )
+    )
+  )
+}
+````
+
+Note the FactoryPal dependency and the FactoryPal repository.
+
+##What does it use internally?
+
+Internally, this framework uses Scala Macros, Dynamic and the new Reflection library provided by Scala 2.10.
+
+Besides this, every class, every object except for FactoryPal object are immutable. I think that this is the best practice to use. FactoryPal has a mutable field with an immutable map assigned to it where I add the new templates added by the user.
+
+##Next Steps
+
+The next things I want to do are:
+
+* ~~Multiple templates for class~~
+* ~~Refactor Randomizer to extend Function to use this inline easily~~
+* Add template inheritance
+* ~~Add helpers to use this with ScalaTest and Specs2. For the moment, you can create the templates in the before.~~
+
+
+##Licence
+
+FactoryPal is distributed under the [Apache 2 licence](http://www.apache.org/licenses/LICENSE-2.0.html)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.",True
+434469478,sergiodxa,sergiodxa.com,sergiodxa/sergiodxa.com,The code behind sergiodxa.com,"airtable,cloudflare-pages,cloudflare-workers-kv,i18n,i18next,react,remix,remix-i18next,tailwindcss",TypeScript,"TypeScript,CSS",94,5,94,7,2021-12-03T04:48:37Z,2025-12-14T02:51:49Z,2025-11-01T11:17:37Z,mit,True,,False
+99268856,spiermar,burn,spiermar/burn,burn :fire: is a CLI tool to convert performance profiles to hierarchical data structures that can be visualized as flame graphs,,Go,Go,92,9,92,9,2017-08-03T19:41:16Z,2026-03-14T05:22:03Z,2023-05-16T19:11:52Z,apache-2.0,True,"![burn](lizard.png)
+
+# burn
+burn is a CLI tool to convert performance profiles (perf_events, pprof, etc) to hierarchical data structure that can be visualized as [flame graphs](http://www.brendangregg.com/flamegraphs.html), with the help of the [d3-flame-graph](https://github.com/spiermar/d3-flame-graph) plugin. burn can also generate a self contained html flame graphs from the same data.
+
+## Getting Started
+
+Just download _burn_ from github using `go get` or the _pre-build_ binary and use it!
+
+### From go
+
+Make sure you have [golang](https://golang.org/) installed and `GOPATH` correctly set.
+
+```bash
+$ go get github.com/spiermar/burn
+$ burn $GOPATH/src/github.com/spiermar/burn/examples/out.perf
+```
+
+### From binary
+
+Binaries are being provided for both `linux` and `darwin`, in `amd64` arch.
+
+#### darwin/amd64
+
+```bash
+$ curl -L ""https://dl.bintray.com/mspier/binaries/burn/1.0.1/darwin/amd64/burn"" -o burn
+$ chmod +x burn
+$ ./burn <input_file>
+```
+
+#### linux/amd64
+
+```bash
+$ curl -L ""https://dl.bintray.com/mspier/binaries/burn/1.0.1/linux/amd64/burn"" -o burn
+$ chmod +x burn
+$ ./burn <input_file>
+```
+
+## Options
+
+```
+$ burn convert --help
+
+Convert a performance profile to a hierarchical data structure that
+can be visualized as a flame graph.
+
+Examples:
+  burn convert examples/out.perf
+  burn convert --type=folded examples/out.perf-folded
+  burn convert --html examples/out.perf
+  burn convert --output=flame.json examples/out.perf
+  burn convert --html --output=flame.html examples/out.perf
+  perf script | burn convert --html
+
+Usage:
+  burn convert [flags] (<input>)
+
+Flags:
+  -h, --help            help for convert
+  -m, --html            output is a html flame graph
+      --output string   output file
+  -p, --pretty          json output is pretty printed
+      --type string     input type (default ""perf"")
+
+Global Flags:
+      --config string       config file (default is $HOME/.burn.yaml)
+      --cpuprofile string   write CPU profile to file
+      --memprofile string   write heap profile to file
+```
+
+## Examples
+
+Input and output examples can be found in the [examples](/examples) directory.
+
+## Building from source
+
+Make sure you have [golang](https://golang.org/) installed and `GOPATH` correctly set.
+
+```bash
+$ go get github.com/spiermar/burn
+$ cd $GOPATH/src/github.com/spiermar/burn
+$ go build
+$ ./burn examples/out.perf
+```
+
+## Issues
+
+For bugs, questions and discussions please use the [GitHub Issues](https://github.com/spiermar/burn/issues).
+
+## Contributing
+
+We love contributions! But in order to avoid total chaos, we have a few guidelines.
+
+If you found a bug, have questions or feature requests, don't hesitate to open an [issue](https://github.com/spiermar/burn/issues).
+
+If you're working on an issue, please comment on it so we can assign you to it.
+
+If you have code to submit, follow the general pull request format. Fork the repo, make your changes, and submit a [pull request](https://github.com/spiermar/burn/pulls).
+
+## License
+
+Copyright 2017 Martin Spier. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",True
+440362128,sergiodxa,remix-auth-github,sergiodxa/remix-auth-github,"A GitHubStrategy for Remix Auth, based on the OAuth2Strategy",,TypeScript,TypeScript,91,16,91,2,2021-12-21T02:07:00Z,2026-03-09T06:09:26Z,2026-03-09T06:09:24Z,mit,True,"# GitHubStrategy
+
+A Remix Auth's strategy for GitHub Apps and OAuth Apps
+
+## Supported runtimes
+
+| Runtime    | Has Support |
+| ---------- | ----------- |
+| Node.js    | ✅          |
+| Cloudflare | ✅          |
+
+## How to use
+
+### Installation
+
+```bash
+npm add remix-auth remix-auth-github
+```
+
+### Create an OAuth application
+
+Follow the steps on [the GitHub documentation](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app) to create a new application and get a client ID and secret.
+
+### Usage
+
+You can use this strategy by adding it to your authenticator instance and configuring the correct endpoints.
+
+```ts
+export let authenticator = new Authenticator<User>();
+
+authenticator.use(
+  new GitHubStrategy(
+    {
+      clientId: CLIENT_ID,
+      clientSecret: CLIENT_SECRET,
+      redirectURI: ""https://example.app/auth/callback"",
+      scopes: [""user:email""], // optional
+    },
+    async ({ tokens, request }) => {
+      // here you can use the params above to get the user and return it
+      // what you do inside this and how you find the user is up to you
+      return await getUser(tokens, request);
+    }
+  ),
+  // this is optional, but if you setup more than one GitHub instance you will
+  // need to set a custom name to each one, by default is ""github""
+  ""provider-name""
+);
+```
+
+Then you will need to setup your routes, for the OAuth2 flows you will need to call the `authenticate` method twice.
+
+First, you will call the `authenticate` method with the provider name you set in the authenticator.
+
+```ts
+export async function action({ request }: Route.ActionArgs) {
+  await authenticator.authenticate(""provider-name"", request);
+}
+```
+
+> [!NOTE]
+> This route can be an `action` or a `loader`, it depends if you trigger the flow doing a POST or GET request.
+
+This will start the OAuth2 flow and redirect the user to the provider's login page. Once the user logs in and authorizes your application, the provider will redirect the user back to your application redirect URI.
+
+You will now need a route on that URI to handle the callback from the provider.
+
+```ts
+export async function loader({ request }: Route.LoaderArgs) {
+  let user = await authenticator.authenticate(""provider-name"", request);
+  // now you have the user object with the data you returned in the verify function
+}
+```
+
+> [!NOTE]
+> This route must be a `loader` as the redirect will trigger a `GET` request.
+
+Once you have the `user` object returned by your strategy verify function, you can do whatever you want with that information. This can be storing the user in a session, creating a new user in your database, link the account to an existing user in your database, etc.
+
+### Using the Refresh Token
+
+The strategy exposes a public `refreshToken` method that you can use to refresh the access token.
+
+```ts
+let strategy = new GitHubStrategy<User>(options, verify);
+let tokens = await strategy.refreshToken(refreshToken);
+```
+
+The refresh token is part of the `tokens` object the verify function receives. How you store it to call `strategy.refreshToken` and what you do with the `tokens` object after it is up to you.
+
+The most common approach would be to store the refresh token in the user data and then update the session after refreshing the token.
+
+```ts
+authenticator.use(
+  new GitHubStrategy<User>(
+    options,
+    async ({ tokens, request }) => {
+      let user = await getUser(tokens, request);
+      return {
+        ...user,
+        accessToken: tokens.accessToken()
+        refreshToken: tokens.hasRefreshToken() ? tokens.refreshToken() : null,
+      }
+    }
+  )
+);
+
+// later in your code you can use it to get new tokens object
+let tokens = await strategy.refreshToken(user.refreshToken);
+```
+
+### Get user profile
+
+Once you have the OAuth2 tokens object, you can use the access token to get the [user profile from GitHub's API](https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28#get-the-authenticated-user).
+
+```ts
+let response = await fetch(""https://api.github.com/user"", {
+  headers: {
+    Accept: ""application/vnd.github+json"",
+    Authorization: `Bearer ${tokens.accessToken()}`,
+    ""X-GitHub-Api-Version"": ""2022-11-28"",
+  },
+});
+
+let user = await response.json();
+
+// Somehow parse the user object to ensure it has the correct shape
+```
+
+### Get user email
+
+Similarly, you can use the access token to get the [user's email from GitHub's API](https://docs.github.com/en/rest/users/emails?apiVersion=2022-11-28#list-email-addresses-for-the-authenticated-user).
+
+> [!IMPORTANT]
+> You will need to request the `user:email` scope when authenticating the user.
+
+```ts
+let response = await fetch(""https://api.github.com/user/emails"", {
+  headers: {
+    Accept: ""application/vnd.github+json"",
+    Authorization: `Bearer ${tokens.accessToken()}`,
+    ""X-GitHub-Api-Version"": ""2022-11-28"",
+  },
+});
+
+let emails = await response.json();
+
+// Somehow parse the emails object to ensure it has the correct shape
+```
+",True
+13110352,drmad,tmux-git,drmad/tmux-git,Script for showing current Git branch in Tmux status bar,,Shell,Shell,85,21,85,2,2013-09-26T01:51:29Z,2025-10-29T09:07:29Z,2024-09-11T14:41:43Z,gpl-3.0,True,"# tmux-git
+
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/drmad/tmux-git)
+
+`tmux-git` shows information about the [git](https://git-scm.com/) repo (current branch, *dirtiness*,
+stash status, etc.) under the working directory using the [tmux][3] status bar.
+
+## Overview
+
+There are many solutions to integrate the current Git branch on your Linux terminal
+prompt (like [this one][1] and [this one][2], from where I borrowed most parts of
+this script), but I don't like to bloat my prompt.
+
+So I was thinking where can I put that information, and then I remembered the
+fabulous [tmux][3]. `tmux` is a powerful and really cool client-server terminal
+multiplexer, but it also provides a nice status bar.
+
+This script scans the current working directory and upwards for a `git` repo.
+If it founds one, puts information about it in the status bar, like:
+
+* Project name (actually, is the `git` repo directory name)
+* Active branch
+* 'Dirty' status (i.e., there are pending modifications to be committed)
+* Stashed changes
+
+## Installation
+
+Clone this project in your home directory with a dot-prefixed name, so it stays
+hidden:
+
+    git clone https://github.com/drmad/tmux-git.git ~/.tmux-git
+
+Then, execute this line in a shell to add the script in the Bash initialization
+file (usually `.bashrc`, replace if needed):
+
+    echo ""if [[ \$TMUX ]]; then source ~/.tmux-git/tmux-git.sh; fi"" >> ~/.bashrc
+
+Now run `tmux`, `cd` to a Git repo, and enjoy :)
+
+**Note for OSX users**: You'll need to install `coreutils`:
+
+    brew install coreutils
+
+## Configuration
+
+The configuration is stored in the file `~/.tmux-git.conf`, created at the first
+run of the script with default values. Just edit it, and reload `tmux`.
+
+### Variables and functions
+
+* `TMUX_STATUS_LOCATION`: Position of the status on tmux bar: `left` or `right`
+* `TMUX_OUTREPO_STATUS`: Tmux status for when you're out of a repo. Set by
+  default to your pre-existing status line.
+* `TMUX_STATUS_DEFINITION()`: This function sets the `TMUX_STATUS` variable, which
+  is shown in the tmux bar. You can use any variable used across the script for
+  creating this variable.
+
+## En español
+
+He realizado un post en español de las instrucciones de instalación en mi blog:
+
+https://drmad.org/blog/branch-de-git-en-tmux.html
+
+[1]: https://github.com/jimeh/git-aware-prompt
+[2]: http://aaroncrane.co.uk/2009/03/git_branch_prompt/
+[3]: https://github.com/tmux/tmux
+",True
+436411126,apholdings,ninerogues_ecommerce,apholdings/ninerogues_ecommerce,,,JavaScript,"JavaScript,CSS,Python,HTML,Shell",78,41,78,1,2021-12-08T22:31:37Z,2024-12-20T22:46:33Z,2023-08-14T17:22:06Z,,False,,False
+1143616564,sergiodxa,agent-skills,sergiodxa/agent-skills,My own agent skills for tools I use,,,,75,7,75,0,2026-01-27T19:54:27Z,2026-03-06T00:17:37Z,2026-02-01T08:26:24Z,mit,True,"# sergiodxa/agent-skills
+
+Agent skills for the tools I use.
+
+Install with:
+
+```sh
+bunx skills add sergiodxa/agent-skills
+```
+
+And choose the ones you want.
+",True
+122018303,spiermar,d3-heatmap2,spiermar/d3-heatmap2,A D3.js plugin that produces heatmaps.,,JavaScript,"JavaScript,HTML,CSS",73,5,73,12,2018-02-19T04:18:21Z,2026-03-08T03:29:12Z,2026-03-13T23:31:04Z,apache-2.0,True,"# d3-heatmap2
+
+A D3.js plugin that produces heatmaps.
+
+[![Heatmap](heatmap.png)](https://github.com/spiermar/d3-heatmap2/)
+
+## Example
+
+Click [here](https://spiermar.github.io/d3-heatmap2/) to check the interactive demo, and [source](src/main.js).
+
+## Installing
+
+```bash
+npm install d3-heatmap2
+```
+
+## Getting Started
+
+### Using as an ES Module
+
+```javascript
+import heatmap from 'd3-heatmap2'
+
+const h = heatmap()
+  .width(960)
+  .colorScale(d3.scaleLinear()
+    .domain([0, 65 / 2, 65])
+    .range(['#F5F5DC', '#FF5032', '#E50914'])
+  )
+
+d3.select('#chart')
+  .datum(data)
+  .call(h)
+```
+
+### Using as a UMD Build
+
+```html
+<head>
+</head>
+<body>
+  <div id=""chart""></div>
+  <div id=""details""></div>
+  <script src=""https://d3js.org/d3.v7.min.js"" charset=""utf-8""></script>
+  <script src=""https://cdn.jsdelivr.net/npm/d3-heatmap2@2.0.0/dist/d3-heatmap2.umd.min.js""></script>
+  <script>
+    var h = d3.heatmap()
+      .width(960)
+      .colorScale(d3.scaleLinear()
+        .domain([0, 65 / 2, 65])
+        .range(['#F5F5DC', '#FF5032', '#E50914'])
+      )
+      
+    d3.select(""#chart"")
+      .datum(data)
+      .call(h)
+  </script>
+</body>
+```
+
+## Heatmap Data Structure
+
+```json
+[
+    [1,0,0],
+    [0,1,0],
+    [0,0,1]
+]
+```
+
+## API Reference
+
+<a href=""#title"" name=""title"">#</a> heatmap.<b>title</b>(<i>[title]</i>)
+
+Heatmap title. Defaults to _empty_ if not set. If called with no arguments, `title` will return the heatmap title. 
+
+<a href=""#subtitle"" name=""subtitle"">#</a> heatmap.<b>subtitle</b>(<i>[subtitle]</i>)
+
+Heatmap subtitle. Defaults to _empty_ if not set. If called with no arguments, `subtitle` will return the heatmap subtitle. 
+
+<a href=""#legendLabel"" name=""legendLabel"">#</a> heatmap.<b>legendLabel</b>(<i>[label]</i>)
+
+Heatmap label legend. Defaults to _empty_ if not set. If called with no arguments, `legendLabel` will return the heatmap label legend. 
+
+<a href=""#width"" name=""width"">#</a> heatmap.<b>width</b>(<i>[width]</i>)
+
+Heatmap width in _px_. Defaults to 960px if not set. If called with no arguments, `width` will return the heatmap width. 
+
+<a href=""#margin"" name=""margin"">#</a> heatmap.<b>margin</b>(<i>[object]</i>)
+
+Heatmap title. Defaults to the values below if not set.
+
+```js
+{
+    top: 20,
+    right: 0,
+    bottom: 0,
+    left: 0
+}
+```
+
+If called with no arguments, `margin` will return the heatmap margin object. 
+
+<a name=""colorScale"" href=""#colorScale"">#</a> heatmap.<b>colorScale</b>(<i>[function]</i>)
+
+Replaces the built-in color scale function. The scale function takes no arguments, and returns a [d3.scale](https://github.com/d3/d3-scale) function. Example:
+
+```js
+heatmap.colorScale(d3.scaleLinear()
+    .domain([0, 65 / 2, 65])
+    .range(['#FFFFFF', '#ff5032', '#e50914'])
+);
+```
+
+If called with no arguments, `colorScale` will return the heatmap _colorScale_ function.
+
+<a name=""xAxisScale"" href=""#xAxisScale"">#</a> heatmap.<b>xAxisScale</b>(<i>[array]</i>)
+
+Heatmap xAxis scale domain, in a value scale array format. Defaults to `null` if not set, which displays the xAxis labels instead of the scale.
+
+```js
+heatmap.xAxisScale([0, 1000]);
+```
+
+If called with no arguments, `xAxisScale` will return the heatmap xAxis scale domain array.
+
+<a name=""yAxisScale"" href=""#yAxisScale"">#</a> heatmap.<b>yAxisScale</b>(<i>[array]</i>)
+
+Heatmap yAxis scale domain, in a value scale array format. Defaults to `null` if not set, which displays the yAxis labels instead of the scale.
+
+```js
+heatmap.yAxisScale([0, 100]);
+```
+
+If called with no arguments, `yAxisScale` will return the heatmap yAxis scale domain array.
+
+<a name=""xAxisScaleTicks"" href=""#xAxisScaleTicks"">#</a> heatmap.<b>xAxisScaleTicks</b>(<i>[integer]</i>)
+
+If using `xAxisScale`, defines the number of scale ticks. Defaults to `20` if not set.
+
+If called with no arguments, `xAxisScaleTicks` will return the number of ticks in the xAxis scale.
+
+<a name=""yAxisScaleTicks"" href=""#yAxisScaleTicks"">#</a> heatmap.<b>yAxisScaleTicks</b>(<i>[integer]</i>)
+
+If using `yAxisScale`, defines the number of scale ticks. Defaults to `20` if not set.
+
+If called with no arguments, `yAxisScaleTicks` will return the number of ticks in the yAxis scale.
+
+<a name=""xAxisLabelFormat"" href=""#xAxisLabelFormat"">#</a> heatmap.<b>xAxisLabelFormat</b>(<i>[function]</i>)
+
+Heatmap xAxis label formatter function. The label formatter function takes a single argument, the label array value, and returns a label string. Defaults to `function (d) { return d }` if not set, which displays the value in the xAxis labels array.
+
+```js
+heatmap.xAxisLabelFormat(function (d) { return d + ' sec' });
+```
+
+If called with no arguments, `xAxisLabelFormat` will return the heatmap xAxis label formatter function.
+
+<a name=""yAxisLabelFormat"" href=""#yAxisLabelFormat"">#</a> heatmap.<b>yAxisLabelFormat</b>(<i>[function]</i>)
+
+Heatmap yAxis label formatter function. The label formatter function takes a single argument, the label array value, and returns a label string. Defaults to `function (d) { return d }` if not set, which d",True
+4280859,mjambon,purple-fringe,mjambon/purple-fringe,Removal of purple fringing from digital photos,,OCaml,"OCaml,Makefile",73,11,73,2,2012-05-10T06:04:08Z,2026-02-11T09:47:47Z,2020-01-12T04:18:54Z,other,True,"Unpurple
+========
+
+Unpurple is a tool for removing purple fringes (axial chromatic aberration)
+from digital photos using a heuristic of my own.
+
+This is the original OCaml implementation which produces a standalone
+executable with a simple command-line interface.
+It is fast enough (~ one second per megapixel) but doesn't
+preserve Exif data and the JPEG compression factor is fixed at 75%.
+
+Unpurple was
+[ported](https://github.com/dtschump/gmic-community/blob/master/include/stanislav_paskalev.gmic)
+to [G'MIC](https://gmic.eu/)
+by [Stanislav Paskalev](https://github.com/solarsea), allowing its use from
+[GIMP](https://www.gimp.org/) and other image-manipulation software.
+🎉
+
+Example
+-------
+
+Before:
+
+[<img src=""https://mjambon.github.io/mjambon2016/purple-fringe/wikipedia-horsie.jpg"" alt=""Before""/>]()
+
+After:
+
+[<img src=""https://mjambon.github.io/mjambon2016/purple-fringe/wikipedia-horsie-fixed.jpg"" alt=""After""/>]()
+
+Difference:
+
+[<img src=""https://mjambon.github.io/mjambon2016/purple-fringe/wikipedia-horsie-diff.jpg"" alt=""Difference""/>]()
+
+[More examples](https://mjambon.github.io/mjambon2016/purple-fringe/examples.html)
+
+Algorithm outline
+-----------------
+
+1. Produce a blurred mask from the blue component in the original image.
+2. Subtract from the original image some amount of blue and red based on the intensities found in the blurred mask, using the following constraints:
+   * Blue level may not drop below green level.
+   * Red level may not drop below green level.
+   * Red:blue ratio may not drop below some constant.
+
+Please refer to the implementation for details and default parameters.
+
+Intuition and future prospects
+------------------------------
+
+The original motivation for this work was to remove purple fringing
+from my own photos that I took with a relatively cheap lens. Coming up
+with an algorithm required:
+
+1. Notions about optics, and in particular understanding why chromatic
+   aberration happens.
+2. Notions about image manipulation and RGB color encoding.
+3. Notions about the visible spectrum (rainbow) and how wavelengths
+   map to certain perceived colors.
+4. Notions about the perception of colors in humans and why computers
+   encode colors as 3 components (excluding brightness or transparency) and
+   not another number.
+
+It is useful, or perhaps critical, to understand why mixing blue and
+red dots produces a perception of purple, even though none of the
+light emitted from blue and red dots needs to have the wavelength of
+the purple band of the rainbow. School and Wikipedia are your friends.
+
+Here's my mental model of purple fringing, which may be inacurrate but
+turned out to be good enough. It may not work as well or at all for
+other types of chromatic aberration:
+
+A camera ""lens"" is made of several simple lenses, which help not
+only with zooming in, but also correcting for certain problems. My
+understanding is that they allow multiple regions of the visible
+spectrum to remain in focus, but this has the opposite effect on the
+short wavelengths (purple and ultraviolet) which end up very blurred out.
+It is also possible that UV light is captured as purple by the sensor
+of a digital camera. As a result, black objects on a white background
+will exhibit a purple fringe all around. Note that this is different
+then some other types of chromatic aberration, where some objects have a red
+margin on one side and a blue margin on the other side.
+
+Now for the method. The problem of removing the purple fringe is
+tackled by observing that the bright parts of the image still contain
+most of the purple that they should contain. We don't need to take the
+purple from the purple fringes and put it back into the bright
+areas. They're still plenty bright and their colors look natural. We
+assume that they still contain most of the indigo-purple color
+corresponding to the short wavelengths, in the correct location. So
+instead of trying to locate a purple fringe in the hope of removing
+it, we create a purple fringe from the image which already has a
+purple fringe.
+This involves selecting the blue-purple component of the image, which
+is a combination of blue and red within some acceptable ratio and
+blurring it. The result is a mask that if added to the original image
+would produce a purple fringe roughly like the one we want to remove.
+What remains to do is somehow subtract this approximate artificial
+purple fringe mask from the original. The first problem is that our
+artificial fringe is most likely wider and more intense that the
+actual fringe we want to remove, and we don't want to remove too much
+so as to not introduce new colors. The second problem is that we don't
+want to remove the blue-purple component from the bright areas of the
+image. These problems are solved by:
+
+1. Subtracting the purple mask only where it's brighter than the
+   original purple component.
+2. Subtracting purple only from regions that are somewhat purple, and
+   at most until they look grey. For example, from
+   a dark purplish pixel like ",True
+440042324,sergiodxa,remix-auth-strategy-template,sergiodxa/remix-auth-strategy-template,A template for creating a new Remix Auth strategy.,,TypeScript,"TypeScript,JavaScript",67,15,67,11,2021-12-20T04:30:18Z,2025-07-16T19:27:25Z,2025-11-01T22:10:52Z,mit,True,"# Remix Auth - Strategy Template
+
+> A template for creating a new Remix Auth strategy.
+
+If you want to create a new strategy for Remix Auth, you could use this as a template for your repository.
+
+The repo installs the latest version of Remix Auth and do the setup for you to have tests, linting and typechecking.
+
+## How to use it
+
+1. In the `package.json` change `name` to your strategy name, also add a description and ideally an author, repository and homepage keys.
+2. In `src/index.ts` change the `MyStrategy` for the strategy name you want to use.
+3. Implement the strategy flow inside the `authenticate` method. Use `this.success` and `this.failure` to correctly send finish the flow.
+4. In `tests/index.test.ts` change the tests to use your strategy and test it. Inside the tests you have access to `jest-fetch-mock` to mock any fetch you may need to do.
+5. Once you are ready, set the secrets on Github
+   - `NPM_TOKEN`: The token for the npm registry
+   - `GIT_USER_NAME`: The git username you want the bump workflow to use in the commit.
+   - `GIT_USER_EMAIL`: The email you want the bump workflow to use in the commit.
+
+## Scripts
+
+- `build`: Build the project for production using the TypeScript compiler (strips the types).
+- `typecheck`: Check the project for type errors, this also happens in build but it's useful to do in development.
+- `lint`: Runs ESLint against the source codebase to ensure it pass the linting rules.
+- `test`: Runs all the test using Jest.
+
+## Documentations
+
+To facilitate creating a documentation for your strategy, you can use the following Markdown
+
+```markdown
+# Strategy Name
+
+<!-- Description -->
+
+## Supported runtimes
+
+| Runtime    | Has Support |
+| ---------- | ----------- |
+| Node.js    | ✅          |
+| Cloudflare | ✅          |
+
+<!-- If it doesn't support one runtime, explain here why -->
+
+## How to use
+
+<!-- Explain how to use the strategy, here you should tell what options it expects from the developer when instantiating the strategy -->
+```
+",True
+630758294,sergiodxa,web-oidc,sergiodxa/web-oidc,An OpenID Connect client built using only Web APIs,,TypeScript,"TypeScript,JavaScript",66,6,66,24,2023-04-21T04:57:57Z,2026-01-25T17:32:27Z,2024-12-17T06:12:24Z,mit,True,"# Web OIDC
+
+> [!CAUTION]
+> Most of the features here are now supported by the OAuth2Strategy for Remix Auth and the Arctic package used internally by that strategy, this package is now depreacted and if you use it with Remix Auth I recommend you to use the OAuth2Strategy.
+
+An OpenID Connect client for web applications built completely using standard Web APIs.
+
+> **Note**: This package is a port of [`openid-client`](https://github.com/panva/node-openid-client) but only using standard Web APIs.
+
+> **Warning**: This package is still a work in progress and should not be used in production.
+
+## Installation
+
+```sh
+npm add web-oidc
+```
+
+## Usage
+
+You can use the `Issuer.discover` method to discover the OpenID Connect issuer configuration.
+
+```ts
+import { Issuer } from ""web-oidc"";
+
+const issuer = await Issuer.discover(""https://auth.company.tld"");
+```
+
+The `issuer` value will be a `Issuer` instance where you can later call `issuer.metadata` to access the configuration of the issuer.
+
+With the issuer ready, we can instantiate a Client.
+
+```ts
+import { Client } from ""web-oidc"";
+let client = new Client(issuer, {
+  client_id: ""CLIENT_ID"",
+  client_secret: ""CLIENT_SECRET"",
+  redirect_uri: ""https://www.company.tld/auth/callback"",
+  response_type: ""code id_token"",
+});
+```
+
+Additionally, we can create the client directly from the issuer.
+
+```ts
+import { Issuer } from ""web-oidc"";
+
+const issuer = await Issuer.discover(""https://auth.company.tld"");
+
+let client = issuer.client({
+  client_id: ""CLIENT_ID"",
+  client_secret: ""CLIENT_SECRET"",
+  redirect_uri: ""https://www.company.tld/auth/callback"",
+  response_type: ""code id_token"",
+});
+```
+
+This will instantiate a client with the issuer's configuration.
+
+With a Client instance, we can start handling the authentication flow.
+
+```ts
+// The `Generator.state()` method is a helper to generate a cryptographically
+// secure random string
+import { Generator } from ""web-oidc"";
+
+let state = Generator.state(); // keep this in a cookie/session
+let url = client.authorizationUrl({ state });
+```
+
+This will generate a URL that you can redirect the user to start the flow.
+
+Once the user is back on your callback URL, you can use the `Client#callbackParams` and `Client#oauthCallback` methods to handle the request.
+
+```ts
+let params = await client.callbackParams(request);
+let tokens = await client.oauthCallback(new URL(request.url), params, {
+  state, // read this from where you stored it
+  response_type: ""code"",
+});
+```
+
+You can then use the `Client#userinfo` method to fetch the user's profile from the IdP.
+
+```ts
+let userinfo = await client.userinfo(tokens.access_token);
+```
+
+And if you're keeping the access and refresh tokens around, you can use the `Client#refresh` method to get a new access token when it expires.
+
+```ts
+let { accessToken, refreshToken, extraParams } = await client.refresh(
+  tokens.refresh_token
+);
+```
+
+### Use with Remix Auth
+
+If you're building a Remix application and using Remix Auth, this package exports a strategy you can use.
+
+```ts
+import { OIDCStrategy } from ""web-oidc/remix"";
+
+authenticator.use(
+  new OIDCStrategy(
+    {
+      issuer: ""https://auth.company.tld"",
+      client_id: ""CLIENT_ID"",
+      client_secret: ""CLIENT_SECRET"",
+      redirect_uri: ""https://www.company.tld/auth/callback"",
+      response_type: ""code id_token"",
+    },
+    async ({ profile, tokens }) => {
+      return { profile, tokens };
+    }
+  )
+);
+```
+
+The `issuer` can be a string or URL similar to `Issuer.discover`, it could also be a `Issuer` instance if you already have one.
+
+You can then use this strategy in your routes.
+
+```ts
+export async function action({ request }: DataFunctionArgs) {
+  return await authenticator.authenticate(""oidc"", request, {
+    successRedirect: ""/home"",
+    failureRedirect: ""/login"",
+  });
+}
+```
+
+If you plan to keep the tokens saved, you can save the strategy into a variable.
+
+```ts
+import { OIDCStrategy } from ""web-oidc/remix"";
+import { Issuer } from ""web-oidc"";
+
+let strategy = new OIDCStrategy<User>(
+  {
+    issuer: ""https://auth.company.tld"",
+    client_id: ""CLIENT_ID"",
+    client_secret: ""CLIENT_SECRET"",
+    redirect_uri: ""https://www.company.tld/auth/callback"",
+    response_type: ""code id_token"",
+  },
+  async ({ profile, tokens }) => {
+    return { profile, tokens };
+  }
+);
+
+authenticator.use(strategy);
+```
+
+Then, you can access the Issuer and Client instances with:
+
+```ts
+let issuer = await strategy.issuer;
+let client = await strategy.client;
+```
+
+The return value of both is a promise because (unless you pass an Issuer instance to the strategy) the strategy needs to discover the issuer configuration dynamically first and this only happens the first time it's needed.
+
+### Use with Hono
+
+If you're building a Hono application, this package exports a middleware you can use.
+
+```ts
+import { oidc } from ""web-oidc/hono"";
+
+app = new Hono();
+
+app.use(
+  ""*"",
+  oidc({
+    issuer: ""https://auth.company.tld"",
+    client_id: ""CLIENT_ID"",
+    client_secret: ""CLIENT_SECRET"",
+    redir",True
+334519780,mjambon,cmdliner-cheatsheet,mjambon/cmdliner-cheatsheet,Cheatsheet for adding command-line options to an OCaml program using cmdliner,,OCaml,"OCaml,Makefile,Shell,Dune",65,2,65,0,2021-01-30T21:57:32Z,2026-01-27T03:26:48Z,2026-01-27T03:26:44Z,unlicense,True,"Cmdliner cheatsheet [![CircleCI badge](https://circleci.com/gh/mjambon/cmdliner-cheatsheet.svg?style=svg)](https://app.circleci.com/pipelines/github/mjambon/cmdliner-cheatsheet)
+==
+
+[Cmdliner](https://erratique.ch/software/cmdliner) is a
+feature-complete library for parsing the command line from an OCaml
+program. The output of `--help` is similar to a man page, see for
+example `opam --help`.
+Cmdliner is to be used instead of the `Arg` module from the standard library.
+
+This cheatsheet is a compact reference for common patterns.
+
+[Two sample programs](src) are provided for exploration
+purposes or as templates for new projects. Clone this git repository
+and test it as follows (requires `dune` and of course `cmdliner`):
+```
+$ make
+$ make test
+
+$ ./bin/cmdliner-demo-arg --help
+$ ./bin/cmdliner-demo-arg             # try with some options
+$ ./bin/cmdliner-demo-subcmd
+$ ./bin/cmdliner-demo-subcmd subcmd1  # try with some options
+```
+
+Anonymous argument at specific position
+--
+
+```
+$ foo 42 -j 8 data.csv        -> Some ""data.csv""
+      ^^      ^^^^^^^^
+      0       1
+```
+
+Optional argument at a specific position:
+```ocaml
+let input_file_term =
+  let info =
+    Arg.info []  (* list must be empty for anonymous arguments *)
+      ~doc:""Example of an anonymous argument at a fixed position""
+  in
+  Arg.value (Arg.pos 1 (Arg.some Arg.file) None info)
+```
+
+Required argument at a specific position:
+```ocaml
+let input_file_term =
+  let info =
+    Arg.info []  (* list must be empty for anonymous arguments *)
+      ~doc:""Example of an anonymous argument at a fixed position""
+  in
+  Arg.required (Arg.pos 1 (Arg.some Arg.file) None info)
+```
+
+Any number of anonymous arguments
+--
+
+```
+$ foo                         -> []
+$ foo a.csv b.csv c.csv       -> [""a.csv""; ""b.csv""; ""c.csv""]
+```
+
+```ocaml
+Arg.value (Arg.pos_all Arg.file [] info)
+```
+
+Any number of anonymous arguments, defaulting to non-empty list
+--
+
+```
+$ foo                         -> ["".""]
+$ foo a.csv b.csv c.csv       -> [""a.csv""; ""b.csv""; ""c.csv""]
+```
+
+```ocaml
+let default = ["".""] in
+Arg.value (Arg.pos_all Arg.file default info)
+```
+
+Simple flag
+--
+
+```
+$ foo             -> false
+$ foo --no-exe    -> true
+```
+
+```ocaml
+let no_exe_term =
+  let info =
+    Arg.info [""no-exe""]
+      ~doc:""Example of a flag, which sets a boolean to true.""
+  in
+  Arg.value (Arg.flag info)
+```
+
+Optional argument specification
+--
+
+```
+$ foo                  -> 1
+$ foo -j 8             -> 8
+$ foo --num-cores 8    -> 8
+```
+
+```ocaml
+let num_cores_term =
+  let default = 1 in
+  let info =
+    Arg.info [""j""; ""num-cores""]  (* '-j' and '--num-cores' will be synonyms *)
+      ~docv:""NUM""
+      ~doc:""Example of an optional argument with a default.
+            The value of \\$\\(docv\\) is $(docv).""
+  in
+  Arg.value (Arg.opt Arg.int default info)
+```
+
+Optional value without a default
+--
+
+```
+$ foo                 -> None
+$ foo --bar thing     -> Some ""thing""
+```
+
+```ocaml
+Arg.value (Arg.opt (Arg.some Arg.string) None info)
+```
+
+Optional value with a default
+--
+
+```
+$ foo             -> 1
+$ foo --bar 8     -> 8
+```
+
+```ocaml
+let default = 1 in
+Arg.value (Arg.opt Arg.int default info)
+```
+
+Predefined argument converters
+--
+
+```
+Raw argument        OCaml value        Converter
+
+abc                 ""abc""              Arg.string
+true                true               Arg.bool
+false               false              Arg.bool
+x                   'x'                Arg.char
+%                   '%'                Arg.char
+123                 123                Arg.int
+123                 123.               Arg.float
+123.4               123.4              Arg.float
+-1.2e6              -1.2e6             Arg.float
+123                 123l               Arg.int32
+123                 123L               Arg.int64
+foo                 Foo                Arg.enum [""foo"", Foo; ""bar"", Bar]
+data.csv            ""data.csv""         Arg.file (* path must exist *)
+data/               ""data/""            Arg.file (* path must exist *)
+data/               ""data/""            Arg.dir (* must be a folder *)
+data.csv            ""data.csv""         Arg.non_dir_file (* file must exist *)
+foo.sock            ""foo.sock""         Arg.non_dir_file (* file must exist *)
+ab,c,d              [""ab""; ""c""; ""d""]   Arg.list Arg.string
+17,42               [|17; 42|]         Arg.array Arg.int
+ab:c:d              [""ab""; ""c""; ""d""]   Arg.list ~sep:':' Arg.string
+```
+
+Subcommands
+--
+
+```
+$ foo                 # displays root help page
+$ foo --help          # also displays root help page
+$ foo subcmd1         # returns 'Subcmd1 { ... }'
+$ foo subcmd2 --bar   # returns 'Subcmd2 { ... }'
+```
+
+Each subcommand is defined as if it were its own command. They are
+then combined into one. See demo in [src](src).
+
+```ocaml
+...
+
+type cmd_conf =
+  | Subcmd1 of subcmd1_conf
+  | Subcmd2 of subcmd2_conf
+
+...
+
+let subcmd1_info =
+  Term.info ""subcmd1""
+    ~doc:subcmd1_doc
+    ~man:subcmd1_man
+
+...
+
+let subcmd1 = (subcmd1_term, subcmd1_info)
+let subcmd2 = (subcmd2_term, subcm",True

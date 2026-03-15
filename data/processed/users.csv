@@ -1,9 +1,19 @@
 id,login,name,location,bio,company,blog,email,followers,following,public_repos,created_at,updated_at
-33765137,alainm23,Alain,"Cusco, Cusco, Perú",,,,alainmh23@gmail.com,395,49,74,2017-11-17T21:01:01Z,2026-03-14T09:17:25Z
+343265,mjambon,Martin Jambon,San Francisco Bay Area,Automation enthusiast,Semgrep,https://mjambon.com,,319,177,103,2010-07-25T06:06:57Z,2026-01-16T20:44:27Z
+2207415,spiermar,Martin Spier,"San Francisco Bay Area, CA",VP of Engineering. AI and Cloud Infrastructure. Performance Engineering. Platform Engineering. Ex-Netflix.,@parasail-ai ,http://martinspier.io/,martin@martinspier.io,383,66,75,2012-08-23T21:44:35Z,2026-02-28T22:36:38Z
+32233200,Mars-tin,Martin Ziqiao Ma,"San Francisco, CA","phd<<<1,1>>>(umich);",University of Michigan,http://ziqiaoma.com/,marstin@umich.edu,228,102,18,2017-09-24T03:29:44Z,2026-03-11T18:47:07Z
+49838578,gerardokaztro,Gerardo Castro ☁️🔐,"Callao, Perú","AWS Security Hero | Cloud Security Engineer | Building real security tools for AWS Organizations in LATAM. I learn by building, not memorizing.",,,,62,13,7,2019-04-21T14:34:59Z,2026-03-05T02:56:09Z
+44477388,apholdings,SoloPython,"Lima, Peru","Desarrollo web con Programacion Python, Django y React",SoloPython,https://solopython.com,mail@solopython.com,674,0,56,2018-10-25T17:31:42Z,2026-03-12T20:57:25Z
+3536982,ekmartin,Martin Ek,San Francisco,,Increase,https://ekmartin.com,mail@ekmartin.com,209,112,92,2013-02-11T23:29:09Z,2026-02-10T19:42:26Z
+577277,martinwicke,Martin Wicke,San Francisco,,,,,471,2,18,2011-01-21T21:56:41Z,2026-02-22T12:22:51Z
+10574326,escueladigital,EDteam,"Lima, Perú",,EDteam,https://ed.team,,1000,0,18,2015-01-17T15:25:06Z,2025-10-20T17:20:15Z
+1307948,drmad,Oliver Etchebarne,"Ica, Perú","Self-taught epicurean Linux geek, compulsive programmer since 10 yo, runs @paperclip-eirl and hacks @vendimia on his (sometimes not so) free time",@paperclip-eirl,https://drmad.org,,29,17,15,2012-01-05T22:12:44Z,2026-01-27T22:21:11Z
+8503732,devaige,Aige,"Pampa de Vaca, Torata, Mariscal Nieto  Moquegua 18100, Peru","Once I thought technology could change the world, then I realized that the only person I could change was me.","Bill Finance Technology Co.,Ltd.",,,1178,1,35,2014-08-20T14:34:09Z,2025-09-14T02:22:55Z
+203321,matiskay,Edgar Marca,"Arequipa, Perú",Doing security things by day and doing things with data and crafty stuff by night.,,http://twitter.com/matiskay,,100,210,61,2010-02-14T03:45:46Z,2025-12-01T17:03:34Z
 131488004,mabelolivera10,MABEL QUISPE OLIVERA,"LIMA, PERU","👀 Persona apasionada con su profesión, excelente capacidad de organización y facilidad de trabajo en equipo. Muy adaptable a todo tipo de entornos y clara orie",TITANIC SOFT EIRL,encoded.pe,mabelolivera2110@gmail.com,1197,0,88,2023-04-21T19:19:11Z,2025-11-05T13:58:39Z
+33765137,alainm23,Alain,"Cusco, Cusco, Perú",,,,alainmh23@gmail.com,395,49,74,2017-11-17T21:01:01Z,2026-03-14T09:17:25Z
 1312018,sergiodxa,Sergio Xalambrí,"Lima, Perú","Web Dev at Daffy.org.
 Previously: @ableco, @codeableorg, @platzi (YC W15), and @vercel",Daffy.org,https://sergiodxa.com,hello@sergiodxa.com,2204,170,154,2012-01-07T21:15:03Z,2026-03-07T17:01:14Z
-8503732,devaige,Aige,"Pampa de Vaca, Torata, Mariscal Nieto  Moquegua 18100, Peru","Once I thought technology could change the world, then I realized that the only person I could change was me.","Bill Finance Technology Co.,Ltd.",,,1178,1,35,2014-08-20T14:34:09Z,2025-09-14T02:22:55Z
-49838578,gerardokaztro,Gerardo Castro ☁️🔐,"Callao, Perú","AWS Security Hero | Cloud Security Engineer | Building real security tools for AWS Organizations in LATAM. I learn by building, not memorizing.",,,,62,13,7,2019-04-21T14:34:59Z,2026-03-05T02:56:09Z
+2745567,mriscoc,Miguel Risco-Castillo,"Lima, Peru","FPGA system architect with experience in embedded and microcontroller devices. Software, hardware and firmware development.",PULSAR,http://mrisco.accesus.com,,1110,2,72,2012-11-07T19:46:36Z,2026-03-01T12:34:43Z
 723723,mgonto,Martin Gontovnikas,"San Fransisco, California","Developer turned product growth & mktg exec. Now run Hypergrowth Partners  helping some of the best: Vercel, Ramp,
 n8n, Clerk, Braintrust, Ashby, and more!",Hypergrowth Partners,http://gon.to/,,824,0,99,2011-04-12T00:39:19Z,2026-03-05T02:03:27Z
