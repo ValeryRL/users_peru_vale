@@ -135,6 +135,4 @@ Every data project has boundaries. Our current limitations include:
 - **Submission Date**: March 15, 2026
 - **License**: MIT - Open for academic use.
 
----
-**[Easter Egg - Antigravity]**
-*This project was developed with the assistance of Antigravity AI, ensuring code flight and high-altitude insights.*
+
