@@ -99,23 +99,109 @@ Respond in JSON format:
                 "reasoning": f"Error during classification: {e}"
             }
 
+    def classify_batch(self, batch_repositories: list[dict]) -> list[dict]:
+        """Classify a batch of repositories in a single LLM call for efficiency."""
+        if not self.client:
+            return [{
+                "repo_id": r.get("id"),
+                "repo_name": r.get("name"),
+                "industry_code": "J",
+                "industry_name": self.industries["J"],
+                "confidence": "low",
+                "reasoning": "OpenAI client missing"
+            } for r in batch_repositories]
+
+        batch_info = []
+        for r in batch_repositories:
+            topics = r.get("topics", [])
+            topics_str = ", ".join(topics) if isinstance(topics, list) else str(topics)
+            readme = r.get("readme", "")
+            readme_snippet = readme[:1000] if readme else 'No README'
+            
+            batch_info.append({
+                "id": r.get("id"),
+                "name": r.get("name"),
+                "description": r.get("description", "No description"),
+                "language": r.get("language", "Not specified"),
+                "topics": topics_str,
+                "readme": readme_snippet
+            })
+
+        prompt = f"""Analyze the following {len(batch_repositories)} GitHub repositories and classify each into ONE industry category.
+        
+INDUSTRY CATEGORIES:
+{json.dumps(self.industries, indent=2)}
+
+REPOSITORIES TO CLASSIFY:
+{json.dumps(batch_info, indent=2)}
+
+INSTRUCTIONS:
+1. For each repository, provide the industry_code, industry_name, confidence, and a brief reasoning.
+2. Return a JSON structure with a "classifications" key containing a list of objects.
+3. Every object must have these fields: "repo_id", "industry_code", "industry_name", "confidence", "reasoning".
+4. Ensure the repo_id matches the input exactly.
+"""
+
+        try:
+            response = self.client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": "You are an expert software project classifier. Your output must be a valid JSON object matching the requested schema."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.2,
+                response_format={"type": "json_object"}
+            )
+            
+            output = json.loads(response.choices[0].message.content)
+            results = output.get("classifications", [])
+            
+            # Map back to ensure we return results for all repos in the batch
+            # even if the LLM missed one (unlikely but possible)
+            mapping = {str(res["repo_id"]): res for res in results if "repo_id" in res}
+            
+            final_results = []
+            for r in batch_repositories:
+                rid = str(r.get("id"))
+                if rid in mapping:
+                    res = mapping[rid]
+                    final_results.append({
+                        "repo_id": r.get("id"),
+                        "repo_name": r.get("name"),
+                        "industry_code": res.get("industry_code", "J"),
+                        "industry_name": res.get("industry_name", "Information and communication"),
+                        "confidence": res.get("confidence", "medium"),
+                        "reasoning": res.get("reasoning", "Bulk classified")
+                    })
+                else:
+                    # Fallback for missing items
+                    final_results.append({
+                        "repo_id": r.get("id"),
+                        "repo_name": r.get("name"),
+                        "industry_code": "J",
+                        "industry_name": self.industries["J"],
+                        "confidence": "low",
+                        "reasoning": "Missing from bulk output"
+                    })
+            return final_results
+            
+        except Exception as e:
+            logger.error(f"Bulk classification failed: {e}")
+            return [{
+                "repo_id": r.get("id"),
+                "repo_name": r.get("name"),
+                "industry_code": "J",
+                "industry_name": self.industries["J"],
+                "confidence": "low",
+                "reasoning": f"Error in bulk: {e}"
+            } for r in batch_repositories]
+
     def batch_classify(self, repositories: list[dict], batch_size: int = 10) -> list[dict]:
-        """Classify multiple repositories efficiently."""
+        """Classify multiple repositories efficiently using bulk calls."""
         results = []
         for i in range(0, len(repositories), batch_size):
             batch = repositories[i:i+batch_size]
-            for repo in batch:
-                classification = self.classify_repository(
-                    name=repo.get("name", ""),
-                    description=repo.get("description", ""),
-                    readme=repo.get("readme", ""),
-                    topics=repo.get("topics", []),
-                    language=repo.get("language", "")
-                )
-                results.append({
-                    "repo_id": repo.get("id"),
-                    "repo_name": repo.get("name"),
-                    **classification
-                })
-                logger.info(f"Classified {repo.get('name')} as {classification.get('industry_name')}")
+            logger.info(f"Classifying batch of {len(batch)} repositories (starting at index {i})...")
+            batch_results = self.classify_batch(batch)
+            results.extend(batch_results)
         return results

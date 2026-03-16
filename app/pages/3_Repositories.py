@@ -1,11 +1,14 @@
 import streamlit as st
 import pandas as pd
+import os
 
 st.set_page_config(page_title="Repository Browser", page_icon="📁", layout="wide")
 st.title("Repository Browser")
 
-@st.cache_data
+@st.cache_data(ttl=60)
 def load_data():
+    # Force reload
+    _ = os.path.getmtime("data/processed/repositories.csv") if os.path.exists("data/processed/repositories.csv") else 0
     try:
         repos_df = pd.read_csv("data/processed/repositories.csv")
     except:

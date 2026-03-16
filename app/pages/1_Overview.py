@@ -7,8 +7,10 @@ import os
 st.set_page_config(page_title="Overview - GitHub Peru", page_icon="🇵🇪", layout="wide")
 st.title("Peru Developer Ecosystem Overview")
 
-@st.cache_data
+@st.cache_data(show_spinner="Loading ecosystem data...", ttl=60)
 def load_data():
+    # Force reload by checking file modification time
+    _ = os.path.getmtime("data/processed/repositories.csv") if os.path.exists("data/processed/repositories.csv") else 0
     try:
         users_df = pd.read_csv("data/metrics/user_metrics.csv")
     except:

@@ -36,7 +36,7 @@ def extract_data():
     
     logger.info("Starting user discovery by location...")
     for loc in locations:
-        users = user_extractor.search_users_by_location(loc, max_users=100) # 25 locations * 100 max = up to 2500 initial pool
+        users = user_extractor.search_users_by_location(loc, max_users=40) # 25 locations * 40 = 1000 users Discovery
         for user in users:
             login = user.get("login")
             if login and login not in seen_users:
@@ -45,7 +45,7 @@ def extract_data():
                 
     logger.info(f"Discovered {len(all_users)} unique users.")
     
-    # We need 1000 repos total. Let's get the repos for our users.
+    # We need 2500 repos total. Let's get the repos for our users.
     # To optimize API calls, we'll fetch full user details and their repos only for top-tier users 
     # until we hit a good pool of repositories.
     
@@ -53,6 +53,7 @@ def extract_data():
     
     logger.info("Extracting repositories (sorted by stars)...")
     top_repos = repo_extractor.search_repos_by_stars(user_logins, min_stars=0)
+    top_repos = top_repos[:2500] # Use the requested 2500 limit
     logger.info(f"Found {len(top_repos)} repositories matching criteria.")
     
     # Save raw repos
@@ -73,44 +74,57 @@ def extract_data():
         json.dump(detailed_users, f, indent=2)
         
     # Get extra info for repositories: README and languages
-    logger.info("Extracting README and languages for all repositories...")
+    logger.info("Extracting README and languages for all repositories using parallel threads...")
     enriched_repos = []
-    for repo in tqdm(top_repos, desc="Repo details"):
+    
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    
+    def fetch_repo_details(repo):
         owner = repo["owner"]["login"]
         repo_name = repo["name"]
         
-        # Additional data calls
-        readme = repo_extractor.get_repo_readme(owner, repo_name)
-        languages_dict = repo_extractor.get_repo_languages(owner, repo_name)
-        
-        # We only care about the primary language for easy mapping, but let's keep the dict
-        primary_language = repo.get("language")
-        if not primary_language and languages_dict:
-            # Get the language with max bytes
-            primary_language = max(languages_dict.items(), key=lambda x: x[1])[0]
+        try:
+            # Additional data calls
+            readme = repo_extractor.get_repo_readme(owner, repo_name)
+            languages_dict = repo_extractor.get_repo_languages(owner, repo_name)
             
-        repo_data = {
-            "id": repo["id"],
-            "owner": owner,
-            "name": repo_name,
-            "full_name": repo["full_name"],
-            "description": repo.get("description", ""),
-            "topics": repo.get("topics", []),
-            "language": primary_language,
-            "languages": list(languages_dict.keys()),
-            "stargazers_count": repo.get("stargazers_count", 0),
-            "forks_count": repo.get("forks_count", 0),
-            "watchers_count": repo.get("watchers_count", 0),
-            "open_issues_count": repo.get("open_issues_count", 0),
-            "created_at": repo.get("created_at", ""),
-            "updated_at": repo.get("updated_at", ""),
-            "pushed_at": repo.get("pushed_at", ""),
-            "license": repo.get("license", {}).get("key") if repo.get("license") else None,
-            "has_license": bool(repo.get("license")),
-            "readme": readme,
-            "has_readme": bool(readme.strip())
-        }
-        enriched_repos.append(repo_data)
+            # We only care about the primary language for easy mapping
+            primary_language = repo.get("language")
+            if not primary_language and languages_dict:
+                primary_language = max(languages_dict.items(), key=lambda x: x[1])[0]
+                
+            return {
+                "id": repo["id"],
+                "owner": owner,
+                "name": repo_name,
+                "full_name": repo["full_name"],
+                "description": repo.get("description", ""),
+                "topics": repo.get("topics", []),
+                "language": primary_language,
+                "languages": list(languages_dict.keys()),
+                "stargazers_count": repo.get("stargazers_count", 0),
+                "forks_count": repo.get("forks_count", 0),
+                "watchers_count": repo.get("watchers_count", 0),
+                "open_issues_count": repo.get("open_issues_count", 0),
+                "created_at": repo.get("created_at", ""),
+                "updated_at": repo.get("updated_at", ""),
+                "pushed_at": repo.get("pushed_at", ""),
+                "license": repo.get("license", {}).get("key") if repo.get("license") else None,
+                "has_license": bool(repo.get("license")),
+                "readme": readme,
+                "has_readme": bool(readme.strip())
+            }
+        except Exception as e:
+            logger.error(f"Failed to enrich {owner}/{repo_name}: {e}")
+            return None
+
+    # Use 10 threads to avoid hitting rate limits too fast but still be 10x quicker
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        futures = [executor.submit(fetch_repo_details, repo) for repo in top_repos]
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Repo details"):
+            result = future.result()
+            if result:
+                enriched_repos.append(result)
         
     # Save processed users to CSV
     logger.info("Saving to CSV...")

@@ -1,19 +1,399 @@
 id,login,name,location,bio,company,blog,email,followers,following,public_repos,created_at,updated_at
-343265,mjambon,Martin Jambon,San Francisco Bay Area,Automation enthusiast,Semgrep,https://mjambon.com,,319,177,103,2010-07-25T06:06:57Z,2026-01-16T20:44:27Z
-2207415,spiermar,Martin Spier,"San Francisco Bay Area, CA",VP of Engineering. AI and Cloud Infrastructure. Performance Engineering. Platform Engineering. Ex-Netflix.,@parasail-ai ,http://martinspier.io/,martin@martinspier.io,383,66,75,2012-08-23T21:44:35Z,2026-02-28T22:36:38Z
+498448,charlesmartin14,Charles Martin,San Francisco,AI and Data Science Consultant ,Calculation Consulting,http://www.linkedin.com/in/charlesmartin14,charlesmartin14@gmail.com,188,54,64,2010-11-26T23:01:32Z,2025-10-20T00:23:23Z
+214755104,EzerZuniga,Ezer Benito Zuñiga chura ,Cusco - Perú,Estudiante de Ingeniería Informática y de Sistemas | Full Stack Developer en formación.,Universidad Nacional San Antonio Abad del Cusco ,,zunigaezer2@gmail.com,12,3,18,2025-06-04T02:09:56Z,2026-03-12T22:01:40Z
+20654016,HLena,Elena Gordillo Viña,Arequipa - Perú,Front-End Developer ,,https://ghlena.web.app/,gordillo.vi20@gmail.com,28,32,51,2016-07-26T02:59:21Z,2025-09-22T12:46:36Z
+164355095,Jeremyvc2202,Jeremy Villacrez,Ucayali,,,,,1,1,19,2024-03-21T13:01:11Z,2026-03-12T00:20:26Z
+6383593,ricjuanflores,Juan Flores,Tacna - Perú,I am an engineer passionate about building and scaling systems who loves clean architecture and best practices.,,,juanflores.ric@gmail.com,4,4,16,2014-01-12T17:58:46Z,2026-03-05T15:22:41Z
+24356603,goandreus,Andres Chavez,Lima - Peru,"Software Architect
+",Citibank,https://www.linkedin.com/in/andres-chavez-crisostomo-0a903a121,andres.chavez.crisostomo@gmail.com,555,1338,157,2016-12-03T15:11:02Z,2026-01-19T17:18:37Z
 32233200,Mars-tin,Martin Ziqiao Ma,"San Francisco, CA","phd<<<1,1>>>(umich);",University of Michigan,http://ziqiaoma.com/,marstin@umich.edu,228,102,18,2017-09-24T03:29:44Z,2026-03-11T18:47:07Z
-49838578,gerardokaztro,Gerardo Castro ☁️🔐,"Callao, Perú","AWS Security Hero | Cloud Security Engineer | Building real security tools for AWS Organizations in LATAM. I learn by building, not memorizing.",,,,62,13,7,2019-04-21T14:34:59Z,2026-03-05T02:56:09Z
-44477388,apholdings,SoloPython,"Lima, Peru","Desarrollo web con Programacion Python, Django y React",SoloPython,https://solopython.com,mail@solopython.com,674,0,56,2018-10-25T17:31:42Z,2026-03-12T20:57:25Z
-3536982,ekmartin,Martin Ek,San Francisco,,Increase,https://ekmartin.com,mail@ekmartin.com,209,112,92,2013-02-11T23:29:09Z,2026-02-10T19:42:26Z
-577277,martinwicke,Martin Wicke,San Francisco,,,,,471,2,18,2011-01-21T21:56:41Z,2026-02-22T12:22:51Z
-10574326,escueladigital,EDteam,"Lima, Perú",,EDteam,https://ed.team,,1000,0,18,2015-01-17T15:25:06Z,2025-10-20T17:20:15Z
+73418962,Elcornevic,Victor Guillermo Cornejo Villanueva,"Chachapoyas, Amazonas, Peru","B.Sc. Genetics & Biotechnology at National University of San Marcos, Peru. Researcher in Molecular Genetics at the Laboratory of Molecular Physiology (UNTRM).",Toribio Rodríguez de Mendoza National University (UNTRM),,,3,0,3,2020-10-25T07:10:57Z,2025-09-17T12:03:17Z
+50345067,alexRai98,Rai,"Piura, Peru",Desarrollador Frontend 👨‍💻 con experiencia en 💻 React y especializado en el desarrollo para 📲 Android utilizando Jetpack Compose.,Codeable,https://alexrai98.github.io/portafolio/,,6,4,64,2019-05-06T23:59:38Z,2026-02-23T17:51:14Z
+427535,dcmartin,DC Martin,"San Jose, CA USA","UNIX hacker; Web pioneer; data mining dilettante; exploring cognitive, Cloud and IoT solutions for fun and profit; if you can't find something, ask.","Alumni of IBM, Dell, UCSF, Sun",www.dcmartin.com,,64,26,140,2010-10-05T05:30:57Z,2026-02-20T12:23:42Z
+47969,nicolas-mosconi,Nicolas Mosconi,Junin,,,,nicolasmosconi@gmail.com,7,0,2,2009-01-20T15:15:21Z,2025-11-27T15:47:40Z
+5052489,imarpe,Instituto del Mar del Perú,"Callao, Perú",,,www.imarpe.gob.pe,,7,0,10,2013-07-20T07:51:58Z,2025-05-08T23:49:21Z
+11188092,jasminejeane,Jasmine Martin,"San Francisco, CA",I enjoy bridging my logical side with my creative side. Contributing out of box ideas that are not often explored to add value to a project.,UC Berkeley,www.jasminejeane.com,,27,4,111,2015-02-25T05:39:05Z,2026-02-27T12:35:04Z
+11514837,TenKenZero,Lenin Carrasco,"Tumbes, Perú",Data Engineer | Software Engineer,,,leningeniero@gmail.com,2,1,4,2015-03-17T05:16:24Z,2026-02-28T16:04:08Z
+14082070,neunapp,Neunapp,Cusco-Peru,Utilizo esta cuenta para compartir conocimientos y ejemplos sobre desarrollo de aplicaciones web. ,Neunapp,https://neunapp.com/,neunapp.cursos@gmail.com,60,1,61,2015-09-01T22:02:11Z,2024-03-12T06:00:38Z
+7337141,dcyar,Jhon Achata Limachi,Arequipa - Perú,Remote Fullstack Developer | PHP | Laravel | Javascript | Vue | React | Docker | +4 years of experience | Always ready for new challenges 🚀,@Agencia-Web-Porta,https://jhonachata.dev/,jhonachata.dev@gmail.com,22,2,71,2014-04-18T12:59:58Z,2026-03-04T13:25:43Z
+90013732,ALYA-MIKAEL,Valeria Saidid Miranda Ibarra,Perú - Callao,"Estoy entusiasmada por continuar aprendiendo, colaborar en proyectos innovadores y, eventualmente, contribuir a la construcción de soluciones tecnológicas.",,,,5,11,14,2021-09-03T00:41:23Z,2026-02-14T14:08:20Z
+130936574,AliKnows,AliKnows,"Cusco, Perú", System and Computer Engineer/ Software Developer,,,,39,137,27,2023-04-16T21:52:02Z,2026-03-04T15:04:32Z
+17274950,giancarlosisasi,Giancarlos Isasi,"Ica, Peru","Frontend Principal at @crehana.com. I love all things related to javascript tooling!
+
+https://giancarlos-isasi.com/",Crehana,https://giancarlos-isasi.com/,giancarlos.isasi@gmail.com,23,22,167,2016-02-16T15:20:35Z,2026-03-01T19:35:54Z
+49346366,jcaramantin,Jhoan Caramantin,"Callao,Lima,Peru",Bachiller de Ingeniería de Software en la Universidad Nacional Mayor de San Marcos / .NET Developer ,,https://gitlab.com/zero1706,,29,99,20,2019-04-06T16:26:11Z,2026-02-14T21:10:26Z
+1541836,dennisbot,Dennis Huillca Portilla,Cusco - Perú,software craftsman - by my commits you shall know me,,https://www.linkedin.com/in/dennis-huillca-portilla/,dennisbot@gmail.com,20,43,63,2012-03-15T21:02:17Z,2026-02-10T16:33:56Z
+38089794,fastworkx,Fastworkx S.R.L.,"Abancay, Apurimac, Perú",Desarrollo Software ,,https://www.fastworkx.com/,,0,0,7,2018-04-05T00:59:12Z,2018-04-05T01:13:46Z
+40885546,GalaxyTraining,Galaxy Training,Av. Arequipa 330 Oficina 801 Santa Beatriz - Lima,,,http://galaxy.edu.pe/,,53,0,7,2018-07-06T08:36:30Z,2023-08-15T18:22:29Z
+127633330,CrhistianAquino1984,Crhistian Aquino,Cajamarca-Perú,Bachiller en Ingeniería de Sistemas,Universidad Nacional de Cajamarca,,,1,3,4,2023-03-11T22:37:17Z,2023-03-15T20:19:32Z
 1307948,drmad,Oliver Etchebarne,"Ica, Perú","Self-taught epicurean Linux geek, compulsive programmer since 10 yo, runs @paperclip-eirl and hacks @vendimia on his (sometimes not so) free time",@paperclip-eirl,https://drmad.org,,29,17,15,2012-01-05T22:12:44Z,2026-01-27T22:21:11Z
+50188432,Ddrojaz,DDRojas,Junin de los Andes,,,,,1,0,2,2019-05-02T01:23:58Z,2024-07-08T19:50:55Z
+100012260,AlexSystem19,HuGod | UXDevOps.net,Lima / Callao,Prime Low Code.,UXDEVOPS,https://uxdevops.net/,powerbi@servosa.pe,3,12,25,2022-02-19T05:19:32Z,2026-01-28T15:49:31Z
+115769418,Jeremitc,JeremiTC,Callao Lima Peru,Passionate Student / Full Stack Software Engineer & Web Application Developer,,,,20,84,29,2022-10-14T04:08:26Z,2026-02-28T17:02:32Z
+20645536,Terrakill5,Jose Briceño,"Tumbes, Peru.","Bachellor in Computer Science in Proccess, Proficent in Frontend Developement using Vanilla JavaScript, VueJS and React. ",,https://portfoliofrontendjosebriceno.netlify.app,josealbertino4@gmail.com,1,0,41,2016-07-25T15:51:25Z,2025-10-24T18:13:05Z
+58184133,Enryuk3,Cristopher Guzmán,"Ica, Perú","Frontend Developer
+",,,guzmncristopher@gmail.com,19,20,23,2019-11-25T16:49:57Z,2026-03-04T23:38:15Z
+102426024,Kochq,Mateo Koch,"Junin, Buenos Aires, Argentina",Passionate software developer looking to expand his skills on a big project,Relevar,,matukoch6@gmail.com,4,8,19,2022-03-26T15:37:21Z,2026-03-05T14:43:31Z
+5640041,yg-apaza,Yuliana Apaza,"Arequipa, Perú",,,yg-apaza.github.io,yuliana.apaza94@gmail.com,24,14,39,2013-10-08T16:25:19Z,2026-02-23T17:35:44Z
+149842,gabetax,Gabe Martin-Dempesy,San Francisco,,Zendesk,,gabe@zendesk.com,72,74,45,2009-11-06T18:30:24Z,2026-02-04T18:37:24Z
+115020164,seyoncito,Cesar Huamani,Haquira-Apurimac,Ing. Sistemas e Informática,Tic,,,0,0,8,2022-10-04T14:19:17Z,2026-02-28T22:11:06Z
+9202761,alfredopaz,Alfredo Paz Valderrama,"Arequipa, Perú",Professor at Universidad Nacional de San Agustín de Arequipa,Universidad Nacional de San Agustín de Arequipa,,,22,0,30,2014-10-13T19:51:39Z,2026-02-21T12:33:41Z
+5897318,jhumbertoh,Jose Hurtado,"Piura, Perú",Senior SDET | Test Automation Trainer,SWTesting Dragon,,josehumberto17@gmail.com,18,25,39,2013-11-09T18:18:16Z,2026-02-21T16:43:00Z
+38768001,jmayta1984,Jorge M,"Lima, Perú",:smirk_cat: Android Engineer | :rocket: Jetpack Compose enthusiast | :earth_americas: Traveler,,,,228,19,159,2018-04-26T20:02:44Z,2026-03-12T12:31:45Z
+42879133,martinsam16,Martín Alexis Samán Arata,"Perú, Lima, San Vicente de Cañete",,,https://martinsam16xyz.vercel.app,martinsam1610@gmail.com,33,25,86,2018-08-31T21:40:53Z,2026-01-16T17:27:44Z
+1703064,martinwells,Martin Wells,San Francisco,,Martin Wells,martinwells.com,,26,6,8,2012-05-03T16:23:32Z,2026-02-03T17:03:31Z
+105665409,SalvadorSarmiento,Eduardo Salvador Araujo Sarmiento,"Bellavista, Callao","✔ Desarrollo backend con PHP (Laravel, APIs, optimización de consultas)
+✔ Desarrollo frontend con JavaScript (React & SVG)",,,,1,0,9,2022-05-16T16:53:24Z,2025-07-12T01:23:18Z
+8290696,programacionparaaprender,Programación para aprender,Cercado Lima - Lima - Perú ,"Mis objetivos son difundir el conocimiento, la voluntad de aprender, trabajo en equipo, eficiencia, confianza, espero poder ayudarte con mis repositorios.",,https://programacionparaaprender.github.io/mi-pagina-web2/,alberto13711@gmail.com,286,309,274,2014-07-28T15:02:44Z,2026-02-23T22:31:07Z
+19536044,piligab,Pilar Gabriela Serrano Quispe,Ayacucho - Perú,,,,piligab.psq@gmail.com,5,0,13,2016-05-23T16:16:39Z,2026-02-10T16:13:03Z
+33938832,FenixLM,Felix Lamadrid,Piura,Software engineer,GoJom,https://felixlm.com/,,13,5,22,2017-11-23T18:10:43Z,2026-03-11T01:10:08Z
+65608253,JosueNoha,Josue Julianz Noha Valdiva,"Cusco, Perú",,,,,29,32,6,2020-05-19T13:51:27Z,2025-10-16T15:55:37Z
+64569347,gianvallejos92,Gian Vallejos,"Cajamarca, Perú",Salesforce Developer,,https://www.gvallejos.com,,8,1,22,2020-04-30T02:37:22Z,2025-10-22T21:13:27Z
+101891501,IngSystemCix,Juan B. Romero C.,"Lambayeque, Perú","My name is Juan B. Romero Collazos, and I am a Systems Engineering student at the Universidad Tecnológica del Perú.",IngSystemCix Company ,https://ingsystemcix.infinityfree.me/,,7,2,44,2022-03-18T17:37:53Z,2026-03-12T21:07:17Z
+135391459,HEARELMER,Elmer,"Ayacucho, Perú",💯 ,Universidad Nacional de San Cristóbal de Huamanga,https://calamardo-pe.web.app/,,2,3,23,2023-06-02T23:16:00Z,2026-03-02T23:39:46Z
+1254674,jeffrom,Jeff Martin,"San Francisco, CA",,,,jeff.martin@classdojo.com,43,100,31,2011-12-10T21:50:31Z,2026-02-25T22:27:10Z
+16847375,PaulESantos,Paul Efren,Cusco - Peru,Plant ecology and R programming.,,http://paulefrensa.rbind.io/,paulefrens@gmail.com,30,46,103,2016-01-23T03:20:36Z,2026-02-20T00:26:43Z
 8503732,devaige,Aige,"Pampa de Vaca, Torata, Mariscal Nieto  Moquegua 18100, Peru","Once I thought technology could change the world, then I realized that the only person I could change was me.","Bill Finance Technology Co.,Ltd.",,,1178,1,35,2014-08-20T14:34:09Z,2025-09-14T02:22:55Z
-203321,matiskay,Edgar Marca,"Arequipa, Perú",Doing security things by day and doing things with data and crafty stuff by night.,,http://twitter.com/matiskay,,100,210,61,2010-02-14T03:45:46Z,2025-12-01T17:03:34Z
-131488004,mabelolivera10,MABEL QUISPE OLIVERA,"LIMA, PERU","👀 Persona apasionada con su profesión, excelente capacidad de organización y facilidad de trabajo en equipo. Muy adaptable a todo tipo de entornos y clara orie",TITANIC SOFT EIRL,encoded.pe,mabelolivera2110@gmail.com,1197,0,88,2023-04-21T19:19:11Z,2025-11-05T13:58:39Z
-33765137,alainm23,Alain,"Cusco, Cusco, Perú",,,,alainmh23@gmail.com,395,49,74,2017-11-17T21:01:01Z,2026-03-14T09:17:25Z
+173285566,MayaCS30,Maya,Ucayali-Pucallpa,,,,,1,2,17,2024-06-19T15:30:52Z,2025-10-15T21:25:55Z
+40831149,DataScienceResearchPeru,Data Science Research Peru,"Lima, Perú","Somos una org. que descentraliza, democratiza y difunde los conocimientos en Ciencia de Datos e Inteligencia Artificial.",,https://www.facebook.com/DataScienceResearch,richardcuica@gmail.com,174,0,106,2018-07-04T13:29:09Z,2021-03-19T21:13:17Z
+1801446,angelolev,Angelo Leva,Tacna,Frontend Engineer,@TRANZACT ,https://angelodev.vercel.app/,,48,2,51,2012-05-31T23:24:35Z,2026-03-09T01:00:02Z
+300238,emedinaa,Eduardo José Medina Alfaro,"Lima, Peru","Android developer, instructor, Kotlin evangelist and Swift enthusiast",Mapsalud,http://emedinaa.github.io/,emedinaa@gmail.com,506,761,219,2010-06-08T20:15:18Z,2026-01-21T20:00:24Z
+9729704,mtli,Martin Li,San Francisco,Research at OpenAI | Perception at Waymo | PhD at CMU SCS.,OpenAI,https://mtli.github.io/,martinli.work@gmail.com,74,3,23,2014-11-13T22:01:51Z,2026-03-08T02:41:43Z
+2458287,hinantin,Hinantin,"Cusco, Perú",Research and NLP Software Development / Investigación y desarrollo de software en el área de la ingeniería lingüística.,,http://hinantin.com,rcastro@hinantin.com,7,0,15,2012-09-30T17:38:26Z,2022-11-24T01:31:44Z
+44477388,apholdings,SoloPython,"Lima, Peru","Desarrollo web con Programacion Python, Django y React",SoloPython,https://solopython.com,mail@solopython.com,674,0,56,2018-10-25T17:31:42Z,2026-03-15T13:35:08Z
+25042132,bryamrrr,Bryam Rodriguez,"Ica, Perú","Experienced Frontend developer. Systems engineer, lifelong learner, tech lover and avid reader.",,,,13,0,52,2017-01-10T21:16:55Z,2026-02-02T03:27:48Z
+2904059,leeja,José Luis Lee Rázuri,Piura,,Mikhuna,http://www.mikhuna.com,jlee.jasoftsolutions@gmail.com,6,0,9,2012-11-27T17:18:13Z,2017-04-23T14:44:44Z
+115027362,Josesaso45,Jose_Montero_Vilcas,"Callao,Lima,Perú",,Agrovet Market,https://inkedin.com/in/josé-gorge-montero-vilcas-b24434183/,,3,30,36,2022-10-04T15:57:33Z,2026-02-03T15:21:11Z
+1459486,eLRuLL,Raul Gallegos,"Arequipa, Perú",https://stackoverflow.com/users/858913/elrull,,https://stackoverflow.com/users/858913/elrull,raul.ogh@gmail.com,69,12,77,2012-02-22T00:39:40Z,2025-08-13T17:53:31Z
+130894533,luishu533,Luis Huanca,"Callao, Perú",,,,,3,0,6,2023-04-16T07:57:46Z,2025-11-03T20:54:23Z
+139652922,JhonAQ,Jhonatan David Arias Quispe,"Arequipa, Perú",I like coffee and code :D,National University of San Agustin,,jariasq@unsa.edu.pe,33,44,49,2023-07-15T19:45:27Z,2026-02-18T14:46:35Z
+4944483,jumanor,Jorge Cotrado,"Tacna, Peru","I like network administration, you can visit my channel here:
+https://www.youtube.com/c/JorgeCotradoNetworking",KaminoSoft,http://jumanor.blogspot.com,jumanor@gmail.com,15,0,33,2013-07-04T23:00:09Z,2026-03-13T15:33:03Z
+97780529,Siris4,Gavin Martin,"San Diego, CA",Full Stack Developer - Certified Apple Genius Bar Technician - Python | Javascript | CSS | HTML,,,,1012,1680,763,2022-01-15T07:29:20Z,2025-11-24T16:06:36Z
+34951894,hackanonimous,Jose Alvarez Escobar,Ayacucho(Peru),Full Stack Engineer,,,,24,14,46,2017-12-30T01:52:59Z,2025-12-02T13:10:19Z
+106293111,Edsghot,Ed soto huamanhorcco,"Abancay,Apurimac","Full stack Developer
+",edsghot,,,5,4,77,2022-05-26T03:24:56Z,2026-02-27T02:18:13Z
+80786948,juniorencode,Carlos Junior Ramos Vasquez,"Tacna, Perú",Hello World!,,https://juniorencode.dev/,,6,0,6,2021-03-16T19:39:13Z,2025-10-13T13:45:14Z
+124643592,AlexMP-Dev,Elmer Alexis Muguerza Prieto,"Peru, Ancash, Chimbote",,,https://alexmp-dev.pages.dev/,,3,2,12,2023-02-07T01:28:37Z,2025-08-11T00:15:08Z
+117586102,abelvillasecaco,Abel Villaseca,"Cajamarca, Perú",💻 Freelance dev 📖 YouTube partner 👾 Geek & Friki,,https://abelvillaseca.com,,11,0,4,2022-11-06T15:29:55Z,2026-03-14T02:46:01Z
+205622515,hexed-AAL1X,AAL1X,Perú/Lima,💻 Dev Junior 🚀 GOD projects in C++ 🎮 Exploring the Frontend and new technologies 🔥 Fan of code and constant learning 👨‍💻,,,,708,435,16,2025-03-31T11:31:27Z,2026-03-11T11:40:20Z
+62476166,dinoroca,Dino Emerson Roca Laurente,Ayacucho Perú,,,,,4,2,24,2020-03-21T15:55:56Z,2026-02-21T02:41:20Z
+52333132,PedroMolina17,Pedro Molina Noa,"Perú, Ica","Desarrollador Full Stack , React - Django -NestJs - SQL/Oracle",,https://pedro-molinanoa.vercel.app/,,16,16,51,2019-06-28T20:16:15Z,2025-11-21T18:40:12Z
+70351020,DinaRocio,Dina Rocio ,Cajamarca,,,,dinarociovq15@hotmail.com,30,50,29,2020-08-27T22:32:50Z,2026-03-05T21:40:05Z
+226014,kreichgauer,Martin Kreichgauer,San Francisco,,@google ,,,47,9,19,2010-03-19T10:10:22Z,2026-02-25T22:36:56Z
+80079103,lhuaytaflores,Lenin Huayta Flores,Puno,Puno - Perú,Universidad Nacional del Altiplano Puno,,,2,0,3,2021-03-05T01:24:22Z,2024-07-10T11:15:28Z
+8764595,cyacarinic,Claudio Yacarini,"Ventanilla-Callao. Lima, Perú.",,Software Engineer at @WhiteStack,http://cyacarinic.github.io/,cyacarinic@gmail.com,5,1,61,2014-09-14T02:07:30Z,2025-12-15T14:06:59Z
+611699,hpneo,Gustavo Leon,Lima - Perú,"Man out of time. Creator of gmaps.js, cevichejs.com and domscope.com. @CodePicnic co-founder.",CodePicnic,https://hpneo.dev,gmleonr@gmail.com,367,2,161,2011-02-10T21:37:20Z,2026-01-09T14:28:08Z
+81202733,FREY-RONDAN,Frey Rondan,Ancash- Peru,,,https://web.facebook.com/profile.php?id=100057242529734,,0,3,4,2021-03-23T01:25:47Z,2025-09-22T17:01:08Z
+11506904,gerardocorn,Gerardo C. Mamani,"Cusco, Perú",Genomic and Animal Breeding,Purdue University,,thal4@hotmail.com,12,102,14,2015-03-16T17:12:53Z,2026-03-08T17:41:59Z
+57047708,Gonzalogdlr,Gonzalo Gianmarco Gutiérrez de la Rosa,"Ica, Peru",,Cymasuite,,gologdlr@gmail.com,24,45,21,2019-10-26T20:05:45Z,2026-01-27T03:48:04Z
+64493192,DCodeMaker07,David Saavedra,"Callao, Perú",Just a programmer. 👨‍💻,,,,3,11,103,2020-04-28T17:46:02Z,2026-02-26T13:38:53Z
+114497422,skyps2003,luis,Apurimac,"@napl4n ilv - f
+
+
+",@unamba,,,0,2,19,2022-09-27T13:51:25Z,2026-02-03T21:57:41Z
+104741907,gabriela-pzambrano,Gabriela Zambrano,Cusco-Perú,,,gabriela-zambrano,,14,5,13,2022-05-02T00:13:51Z,2023-07-04T04:07:46Z
+9041124,ejosymart,Josymar Torrejón-Magallanes,Callao - Perú,"PhD Fisheries Science - Bioeconomics.
+
+",Instituto del Mar del Perú,https://ejosymartm.netlify.app/,ejosymart@gmail.com,44,124,24,2014-10-06T19:10:58Z,2025-11-24T13:19:05Z
+3597900,MartinCastroAlvarez,Martín,San Francisco,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",,https://martincastroalvarez.com,,383,1444,106,2013-02-14T22:28:18Z,2026-02-19T13:36:26Z
+14113955,jonycordero,jony joel,Ayacucho - Perú,,EdSinCloud,www.edsincloud.com,jony_cs_24@hotmail.com,5,10,32,2015-09-03T17:57:01Z,2026-01-12T02:57:53Z
+65838616,maxsolfar,Máximo Solis Farfan,Cusco - Perú,UI & Front-End Developer,,www.maxsolfar.dev,maxsolfar@gmail.com,18,5,20,2020-05-24T02:15:12Z,2026-02-22T14:02:53Z
+10574326,escueladigital,EDteam,"Lima, Perú",,EDteam,https://ed.team,,1000,0,18,2015-01-17T15:25:06Z,2025-10-20T17:20:15Z
+67403486,Raisa320,Raisa Orellana,"Lambayeque, Perú",Desarrolladora Back-end apasionada por la programación y la resolución de problemas complejos.,,https://www.linkedin.com/in/raisa-orellana-rios/,,11,17,34,2020-06-25T03:36:24Z,2026-01-17T04:37:55Z
+43937420,alejandrorodrom,Alejandro Rodriguez Romero,"Callao, Perú",Software Engineer in TCS 💻,,https://www.linkedin.com/in/alejandro-rodriguez-romero/,,5,4,11,2018-10-07T19:35:26Z,2026-01-31T08:39:16Z
+3883699,armandoaepp,Armando Enrique Pisfil Puemape,"Chiclayo, Lambayeque, Peru",,,,armandoaepp@hotmail.com,1,0,48,2013-03-16T14:33:29Z,2026-01-23T12:56:14Z
+30203503,novvier,Novvier Uscuchagua,"Cerro de Pasco (Perú), Lima (Perú)",,"Universidad Nacional Agraria La Molina, Master Student",qjanax.blogspot.pe,novvier@outlook.com.pe,5,4,15,2017-07-15T21:56:49Z,2026-02-07T15:56:52Z
+18169352,DanielCamarena,Daniel Camarena,"Callao, Perú",[computer ∪ stats]  ∩  [math ∪ science],Imarpe,,vcamarenap@uni.pe,51,618,12,2016-03-30T14:13:39Z,2026-01-21T05:34:40Z
+3168050,miguelmartin75,Miguel Martin,San Francisco,"The views and opinions expressed in this account are those of my own and do not represent those of my employer, NVIDIA",,https://miguel-martin.com,,77,65,48,2013-01-02T09:37:30Z,2026-03-03T01:01:28Z
+3615859,aocsa,Alexander Ocsa,Arequipa,Staff Software Engineer,,https://linktr.ee/aocsa,,70,130,163,2013-02-17T06:25:33Z,2026-03-05T13:00:47Z
+32296818,YasminMattos,Yasmin,"Ica, Perú.",🐛 Biologist | UX Designer in training ,,,,37,51,79,2017-09-26T10:33:39Z,2023-12-21T01:45:37Z
+1976010,supertinou,Martin Lagrange,San Francisco,,,,lagrangemartin@gmail.com,107,237,44,2012-07-14T17:43:59Z,2026-03-15T13:34:56Z
+141697,Tombar,Martin Loy,San Francisco,"
+    
+    30% Nerd 70% Polyester
+
+",WeWork,,martinloy.uy+imaspambot@gmail.com,53,87,74,2009-10-19T15:09:48Z,2026-03-11T13:59:30Z
+12684674,HearTom,Tomas Hernandez,Ica,,,,,49,1,10,2015-05-31T15:41:38Z,2023-10-16T03:35:43Z
+105084458,ArvickJara,Arvic Kenedi Jara,huanuco,,,,arvic2514@gmail.com,5,6,33,2022-05-06T21:56:41Z,2026-03-01T15:54:00Z
+9049,snorecone,Mark Martin,San Francisco,,,,,42,23,17,2008-05-01T17:40:25Z,2025-01-14T23:18:12Z
+106676335,EdwardMelendezM,Edward Melendez Mendigure,National University San Antonio Abad del Cusco,Bachiler of software engineer,National University San Antonio Abad of Cusco,https://melemele.site/about-me,,16,6,180,2022-06-01T12:52:53Z,2026-02-16T06:26:24Z
+2745567,mriscoc,Miguel Risco-Castillo,"Lima, Peru","FPGA system architect with experience in embedded and microcontroller devices. Software, hardware and firmware development.",PULSAR,http://mrisco.accesus.com,,1110,2,72,2012-11-07T19:46:36Z,2026-03-01T12:34:43Z
+1113924,kerpie,Kerry,"Tacna, Peru",,Studio 14,www.androidheroes.com,k4torce@gmail.com,35,0,44,2011-10-09T11:23:40Z,2025-05-20T14:01:44Z
+175563577,Nunu-DMG09,Nudav Studio,Lambayeque - Perú ,"| 👨‍🎓 Software Engineering Student 
+| 🌟Future Full-Stack Developer and Ethical Hacking ",,https://nudavstudio.vercel.app/,davidmesta09@gmail.com,8,7,22,2024-07-14T20:06:59Z,2026-03-12T20:17:41Z
+232113,Reflejo,Martín Conte Mac Donell,San Francisco,¯\_(ツ)_/¯ ,@bitdriftlabs ,,,80,3,78,2010-03-28T17:15:09Z,2026-03-07T02:27:57Z
+58860559,lhernerremon,Lherner Remon,"Ayacucho, Perú",,,https://lhernerremon.github.io/,,5,8,14,2019-12-13T18:09:53Z,2026-03-05T13:38:57Z
+57896895,chano64123,Jose Gutierrez,Tacna,,,,,11,7,69,2019-11-18T10:13:57Z,2026-03-11T23:30:34Z
+11042573,Neomartin,Martín Rodríguez,"San Rafael, Mendoza - Argentina",Software Engineer Sr.,NaranjaX ,,neomartinr@gmail.com,35,3,141,2015-02-17T10:02:32Z,2026-03-11T13:00:08Z
+13384115,fabianmerino,Fabian Merino,"Piura, Perú",FullStack Developer,@tgiperu,,,7,7,54,2015-07-17T16:55:12Z,2026-03-09T15:34:57Z
+1810547,eddumelendez,Eddú Meléndez Gonzales,"Ica, Perú","Skydiver, Java Chavo, Software Engineer, Open Source Contributor, Java Champion
+",@docker,https://eddumelendez.dev/,,506,135,266,2012-06-02T19:33:31Z,2026-01-23T19:34:00Z
+115272446,Standylc,Alejandro Jeanpiere Melendez Leon,Av sircunvalacion arenales 217 Chaupimarca Pasco,,Industria Maderera Nazareno M&L,,,0,0,3,2022-10-07T15:55:30Z,2023-04-05T15:24:23Z
+62267772,elliotgaramendi,Elliot Leo Garamendi Sarmiento,"Perú, Lima","Frontend y AI Engineer especializado en React. Creo productos IA enfocados en UX, rendimiento y calidad. Apasionado del aprendizaje y la docencia.",elliotgaramendi,,,282,3,23,2020-03-16T23:06:46Z,2026-02-25T15:22:16Z
+43669,willywg,William Wong Garay,Piura - Perú,CTO at Shoppy.chat,Shoppy.chat,https://willywg.com,willywg@gmail.com,80,140,56,2009-01-01T22:36:45Z,2026-02-18T00:47:48Z
+136985422,NeoKode,NeKosmic,Sicuani/Cusco/Peru,,NeoKosmo,https://gitlab.com/NeKosmic/,,19,22,3,2023-06-18T15:00:38Z,2025-08-24T10:58:12Z
+104025084,AlexTRDev,Alex Terrones Rivera,"Chota, Cajamarca, Perú",,,,allex_tr@hotmail.com,7,6,16,2022-04-19T17:19:48Z,2024-11-09T04:20:04Z
+16279201,ValerioGomez,Valerio Gomez ,Puno Peru,"El Primer paso para un cambio significativo en tu vida es crear el proyecto que tienes en mente. Make u it!,",SamsamTec,https://valerio.me,,3,6,110,2015-12-13T18:11:57Z,2026-03-08T22:34:08Z
+444680,xonecas,Sean Caetano Martin,San Francisco,,Employed,,,105,59,44,2010-10-18T22:23:48Z,2021-08-04T18:11:46Z
+47544543,cerberodev,Pierre  Guillen ,"Ica, Perú",Mobile Software Engineer | Organizer & Founder of @FlutterPeru & @FlutterIca | Member of @flutter-es , @CerberoDev,https://cerbero.dev,hi@cerbero.dev,104,351,121,2019-02-11T23:49:00Z,2026-02-19T17:06:19Z
+64846247,frankalvarezdev,Frank Alvarez,"Arequipa, Perú",Full Stack developer 💻 and electronic music lover 🎧💙,Cantarium,https://frankalvarez.dev,,24,54,24,2020-05-05T12:59:32Z,2026-03-09T20:13:27Z
+71612750,georgegiosue,George Giosue,Cajamarca & Medellin,,,georgegiosue.dev,peraldonamoc@gmail.com,22,21,21,2020-09-20T22:35:24Z,2026-03-01T22:35:53Z
+49843602,DavidYaipen,David Yaipén,Piura - Perú,"
+Frontend Developer.",Entelgy,,,6,11,40,2019-04-21T18:36:01Z,2026-03-10T13:46:04Z
+3240322,ronaldsmartin,Ronald Martin,"San Francisco, CA","👨‍💻📱📈👨‍🏫
+
+Fullstack at Tonic. 🎵 
+Formerly PlanGrid, Ashby",@PocketConservatory,https://itsronald.com/,hello@itsronald.com,72,41,40,2013-01-11T01:43:17Z,2026-03-05T22:50:19Z
+3142308,AlexandroBazan,Alexandro Bazán Ladines,Piura - Perú,,,http://www.alexandrobazan.com,alexandrobazan@gmail.com,35,1,9,2012-12-28T14:23:53Z,2025-09-08T18:53:22Z
+1832457,neyder,Neyder Achahuanco,"Puno, Peru",,Neyder,neyder.net,neyder@neyder.net,4,1,12,2012-06-09T01:55:42Z,2026-02-28T15:15:55Z
+61076196,franki-wolf1,Franki Briones,"Cajamarca, Perú","👨‍💻 Web Developer
+🖥️ Creator of Desktop Systems
+🔍 Researcher of New Technologies
+☁️ Cloud Computing Enthusiast
+💬 Ask me about Firebase, Python,",Sistinco SAC,https://franki-briones.web.app/,,3,5,66,2020-02-15T06:38:30Z,2026-02-22T13:52:02Z
+3599197,frdtorres,Fred Torres Cruz,Puno,,Universidad Nacional del Altiplano,,ftorres@unap.edu.pe,12,7,48,2013-02-15T03:01:32Z,2026-02-23T12:26:29Z
+1118135,joedayz,José Díaz,Lima - Perú,"Member of PeruJUG, Java Champion, Owner of JoeDayz.pe, Community Guy",JOEDAYZ,https://www.joedayz.pe,jose.diaz@joedayz.pe,604,43,275,2011-10-11T01:26:30Z,2026-03-11T16:57:00Z
+4896200,eyllanesc,Edwin Yllanes,Lima-Perú,"C++, Qt, Python 
+",Freelance,,e.yllanescucho@gmail.com,265,1,47,2013-06-30T21:52:01Z,2026-02-23T12:28:06Z
+39932324,PieroCastillo,Piero Castillo,"Lima, Perú","Student of Computer Science in National University of Engineering, 
+Open Source Software Lover :>",,,,195,977,91,2018-06-05T00:45:27Z,2026-03-04T13:08:12Z
+7518464,jmontes50,Jorge Osmar Montesinos Aramayo,"Arequipa, Perú","Working at @Laboratoria 
+
+Love JS and Python",Laboratoria,,osmarmontes50@gmail.com,80,23,208,2014-05-08T01:31:10Z,2026-03-10T02:42:59Z
+18494040,Chasty,Willy Rosa,Cusco,You can do magic 🪄✨🔮,,,,12,83,60,2016-04-16T03:08:52Z,2025-12-25T18:00:02Z
+14001107,paucaro,Paula Asto,"Arequipa, Peru",Code Enthusiast  & Video Game Player  & Foodnatic  & Perfectionist Obsessed & Living a life that I'll remember ,Smart Reasons,https://paucaro.github.io/,carolinaasto@gmail.com,45,8,57,2015-08-27T15:16:46Z,2025-11-22T22:27:34Z
+55208000,ElmerJeanpierreLopez,Elmer López,"Piura,Perú",,,,,6,0,7,2019-09-11T18:26:34Z,2025-09-05T22:59:16Z
+116055924,Kevincarlosqa,Kevin Quispe Aquise,Arequipa - Peru,Passionate about technology and its transformative capacity in all aspects of life.,,kevincarlosqa.dev,kevincarlosqa@gmail.com,39,403,50,2022-10-18T05:13:38Z,2026-01-03T02:28:54Z
+1321736,soncco,Braulio Soncco,Cusco - Perú,,http://abastecimiento.pe,http://soncco.com,,19,22,89,2012-01-11T13:24:29Z,2026-03-05T15:50:39Z
 1312018,sergiodxa,Sergio Xalambrí,"Lima, Perú","Web Dev at Daffy.org.
 Previously: @ableco, @codeableorg, @platzi (YC W15), and @vercel",Daffy.org,https://sergiodxa.com,hello@sergiodxa.com,2204,170,154,2012-01-07T21:15:03Z,2026-03-07T17:01:14Z
-2745567,mriscoc,Miguel Risco-Castillo,"Lima, Peru","FPGA system architect with experience in embedded and microcontroller devices. Software, hardware and firmware development.",PULSAR,http://mrisco.accesus.com,,1110,2,72,2012-11-07T19:46:36Z,2026-03-01T12:34:43Z
+53663762,cwray-tech,Christopher Wray,"Pasco, Washington",Full Stack Software Engineer ,The St. James,https://chriswray.dev/,,50,50,22,2019-08-03T19:55:56Z,2026-03-15T18:23:59Z
+577277,martinwicke,Martin Wicke,San Francisco,,,,,472,2,18,2011-01-21T21:56:41Z,2026-02-22T12:22:51Z
+71897736,UltiRequiem,Eliaz Bobadilla,"Lima, Perú","
+eat • sleep • ship • repeat",,ultirequiem.xyz,eliaz@bobadilla.tech,250,38,391,2020-09-25T17:29:06Z,2026-03-13T21:12:55Z
+47792684,cesarmsq,cesar supo,Puno - Perú,Statistician & Data Science,Nan,https://www.kaggle.com/cesarsupo,,2,3,11,2019-02-19T18:32:49Z,2026-02-20T16:22:30Z
+6463592,nixtoshi,David Lopez,"Cusco, Perú","Translated a lot of Bitcoin.org to Spanish, failed a startup before, and invested in many cryptos early with a few hits.
+
+Occasional Metamask contributor.",,nixtoshi.com,,9,8,6,2014-01-21T18:49:07Z,2026-02-07T08:22:44Z
+11976865,Benjacho,Benjamin Flores Copa,Arequipa Peru,Coding,,,christianbfc97@gmail.com,20,7,36,2015-04-16T10:32:00Z,2026-03-05T16:43:13Z
+8379937,kiwidamien,Damien Martin,"San Francisco, CA",,StitchFix,,djmartin@ucdavis.edu,60,6,95,2014-08-07T01:31:01Z,2026-02-12T20:01:15Z
+89204234,gustarting,Gustavo Mamani,"Arequipa, Peru",software engineer | ai user since 2022,,,,352,424,32,2021-08-19T13:41:28Z,2026-01-10T16:24:55Z
+115683237,yupanquiah,Humberto Yupanqui Apaza,Cusco - Peru,"Hi!...
+",FREELANCER - @linecero,cv.yupanqui.dev,yupanquiah@gmail.com,10,7,11,2022-10-13T04:18:37Z,2026-03-01T16:17:22Z
+66932285,bryan142857,Víctor B Velásquez Huamán,Huancavelica,,Universidad Nacional de Huancavelica,https://bryannaik.wixsite.com/vbrianvh,,1,44,8,2020-06-15T03:31:27Z,2025-10-14T01:05:17Z
+120763209,yeisonagm,Yeison Garcia,Cajamarca,,,,,5,7,18,2022-12-17T01:50:43Z,2026-01-31T12:18:49Z
+21202542,Noodle96,Jorge Tito,"Arequipa, Perú",,,https://russell-portfolio-pearl.vercel.app/,,25,38,102,2016-08-23T16:58:01Z,2026-03-04T02:20:04Z
+5367670,falconshady,Luis Alberto Macedo Gonzales,La Perla | Callao | Perú,,Falconshady Store,falconshady.com,falconshady@gmail.com,1,1,8,2013-09-02T20:21:07Z,2025-10-13T14:54:58Z
+220792905,RonaldoChambillaRojas,Ronaldo Rojas,"Tacna, Perú",Backend & DevOps Enthusiast | Software Engineering Student,,tinto.website,ronaldochambillarojas@gmail.com,4,6,32,2025-07-14T21:15:29Z,2026-03-15T05:49:25Z
+36812672,sergiomauz,Sergio Zambrano,"Tacna, Peru","Full-Stack Developer with hands-on experience using C#, Python, Ruby and Javascript.
+
+Open to new job opportunities.",Full-Stack Developer,https://www.szetapp.com/,sergio.mauz88@gmail.com,36,38,18,2018-02-25T10:09:07Z,2025-12-16T13:17:45Z
+29237807,cesarmayta,César Mayta,"Arequipa,Perú",Data Scientist and Machine Learning Engineer,Solinsoft,https://www.cesarmayta.com,cesarmayta@gmail.com,47,12,304,2017-06-06T19:35:44Z,2026-03-03T14:40:14Z
+40478271,ELECTROALL,ELECTROALL,Arequipa - Perú,"En este sitio usted encontrará información, proyectos y tutoriales a cerca de electrónica, electricidad y automatización industrial. Creación de tarjetas PCBs d",https://www.facebook.com/ELECTROALL.ELECTRONICA/,https://www.electroallweb.com/,,218,0,138,2018-06-22T00:32:23Z,2026-03-10T01:21:50Z
+2207415,spiermar,Martin Spier,"San Francisco Bay Area, CA",VP of Engineering. AI and Cloud Infrastructure. Performance Engineering. Platform Engineering. Ex-Netflix.,@parasail-ai ,http://martinspier.io/,martin@martinspier.io,383,66,75,2012-08-23T21:44:35Z,2026-02-28T22:36:38Z
+4792446,ederivero,Eduardo de Rivero Manrique,"Arequipa, Peru",,RAVN,,ederiveroman@gmail.com,67,12,112,2013-06-23T23:43:56Z,2026-03-11T19:24:17Z
+8053607,AngelRodRo,Alejandro,"Tacna, Peru",I'm keen on challenging myself to achieve my goals. Love programming and work with a team to build awesome products and help people. 🔥,,alerodro.com,,24,10,57,2014-07-03T02:17:59Z,2026-03-07T14:01:23Z
+111806234,SmoKINGcrimSON,SmoKING crimSON,"Cajamarca, Perú.","I'm learning c#, c++ and mySQL.",,,,3,0,13,2022-08-22T21:09:33Z,2026-02-25T12:43:45Z
+127185004,JuniorChistemas,Junior15Dev,Piura/Peru,Desarrollador web  y movil 📱 💻 especializado en Laravel y Flutter🤝👇.,,https://juniormartinez.vercel.app,,9,3,15,2023-03-07T07:19:34Z,2026-03-05T22:18:09Z
+2148833,jlinformatico,Jorge Antonio Linares Vera,Tacna,,Comunidad de Software Libre BasadrinuX,www.facebook.com/jorlive,jlinformatico@gmail.com,8,1,56,2012-08-14T06:01:11Z,2018-03-09T16:40:45Z
+5394154,fabian818,Fabian Peña,Ica,,,,f.pena.jacobo@gmail.com,37,23,72,2013-09-05T19:31:03Z,2026-01-05T14:17:20Z
+234049,mateusfreira,Mateus Freira dos Santos,"Nova Lima, MG, brazil",Principal Architect  at @VIDADiagnostics  and MSc in Computer Science,@VIDADiagnostics ,https://blog.freira.dev/,mateus.freira@gmail.com,200,35,119,2010-03-31T10:58:01Z,2026-03-09T17:42:38Z
+52834007,adelgadop,Alejandro Delgado (Jano),"Chapel Hill (USA), São Paulo (Brazil), Lima (Peru), Cajamarca (Peru)","Environmental engineer and atmospheric scientist researcher in air pollution.
+PhD student in meteorology at IAG/USP.",University of São Paulo,,,35,32,18,2019-07-12T17:01:42Z,2026-02-13T17:56:53Z
+16414449,ivaneliascl,Ivan Elias Carrasco Lupinta,"Abancay, Apurimac, Perú",,,https://www.facebook.com/ivan.e.carrasco,rimanace@hotmail.com,6,11,9,2015-12-23T13:08:45Z,2022-06-30T17:44:24Z
+7347327,bryamrr,Bryam Rodriguez,"Ica, Perú",Frontend developer passionate about software and technology.,,,brodriguezaybar@gmail.com,19,0,13,2014-04-19T15:25:15Z,2016-12-09T19:32:00Z
+936,cjmartin,Chris Martin,San Francisco,,,http://roundhere.net,@cjmartin,64,13,39,2008-02-26T16:30:02Z,2026-03-04T18:59:32Z
+92251336,jhonrolyol,Jhon Roly ,"Ayacucho, Peru",Economy | Research | Econometrics | Math | Statistic | Interested in Data Analysis,UNSCH-UNMSM-UNI,rolyordonezleon@gmail.com,,35,735,60,2021-10-10T09:53:01Z,2025-11-16T20:30:24Z
+39389947,lissavcasas,Lissa Casas,"Lima, Perú.","I'm a lifelong learner! :) 
+
+Front-end Developer from Laboratoria & Flutter enthusiast. ",,https://lissavcasas.github.io/portfolio/,lissavcasas@gmail.com,239,182,115,2018-05-17T22:53:12Z,2026-02-26T06:42:35Z
+1480608,jemehua,jeronimo,ayacucho,,aplicaciones integrales s.r.l.,,jemehua@gmail.com,4,1,13,2012-02-28T03:10:24Z,2026-02-14T04:01:42Z
+170835252,vargasnaut,,"Callao, Lima - Peru",Systems Engineering Student,,,nvargas20027@gmail.com,1,4,6,2024-05-25T22:22:33Z,2026-02-14T15:42:00Z
+51397083,Railly,Railly Hugo,"Lima, Peru",design engineer | v0 ambassador | 25 🇵🇪,@clerk,https://railly.dev,,240,42,84,2019-06-05T06:35:25Z,2026-03-14T12:18:46Z
+56744917,JelsinPalomino,Jelsin Palomino,"Cusco, Perú",,,https://disability-cyan.vercel.app,,9,68,32,2019-10-18T23:46:22Z,2025-10-07T23:54:13Z
+20130753,wilsongthb,Wilson Pilco,Puno - Perú,Egresado de la EPIS en la UNAP,,,wilsonaux1@gmail.com,5,8,55,2016-06-24T16:33:34Z,2026-01-23T00:58:59Z
+75133106,LilWhitte,Carlo Steffano Arróspide Gambini,"Ancash, Santa",Cursando mis últimos ciclos de la carrera de Ingeniería de Sistemas e Informática.,Universidad Nacional del Santa,https://www.linkedin.com/in/steffano-argam/,,0,0,12,2020-11-27T15:37:45Z,2024-06-06T11:17:38Z
+864790,joelibaceta,Joel Ibaceta,"Lima, Peru","AI Researcher in Transition
+
+From Software Engineering to Cognitive Systems & Scientific Computing.",,https://joelibaceta.github.io,mail@joelibaceta.com,657,1150,531,2011-06-21T16:49:43Z,2026-03-06T13:22:24Z
+20690965,johnhooks,John Hooks,"Pasco, WA USA",Just another crane operator,StellarWP,https://johnhooks.io,bitmachina@outlook.com,26,71,71,2016-07-27T21:35:40Z,2026-03-08T12:07:50Z
+12788039,SaulMontoya,Saul Montoya,Lima,,Hatari Labs,http://hatarilabs.com,saulmontoya@gidahatari.com,182,3,39,2015-06-07T20:21:27Z,2023-12-15T15:32:40Z
+40411693,JoseObeso,Jose Obeso,"Chimbote, Ancash, Peru","Professional developer with PHP, C#, Java, Visual Fox/Basic; SQL Server, PL/SQL  Oracle, MySQL, PostgreSQL, DBF; HTML, JavaScript, CSS, MVC, GIT, Azure",elPiquero.com,https://www.elpiquero.com/,,0,11,15,2018-06-20T00:40:38Z,2026-02-20T21:54:24Z
+11233738,sinchijackal,Richarth,"Cusco, Peru",,Inkodex Tech,https://www.inkodex.com,sinchijackal@gmail.com,7,15,41,2015-02-27T17:59:02Z,2026-03-01T12:50:20Z
+4744927,danielfuentes,Ángel Daniel Fuentes Segura,Ciudad Autónoma de Buenos Aires - Argentina - Perú Lima.,"Profesor: Desarrollo Web Full Stack -
+Máster en Diseño y Fabricación Asistido por Computadoras para la rama metalmecánica (CAD-CAM).
+Licenciado en Computación",Digital House - UdeSA - UNTREF - Educación IT - ISIL,https://www.cedavilu.com,cedavilu@gmail.com,839,744,72,2013-06-20T04:38:08Z,2024-02-09T21:44:40Z
+80434257,Emerson-Portugal,emersoncrp,"Arequipa, Peru","emersoncrp
+",,emersoncrp@gmail.com,,28,8,81,2021-03-11T00:52:08Z,2026-03-06T17:46:45Z
+11504548,karitotp,Karito Tenorio Palomino,Ayacucho-Perú,,,,,6,0,13,2015-03-16T14:42:42Z,2026-03-06T12:37:30Z
+57740386,ctucnoc,Cristian Tucno Conde,"Ayacucho, Perú","Programador Back-End en tecnología Java, Spring boot , JPA, Spring Security, Spring Cloud",Digital Corp Perú SAC,,,7,0,17,2019-11-14T03:56:05Z,2025-03-14T14:48:16Z
+86632845,yeltsinale,Yeltsin,Cajamarca,"Ельцин
+- I’m interested on technology, AI, networks, and servers.
+- I'm Learning web development with Python and Django
+- I know some C#, Java, PHP,etc
+
+",Yeltsin,,,3,1,6,2021-06-28T22:33:01Z,2026-02-10T07:43:36Z
+181403325,MiguelVivar,Miguel Vivar,"Ica, Perú","👋 Hola, soy Miguel Vivar, apasionado del desarrollo web y la programación, enfocado en crear soluciones innovadoras y eficientes.",,https://www.miguelvivar.engineer,miguelvivarfarfan@gmail.com,9,11,15,2024-09-12T18:18:50Z,2026-03-14T14:55:48Z
+29429,abelmartin,Abel Martin,"San Francisco, CA","Stops, collaborates, and listens 😁",Ignite Reading,,,67,184,29,2008-10-17T05:26:35Z,2026-02-10T20:14:54Z
+1592216,edgarapaza,Edgar Apaza,Puno,He trabajado en: 1) Archivo Regional de Puno 2008 - 2016. 2) Proyecto Especial Lago Titicaca 2017.,Katari A&C,http://katari.org.pe,,14,2,93,2012-03-31T01:34:07Z,2025-10-08T23:51:48Z
+20079828,Nighteyez07,Duncan Nisbett,"Pasco, WA",,North Wind Solutions,,,3,7,21,2016-06-22T02:53:35Z,2026-03-12T15:00:41Z
+69639410,programadorescs,Jack Chavez Saravia,"Ica, Peru",Android Developer (Java/Kotlin) & .NET,,https://programadorescs.com/,,12,0,39,2020-08-13T14:53:55Z,2026-03-14T05:27:51Z
+16215,martindemello,Martin DeMello,San Francisco,,Meta,http://martindemello.net,martindemello@gmail.com,77,9,106,2008-07-06T23:30:53Z,2026-02-20T19:49:11Z
+10450905,fakel,Fares A. Akel C.,"Cusco, Perú","Dev @Laboratoria
+Backend Developer
+JS/NodeJS, Docker, AWS, GCP/Firebase, Web3/Solidity",@Laboratoria,www.linkedin.com/in/fakel,f.antonio.akel@gmail.com,45,36,37,2015-01-08T14:39:35Z,2026-02-16T16:34:57Z
+891216,bajaloreto,Hugo Quintero,"Loreto, Baja California Sur",,HuQuMa Studio,,,7,20,66,2011-07-03T04:26:03Z,2026-03-04T23:14:52Z
+39337536,siutau,Siu Tau Leon,Piura - Perú,FrontEnd Developer,GoJom,,,7,10,5,2018-05-16T12:52:10Z,2026-03-12T18:08:05Z
+41349009,bitmakerla,Bitmaker,"Arequipa, Peru",,,http://bitmaker.la,hello@bitmaker.la,27,0,32,2018-07-17T23:30:20Z,2023-09-01T21:09:23Z
+65962972,CarlosJhulyan,Jhulyan,Ayacucho Peru,,CJ dev,https://cjdev.vercel.app/,,7,5,34,2020-05-26T14:15:55Z,2026-03-12T16:28:06Z
+24969384,pav-dev98,Pavel Mansilla Goyas,"Tingo Maria , Huanuco Peru.",,,,pavel.mansilla@gmail.com,3,3,22,2017-01-07T02:47:42Z,2026-03-09T06:59:48Z
+64096637,DavidMarioLC,DavidMarioLC,"Ciudad de Ica, Perú","Software Engineer・ GDG Organizer ・       @ Google Developer Groups Ica 🌐
+",Software Engineer,davidmariolc.dev,,49,48,50,2020-04-21T17:34:50Z,2026-03-03T21:12:45Z
+65048311,Brother-Antony,Antony Elmer,"perú, callao",Web Developer,,https://brother-antony.github.io/PORTAFOLIO/,,22,7,29,2020-05-08T22:20:41Z,2025-10-08T03:48:21Z
+163893381,Karen17Mendoza,Karen Mendoza,Cusco-Perú,Ingeniera Electrónica | Apasionada por la Innovación Tecnológica y el Desarrollo de software,,melanie171095@gmail.com,melanie171095@gmail.com,17,7,22,2024-03-18T16:48:23Z,2025-10-19T18:10:38Z
+2582866,carlosthe19916,Carlos Feria,"Ayacucho, Perú",Open source contributor - always learning new things,Red Hat,,,69,27,366,2012-10-17T17:53:52Z,2026-03-15T06:22:13Z
+42578792,rodp63,Joaquin Palma,"Arequipa, Peru",,Quasar AI,,jr63.palma@gmail.com,21,5,28,2018-08-21T14:05:33Z,2026-01-14T18:06:10Z
+51211585,MarcoAntonioBaronEffio,Marco Antonio Barón Effio,"Tumán , Chiclayo - Lambayeque","Soy un emprendedor y apasionado por la programación móvil 😀.
+",,,,5,0,6,2019-05-30T19:03:40Z,2024-03-10T14:51:34Z
+1689010,kelymartinezp,Kely,Ica,"Digital Marketing, UX designer and Project Management. Organizer of 3 #RailsGirlsIca and 1 Startup Weekend Ica. ",,,kelymartinezp@gmail.com,46,27,3,2012-04-28T23:23:07Z,2020-01-22T22:44:14Z
+117321672,JostinHv,Youssef Josten Herrera Vilchez,"Perú, Ancash, Chimbote",Hi everyone!,,,,2,3,11,2022-11-02T23:04:15Z,2026-02-17T03:50:10Z
+113204671,DianaQuintanaY,Diana Quintana,"Ica, Perú",Full Stack Web Developer | Back End Developer | JavaScript | React Js | Redux | Node.Js | Express | PostgreSQL,,dcqy.95@gmail.com,,8,5,14,2022-09-09T17:53:22Z,2026-02-25T03:42:13Z
+17020511,juanxodj,Juan Sánchez,"Piura, Perú",,,https://jsanchez.xyz/,,6,3,34,2016-02-02T06:50:28Z,2026-01-30T20:16:02Z
+61527316,dcajasn,Riskfolio,"Lima, Peru","Finance and Python lover, looking for job opportunities in quantitative finance, investments and risk management.",,https://financioneroncios.wordpress.com/,dcajasn@gmail.com,503,0,7,2020-02-27T01:44:20Z,2026-02-18T01:09:06Z
 723723,mgonto,Martin Gontovnikas,"San Fransisco, California","Developer turned product growth & mktg exec. Now run Hypergrowth Partners  helping some of the best: Vercel, Ramp,
 n8n, Clerk, Braintrust, Ashby, and more!",Hypergrowth Partners,http://gon.to/,,824,0,99,2011-04-12T00:39:19Z,2026-03-05T02:03:27Z
+131488004,mabelolivera10,MABEL QUISPE OLIVERA,"LIMA, PERU","👀 Persona apasionada con su profesión, excelente capacidad de organización y facilidad de trabajo en equipo. Muy adaptable a todo tipo de entornos y clara orie",TITANIC SOFT EIRL,encoded.pe,mabelolivera2110@gmail.com,1196,0,88,2023-04-21T19:19:11Z,2025-11-05T13:58:39Z
+10386219,YeisonBTS,Yeison Eduardo,Moquegua,yeison.bts@gmail.com,,https://github.com/yeisonbts,,2,4,34,2015-01-04T03:38:32Z,2024-02-09T18:39:17Z
+10981880,mnbucher,Martin JJ. Bucher,"San Francisco, CA",PhD Student @ Stanford,Stanford University,https://www.mnbucher.com,,34,67,9,2015-02-12T19:18:27Z,2026-02-26T21:33:33Z
+54047442,FranH20,Franklin Huichi Contreras,"Tacna, Perú","I am a software developer, I like to program in Python and JavaScript, I am currently ready and prepared to work or collaborate with developers.",me,,,33,41,87,2019-08-13T00:33:19Z,2026-03-10T04:20:10Z
+52869811,kevinPerezGarcia,Kevin (Kevo) Perez Garcia,Peru - Cusco - Cusco,"COOPAC DILE | Data scientist (UNI) | Economista (UNSAAC) | Apasionado por Python, ML y fútbol ⚽️",https://www.dile.com.pe/,https://kevinperezgarcia.my.canva.site/tarjeta-presentacion,,29,80,54,2019-07-13T23:07:47Z,2026-03-14T21:57:17Z
+75584352,HackUnderway,Hack Underway,Lima - Perú,Empresa de tecnología de la información⠠⠵,,hackunderway.com,,222,0,40,2020-12-06T19:21:07Z,2025-01-12T23:10:44Z
+26855595,LaMalditaProgramadora,Jimena Alexandra Ruiz Cerna,"Lima, Perú",Convierto café en código.,,https://www.linkedin.com/in/jimena-alexandra-ruiz-cerna/,,202,17,94,2017-04-02T16:10:38Z,2026-02-28T13:22:39Z
+81894363,cesaracjota,Cesar Acjota Merma,Arequipa,Software Engineer.,"TECSUP, UNSA",https://cesaracjota.vercel.app/,,235,4,83,2021-04-04T04:45:15Z,2026-03-02T02:00:56Z
+1459760,martin-liu,Martin Liu,San Francisco Bay Area,,@Nand-AI ,,,34,61,28,2012-02-22T03:04:04Z,2025-08-21T00:20:42Z
+29420547,rubenpazch,Ruben Paz Chuspe,"Peru, Cusco","Full-Stack Developer works with Ruby, Rails, JS, React & Reduct, Java, and C#.",Software Engineer ,http://rubenpazch.github.io,,86,138,132,2017-06-14T04:43:17Z,2026-02-06T15:19:10Z
+29098422,NoeMelo,Noé Melo Locumber,"Cusco, Perú","I'm working as a data scientist, artificial intelligence 😇. My hobby: web development  😁",BBVA,https://noemelo.github.io/NoeMeloLocumber//,,7,2,28,2017-05-31T13:26:32Z,2026-01-26T16:39:00Z
+133463267,jorgemunozl,Jorge Munoz Lar,"Lima, Peru","@dianamunozlar I like neural networks, computational quantum mechanics, Arch 🐧, GPU's, robotics, R. Feynman, Deep Learning @Pymut  @karpathy @google-deepmind",@NONHUMAN-SITE,https://jorgemunozl.github.io/,,312,1027,17,2023-05-13T00:57:13Z,2026-03-06T00:07:54Z
+2133361,jmloyola,Juan Martin Loyola,San Luis,Machine Learning Engineer | Computer Science PhD,,https://jmloyola.github.io/,jmloyola@outlook.com,33,25,36,2012-08-11T03:27:34Z,2026-02-08T02:28:35Z
+30003438,percyelbis,Percy Elbis Colque,Cusco,Science and Technology,,https://percyelbis.blogspot.com/,,20,40,39,2017-07-08T14:29:32Z,2025-10-20T02:22:45Z
+109693459,luccemhu,Joel Ccallocunto,Ayacucho,wallpa |> sua...,Pontificia Universidad Católica del Perú,https://youtu.be/8fisvE39Neo,a20196510@pucp.edu.pe,13,35,33,2022-07-20T18:50:53Z,2025-05-30T11:17:50Z
+2969,skiz,Josh Martin,"San Jose, CA",,Samsung Ads,http://bash.org/?668964,github@webwideconsulting.com,48,32,69,2008-03-13T03:48:36Z,2026-03-09T21:37:44Z
+7544049,DanielEdu,Daniel Eduardo Portugal Revilla,Arequipa - Peru,"🚀 Co-founder of Data Engineering LATAM 
+🧙🏼‍♂️ Founder of @Data-Wizard-Club 
+
+
+",Yape,https://www.linkedin.com/in/daniel-portugal,,42,19,76,2014-05-10T17:44:08Z,2026-01-16T07:14:45Z
+22333076,enzoftware,Enzo Lizama Paredes ,"Lima, Perú","Passionate mobile software engineer and Co-funder @boxting . Embracing challenges, a soccer enthusiast and sharing insights as an article author at @kodecocodes",Clipp,https://enzoftware.hashnode.dev,lizama.enzo@gmail.com,304,1332,85,2016-09-20T23:16:31Z,2026-02-17T15:29:04Z
+1412870,sirghost,Jimmy Valverde Sanchez,"Arequipa, Perú",,,http://sirghost.net,,20,207,40,2012-02-06T15:04:01Z,2024-06-23T16:24:31Z
+14990458,popehiflo,Pool Petter Hijuela Florian,"Perú, Cusco",Java Full Stack Developer,,https://popehiflo.github.io/,poolpetterhijuel@hotmail.com,7,5,91,2015-10-06T04:31:23Z,2026-02-01T13:33:39Z
+31930527,MrBrault,Justin Brault,"Pasco, Washington",Computer Science teacher at Pasco High School,Pasco School District,,,3,0,64,2017-09-13T15:28:49Z,2026-02-02T00:59:59Z
+88926388,Jose-pe,Jose L. Corazao,Cusco - Peru,Web Developer,,https://joseluisch.netlify.app/,,85,101,16,2021-08-14T08:46:02Z,2025-10-03T02:53:23Z
+8814630,JairFrancesco,Jair Francesco,Arequipa - Peru,"Software engineer III
+CEO & CTO on TIDATA SOLUTIONS S.A.C",,,,19,8,122,2014-09-18T01:59:19Z,2026-03-10T19:21:16Z
+34093991,omhmichaels,Michael  Martin,Los Angeles / San Diego/ Irvine,"Core Skills: Cloud Engineering/Administration, Devops, Cyber Security(SIEM’s/Compliance/PenTesting)
+Cloud: AWS, EC2, S3, RDS, Lambda, IAM, Cloudwatch, CloudTra",@coding-boot-camp  @OMHM-Solutions ,http://www.omhm.org,,51,286,198,2017-11-29T11:11:01Z,2023-11-03T09:54:47Z
+387111,PuercoPop,Javier Olaechea,"Lima, Perú",,,www.puercopop.com,pirata@gmail.com,223,711,205,2010-09-04T00:29:08Z,2026-02-22T08:36:36Z
+34749770,hershak,Galia,Ayacucho - Perú,"Ingeniera de Sistema, entusiasta por las tecnologías, contribuyente en @openstreetmap 🗺 @osm-pe 🇵🇪 y amante de la naturaleza. 🌷","@kiswar-org, @openstreetmap, @osm-pe, @mapbox",https://www.openstreetmap.org/user/yurasi,,3,5,10,2017-12-21T17:33:08Z,2024-12-13T17:45:11Z
+54015740,sheylaPozo,Sʜᴇʏʟᴀ Pᴏᴢᴏ,"Tacna, Peru","Full-stack Developer:
+HTML | CSS | Ruby | Ruby on Rails | JavaScript| Currently looking for new opportunities",Freelance Full-stack Developer.,https://meineportfolio.netlify.app/,Shey.sternenstaub@gmail.com,81,61,90,2019-08-12T05:05:10Z,2025-07-23T16:13:59Z
+1317294,jardix22,Joseph Ramos,"Puno, Perú",,WeKnow,,jardix22@gmail.com,24,32,41,2012-01-10T03:48:48Z,2026-02-04T00:21:21Z
+343265,mjambon,Martin Jambon,San Francisco Bay Area,Automation enthusiast,Semgrep,https://mjambon.com,,320,177,103,2010-07-25T06:06:57Z,2026-01-16T20:44:27Z
+42551197,AsulconS,Adrian Bedregal,"Arequipa, Perú",Game programmer,"Universidad Nacional de San Agustín, Arequipa",https://github.com/AsulconS,adrian.r.bedregal@gmail.com,20,24,43,2018-08-20T17:49:41Z,2025-12-28T19:16:27Z
+33587369,blackadress,Erland,Ayacucho,Professional developer,,,,15,29,32,2017-11-12T01:37:46Z,2026-02-12T14:24:35Z
+76859196,Husdady,Imanol Enrique,"Piura, Perú","Hi I am Frontend/MERN Developer 💙, my main skill is React 👊, I really love React 👽 beacuse is a strong technology 🔰 for develop user interfaces 🤏",,https://husdady.netlify.com,husdadymena@gmail.com,7,9,30,2021-01-02T04:10:54Z,2026-03-13T03:45:14Z
+185739372,LizandroTanta,Lizandro Tanta,"Cajamarca, Cajamarca- Perú",Thinking about solutions before writing,,https://lizandrotanta.netlify.app/,lizandrotanta25@outlook.com,2,2,5,2024-10-21T01:49:40Z,2026-01-16T20:31:04Z
+76046080,axl72,Axl,"Perú, Callao",La arrogancia hay que ganársela.,National University of San Marcos,,,4,19,24,2020-12-15T11:21:52Z,2026-03-09T17:26:44Z
+16582728,RichardZC,Richard Zapata,Ayacucho - Perú,,ITB SOLUTION SAC,http://www.itbsolution.com.pe,,2,0,24,2016-01-06T21:06:53Z,2025-09-12T03:30:25Z
+64216614,acidcoolffc,,Tacna,Desarrollador Full Stack,NEGOCIEN,negocien.com,,15,0,2,2020-04-23T16:10:12Z,2025-11-15T22:26:28Z
+70618781,FernandoGavilan2000,Fernando Ramiro Gavilán Hernández,Ica-Peru,GoogleDeveloper 👾 |  JavaScript Developer ⚡ |  Android Developer 📱 | Linux 👨‍💻 |  Open Source Enthusiast 👀,,,,3,8,11,2020-09-02T03:12:15Z,2026-03-07T00:40:40Z
+10676479,calberto185,carlosVM,ancash/peru,,carlosvm,,carlos_vm_7@hotmail.com,2,16,28,2015-01-23T21:14:41Z,2026-01-26T14:04:01Z
+2100779,rikardocorp,Ricardo Coronado,Tacna-Peru,,,,rikardo.corp@gmail.com,4,3,30,2012-08-06T02:47:49Z,2025-09-02T05:57:48Z
+750525,mama21mama,guagua,"Junin, Buenos Aires, Argentina",https://lu4ehf.blogspot.com,,reisub.nsupdate.info/reisub,mama21mama2000@yahoo.com.ar,7,4,9,2011-04-25T15:55:12Z,2025-01-24T16:35:06Z
+45292867,dqarias,Dino Ronald Quispe Arias,Puno - Perú,Full-Stack Software Developer. Passionate about developing first-class web applications. Let's build something amazing!, Full-Stack Developer,https://dqarias.netlify.app/,dino.quispea@gmail.com,30,39,60,2018-11-23T15:12:53Z,2026-03-11T19:59:46Z
+23284899,ambarja,Antony Barja ,"Lima, Peru","I love geography, geocomputation and spatial data science 🤓🌎⚕️.",Innovalab - UPCH,https://geografo.pe/,geografo.pe@gmail.com,257,464,188,2016-11-05T21:51:18Z,2026-03-12T22:31:39Z
+156117774,TechAtlasDev,Giovanny A. Jimenez,"Arequipa, Perú","👋 Hola!, Soy freelance y me gusta mucho experimentar con las cosas, domino el lenguaje de programación python, pero me gustan muchos más!.",,,,22,8,61,2024-01-09T17:25:21Z,2026-03-13T19:21:27Z
+139504059,JaremGallegos,Joseph Gallegos,"Arequipa, Perú","Site Reliability Engineer (SRE) | Data, Automation, Core & Enterprise Infrastructure",@IBM,https://jaremgallegos.github.io,,293,601,9,2023-07-13T19:54:44Z,2026-03-14T20:02:02Z
+18422289,FrankSVP,FrankSVP,Arequipa -Perú,,Sin Rueda Tecnológica,https://www.facebook.com/SinRuedaTecnologica,glavie79@gmail.com,128,12,38,2016-04-12T14:07:10Z,2026-01-11T15:20:57Z
+76791753,rodolfo-riveros,,Peru-Apurimac-Andahuaylas,,,,,0,0,35,2020-12-30T19:55:18Z,2025-12-16T16:14:53Z
+10949373,WCNosliwsys,Wilson Callisaya,Tacna,"Ing. Wilson César Callisaya Choquecota
+952000243
+nosliwsys@gmail.com",demarktec sac,,nosliwsys@gmail.com,12,0,134,2015-02-10T22:53:20Z,2025-10-29T00:03:53Z
+25406162,brunonavarro,Bruno Navarro,"Piura, Perú","Hola, soy ingeniero en Informática. con conocimientos en análisis de sistemas, Firebase y programación Android en los lenguajes Java y Kotlin.",,,brunonavarro34@gmail.com,6,8,20,2017-01-28T18:02:53Z,2026-02-27T20:59:35Z
+18016035,nhuamani,Nilton Huamaní,"Cusco, Perú",,,,,9,27,56,2016-03-22T20:52:53Z,2026-02-14T06:22:49Z
+37123867,DanielMartinAlarcon,Daniel Martin-Alarcon,"San Francisco, CA",Bio/Software engineer in San Francisco.  Currently the Ship's Mechanic at @dayhofflabs ,@dayhofflabs ,,,34,0,6,2018-03-06T21:27:50Z,2026-02-12T22:27:09Z
+11638149,mayconxhh,Maycon Xavier H H,Ica - Perú,"Systems Engineer, UX Designer, Fullstack Web Developer, Javascript Developer, Angular, ReactJs, MongoDb, Nodejs.
+C#, SQL Server, Freelancer.
+Twitter: @mayconx",@cromlu ,https://mayconxhh.herokuapp.com/,,12,14,95,2015-03-24T21:53:14Z,2025-12-26T22:40:10Z
+89100676,BMRCVIP,Brandon Rodriguez,"Cajamarca,Perú","Hi, I'm from Peru, I'm studying computer systems engineering.",,,,1,1,14,2021-08-17T18:36:01Z,2026-02-17T15:01:41Z
+54775933,Luaylin,Jorge Luis Calle Morales,HUARAZ - HUARAZ - ANCASH,"👨‍💻 Software Engineer & IT Project Manager  
+Founder LAIUX — Building smart, scalable, and reliable software.  
+🧩 Code. Lead. Deliver.  
+",LAIUX,,,3,2,16,2019-09-01T17:07:02Z,2026-03-12T06:06:59Z
+108824074,arnoldbgm,Arnold Gallegos,"Arequipa, Perú",,,,,61,3,99,2022-07-06T16:27:56Z,2025-12-26T00:49:25Z
+16768318,csaybar,Cesar Aybar,"Lima, Peru",,PhD student in Valencia 🏖️,csaybar.github.io,csaybar@gmail.com,555,67,115,2016-01-19T00:42:22Z,2026-03-14T12:10:20Z
+5783264,AdrianFullStack, Adrián Suclupe,Lambayeque - Perú,,INDRA / LA POSITIVA / RIMAC / TAPP / GARAGELABS,https://www.linkedin.com/in/rogelio-adri%C3%A1n-suclupe-tello-40aa9354/,rogelio.ast@gmail.com,3,1,35,2013-10-26T19:42:30Z,2026-02-23T12:29:27Z
+108639529,dunlk,Milton Omar Ytusaca Vilca,"Puno, Perú",💻 Digital Craftsman,,https://milton-portafolio.vercel.app/,,2,7,79,2022-07-04T01:15:24Z,2026-03-02T14:08:03Z
+18562089,feyaluciano,feyaluciano,"Ayacucho, Argentina",,,lucianoferrari.com.ar,feyaluciano@gmail.com,2,16,28,2016-04-19T21:53:16Z,2025-10-21T13:23:29Z
+12465979,dvolkow,Daniel Wolkow,"Cusco, Peru",Research engineer. High performance network applications as hobbies.,,https://dvolkow.com,,10,12,49,2015-05-15T20:51:39Z,2025-12-29T12:08:56Z
+98637169,RodrigoChumpitaz,Rodrigo Chumpitaz,"Ica, Perú",,,,,16,5,50,2022-01-29T07:31:34Z,2026-02-18T14:07:16Z
+101151458,AngelaTestino,Angela Testino,"Callao, Perú",FULLSTACK  WEB DEVELOPER | JavaScript | React | Redux | Express | NodeJs | SQL | CSS | HTML,,https://www.linkedin.com/in/angelatestino/,angela11021997@gmail.com,9,11,12,2022-03-07T23:20:29Z,2023-06-07T17:22:44Z
+178603947,luis-huaney-lino-devops,Luis Alberto Huaney Lino,"Peru: Lima , Ancash"," Ingenerio de sistemas e informatica, especializado en el desarrollo web y Dev Ops.",,https://www.luis-alberto-huaney-lino.online/,,1,2,14,2024-08-16T18:55:09Z,2026-02-09T20:56:42Z
+110061249,aalvaropc,alvarop,"Perú, Ica",,@shinkansenfinance,aalvaropc.vercel.app,,28,109,39,2022-07-26T19:38:54Z,2026-02-26T13:28:53Z
+33765137,alainm23,Alain,"Cusco, Cusco, Perú",,,,alainmh23@gmail.com,395,49,74,2017-11-17T21:01:01Z,2026-03-14T09:17:25Z
+9284690,ivandevp,Ivan Medina,"Borned in Lima, Peru",Yet another Software Engineer,Yalo,https://unexpected.dev/,medinadiazivan@gmail.com,262,87,293,2014-10-17T15:08:45Z,2026-03-11T11:37:11Z
+98291422,ernanimendonca,Ernani Mendonça,Belo Horizonte / Cusco,"Olá, sou Ernani Mendonça, técnico em Eletrônica - CEFET-MG, estudante de Engenharia de Minas - UFMG e entusiada em programação ;)",Universidade Federal de Minas Gerais,https://www.linkedin.com/in/ernani-mendon%C3%A7a-1032aa11a/,,83,109,7,2022-01-24T00:23:24Z,2022-12-30T19:07:08Z
+203321,matiskay,Edgar Marca,"Arequipa, Perú",Doing security things by day and doing things with data and crafty stuff by night.,,http://twitter.com/matiskay,,100,210,61,2010-02-14T03:45:46Z,2025-12-01T17:03:34Z
+31359121,hebertdev,hebert villafuerte,Arequipa - Peru,"EPICS 🎓📚
+Software & Web Developer
+My works in the next link
+https://hebertdev.com
+https://tinkulabs.com
+
+",Tinku Labs,https://hebertdev.com,,39,4,55,2017-08-25T22:36:17Z,2026-01-31T02:46:56Z
+12980264,ichaparroc,Israel Chaparro,Tacna - Perú,"Lecturer in AI, Data Structures, and Algorithms.",,https://www.linkedin.com/in/ichaparroc/,ichaparroc@gmail.com,10,3,47,2015-06-20T17:09:51Z,2026-02-25T14:43:47Z
+201184204,abogkevincana,Kevin Cana Maguiña,Huaraz-Ancash-Perú,Lawyer and Software Junior Developer - implement regulations on your software,Abogado Kevin Cana Maguiña,https://kevin-cana-legal-shine.lovable.app/,abogkevincana@gmail.com,5,13,1,2025-02-28T01:31:26Z,2026-02-23T16:50:13Z
+155261549,stella-sre,stella,Sicuani - Cusco,,stella,,nix.os.lc@gmail.com,9,27,12,2023-12-30T19:32:27Z,2026-03-14T17:09:42Z
+21105282,oscaramos,Oscar Ramos,"Arequipa, Perú",Passionate software developer,,oscaramos.dev,odrr.99@gmail.com,29,10,50,2016-08-18T14:13:35Z,2026-03-06T10:02:38Z
+253504991,ListopadXD2009,sapphy wapphy,ancash region of peru,ur average spanish 17 year old who exists.,i have no company,,,6,8,6,2026-01-07T13:08:50Z,2026-03-10T17:19:54Z
+56895393,Luissylar,Luis Saldivar,cusco peru,Luis Fernando Saldivar León: Apasionado Estudiante de Ingeniería de Software e Inteligencia Artificial,@Datsun-Enginers ,,,8,15,15,2019-10-22T20:31:43Z,2026-03-15T02:46:05Z
+79887986,gerardoisla0,Julio Gerardo Isla Goicochea,Cajamarca | Perú,"Senior Full Stack Developer 🧑‍💻| Java, NodeJS  💻 | React, Angular 🤖| B1 English | Sector Salud & Banca",,,,5,1,19,2021-03-02T03:05:47Z,2026-03-10T14:51:13Z
+119689098,crissposs,Cristian 🦭,Perú / Cajamarca,"✿︎-'𝕿𝖔 𝕭𝖔𝖐𝖐𝖆 
+      𖨆- ˡᵘᵘᵘ ⁱᵐ ᶠ4ᶜˡ4 🚻💚
+ 🝮︎︎︎︎︎︎︎ 𝚃𝚁𝙾𝙲' 𝙿𝚂𝚃 𝚔𝚔𝚓-𝚖𝚘𝚍𝚜 🝮︎︎︎︎︎︎︎
+   ☁︎(𝓒𝓻𝓮𝓪𝓭𝓸𝓻 𝓽𝓸' 𝓝𝓮𝓻𝓸 𝔁 / 𝓜𝓓)☁︎",@kjmd,https://github.com/crissposs,,3,1,71,2022-12-02T16:00:24Z,2026-02-10T05:58:23Z
+3536982,ekmartin,Martin Ek,San Francisco,,Increase,https://ekmartin.com,mail@ekmartin.com,209,112,92,2013-02-11T23:29:09Z,2026-02-10T19:42:26Z
+47990946,test0n3,Carlos A.,"Arequipa, Perú","Full-stack developer in formation state (aren't we always in a formation state).
+Starting to get a liking in Ruby, Ruby on Rails, Java and Spring.",,,,30,72,68,2019-02-25T19:41:58Z,2026-03-12T17:15:56Z
+9002215,riux,Riux,Ayacucho Perú,,,,riux.mend@gmail.com,14,7,20,2014-10-02T21:47:04Z,2025-07-01T15:25:58Z
+75816978,WFernandoc07,William Castrejon,"Cajamarca, Perú",Software Developer💻 and Data Scientist🔣 passionate about creating innovative web applications and analyzing data.,,https://williamcastrejon.vercel.app/,,1,12,27,2020-12-11T00:20:44Z,2026-03-13T16:57:21Z
+52054723,bvilladev,Brayan Alexander Villanueva Quispe,Perú- Cajamarca- Los Baños del Inca,,,,,8,1,9,2019-06-20T23:12:31Z,2025-11-23T17:05:43Z
+50956366,csswoman,Karla Agraz,"Lima, Perú",✦ ui engineer focused on interaction design ✦ react / react native ✦,,,karla.agraz@gmail.com,192,111,78,2019-05-23T13:54:56Z,2026-02-28T01:05:07Z
+3810688,IgnacioGans,Ignacio Gutiérrez,"Cusco, Lima, Perú","I am a proactive person in web and computer technology, I am passionate about creating blog, applications, web pages (Statics and Dynamics). Every day, I learn ",Freelance Remking,https://remking.com/portafolio/,gans1988igna@gmail.com,9,6,91,2013-03-08T16:38:11Z,2024-01-15T13:31:15Z
+1782130,moisesli,Moises Linares O.,Peru - Tacna,Web developer FullStack,Freelance,https://moiseslo.github.io,elnaufrago2009@gmail.com,22,26,4,2012-05-27T04:04:39Z,2026-02-12T05:24:37Z
+39033189,luisfernandosolis,Luis fernando solis,Ayacucho Perú.,Large Language Models Researcher | Data Scientist,https://beacons.ai/lfsolisnavarro,felucho.pe,,18,21,64,2018-05-06T18:09:41Z,2026-02-26T21:34:39Z
+5665734,FrancoRosa,FrancoRosa,"Cusco, Perú","Full-Stack Developer,
+Embedded Systems Hobbyist,
+Freelance.",,,km115.franco@gmail.com,25,9,146,2013-10-11T16:10:05Z,2026-03-12T21:43:55Z
+11939055,fernandops26,Fernando Palacios,"Paita,Piura,Perú",,@ghsteam ,,jf.palacios.sz@gmail.com,12,4,38,2015-04-14T07:49:09Z,2026-03-02T17:01:06Z
+143958576,BeltranHC,JUNIOR HUARAYA,"Puno, Peru",estudiante de ing estadistica e informatica,,https://beltranhc.github.io/portafolio/,,13,13,20,2023-09-03T17:24:33Z,2025-12-21T20:28:11Z
+91240794,OmarUTEC,Om@r,"Lima, Perú","""Ningún sistema es seguro""",University of Engineering and Technology,https://depaydev.vercel.app/,,676,1487,101,2021-09-23T05:06:48Z,2026-03-03T16:06:42Z
+79876959,ArthurGC,Arthur Guzman,"Arequipa, Perú",Full-stack Developer with a love for React and Ruby on Rails. I usually play video games and watch videos about web development. Software Developer at Buk,Full-stack Developer,https://arthurgc.github.io/portfolio-microverse/,alxguzmanc@gmail.com,32,14,62,2021-03-01T21:56:43Z,2024-12-20T20:16:31Z
+46494611,Onnichan,Daniel Aguilar,"Tacna, Perú",I like to develop while listening to music to relax.,,https://www.linkedin.com/in/walter-daniel-huaynapata-aguilar-391041197/,,19,35,77,2019-01-08T16:11:05Z,2026-01-18T20:52:03Z
+83934616,antonyayansi,Antony Ayansi,"Cusco, Cusco - PE","Full Stack Developer
+From pixel to query — I’ve got it covered. 🦄",Blocmin,https://blocmin.com,,17,12,48,2021-05-10T02:55:57Z,2026-02-18T20:02:46Z
+380774,chafarleston,charles paul requena palomino,sullana-piura Peru,,@RealComputerSAC,,rcharles84@gmail.com,20,28,37,2010-08-30T14:18:06Z,2026-02-27T14:19:36Z
+33376402,MishaHernandez,Mijail Hernandez,"Piura, Perú","Programmer, autodidact and sometimes asocial. I like to draw :)",Freelance,,,6,12,41,2017-11-04T16:05:12Z,2022-11-27T23:39:57Z
+103982003,Dacyz,Diego Arturo Yangua Merino,"Piura, Perú",,FRACTAL,https://diegoyanguam.fun/,,5,4,17,2022-04-19T04:38:05Z,2026-02-25T15:03:45Z
+20673011,linder3hs,Linder Hassinger,"Lima, Perú","Senior Software Developer
+",Wot Dev,https://www.linderhassinger.dev/,linderhassinger00@gmail.com,346,17,267,2016-07-27T01:33:45Z,2026-02-25T13:04:06Z
+11827305,ChrisChV,Chris Chávez,Arequipa-Perú,,@open-craft,,chrischvdev@gmail.com,27,4,65,2015-04-07T01:43:58Z,2026-02-27T21:36:36Z
+49838578,gerardokaztro,Gerardo Castro ☁️🔐,"Callao, Perú","AWS Security Hero | Cloud Security Engineer | Building real security tools for AWS Organizations in LATAM. I learn by building, not memorizing.",,,,62,13,7,2019-04-21T14:34:59Z,2026-03-05T02:56:09Z
+32112786,javierstamina,Javier Alejandro Arteaga Gonzales,"Callao, Perú","Desarrollador Web, Full Stack in Progress, especialista SEO, Tester Manual, Ingeniería de sistemas",Leja,,,2,2,34,2017-09-19T21:53:20Z,2024-07-03T22:14:08Z
+21184592,heygonzalocaira,Gonzalo Caira,Peru-Arequipa,"Computer Science, an enthusiast in the field of machine learning, astronomy and development. 😃",,,gcairaaguilar@gmail.com,56,23,53,2016-08-22T23:03:32Z,2025-12-14T16:29:55Z
+77988885,kenyihq,Kenyi Hancco,Puno,,TutankaDev,kenyihq.github.io/portfolio-backup/,,2,1,95,2021-01-25T18:35:27Z,2026-03-07T13:45:16Z
+374087,maraca,Martin Cozzi,San Francisco,,@marana-inc ,http://www.marana.io,martin@marana.io,32,61,38,2010-08-24T01:36:40Z,2026-02-26T16:28:15Z
+197961840,MariluFiorela,Marilu Fiorela Pauccar Lima ,"Ayacucho, Perú",Estudiante de economía con pasión a ciencia de datos ,,,marilupauli30@gmail.com,2,4,7,2025-02-05T17:38:53Z,2025-11-16T22:55:17Z
+38053554,MineiToshio,Sergio Toshio Minei,Lima / Perú,"Peruano, tech geek, emprendedor, lifelong learner.",,https://toshiominei.com,,310,23,50,2018-04-03T21:09:09Z,2025-05-24T17:46:53Z
+28662284,jsalinasvela,Jesus Salinas Vela,"Arequipa, Peru",Sofware developer and really passionate about programming and technology,Big Sigma Development,,jjesus.salinas@gmail.com,23,60,23,2017-05-12T23:23:10Z,2026-03-12T18:21:55Z
+95115663,AxelCruzado,,"Perú, Ancash, Nuevo Chimbote","I'm a passionate Web Developer specializing in creating dynamic and responsive websites with HTML, CSS, and JavaScript.",,https://axelcruzado.github.io/AxelCruzado,,2,1,13,2021-11-27T04:42:53Z,2026-02-20T15:00:04Z

@@ -27,9 +27,9 @@ class RepoExtractor:
             except Exception as e:
                 logger.error(f"Error fetching repos for user {username}: {e}")
 
-        # Sort all repos by stars and take top 1000
+        # Sort all repos by stars and take top 3000 (requested 2500)
         repos.sort(key=lambda x: x.get("stargazers_count", 0), reverse=True)
-        return repos[:1000]
+        return repos[:3000]
 
     def get_repo_readme(self, owner: str, repo: str) -> str:
         """

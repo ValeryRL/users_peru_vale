@@ -41,7 +41,7 @@ def classify_data():
     classifications = []
     
     # Classify in batches
-    batch_size = 10
+    batch_size = 20
     for i in tqdm(range(0, len(repositories), batch_size), desc="Classification Batches"):
         batch = repositories[i:i+batch_size]
         try:
